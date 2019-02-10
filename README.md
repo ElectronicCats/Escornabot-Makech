@@ -25,7 +25,7 @@ _Abierto es una inciativa de D. Cuartielles gracias a la generosa aportación de
 
 Makech - Andrés Sabas at Electronic Cats
 
-_Electronic Cats es una hardware libre hecho en México_
+_Electronic Cats es una empresa de hardware libre hecho en México_
 
 # License
 
