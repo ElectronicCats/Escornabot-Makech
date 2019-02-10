@@ -3571,4 +3571,6 @@ Text Label 6560 5720 0    60   ~ 0
 TX
 Text Notes 9520 3725 0    60   ~ 0
 DRIVERS MOTOR
+Text Notes 2125 3725 0    60   ~ 0
+USB and SWD
 $EndSCHEMATC
