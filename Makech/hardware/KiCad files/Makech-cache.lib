@@ -1,11 +1,50 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Makech-rescue_+3.3V-power
+# Connector_Generic_Conn_02x06_Top_Bottom
 #
-DEF Makech-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+DEF Connector_Generic_Conn_02x06_Top_Bottom J 0 40 Y N 1 F N
+F0 "J" 50 300 50 H V C CNN
+F1 "Connector_Generic_Conn_02x06_Top_Bottom" 50 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 150 -350 1 1 10 f
+S 150 -295 100 -305 1 1 6 N
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_10 10 300 -100 150 L 50 50 1 1 P
+X Pin_11 11 300 -200 150 L 50 50 1 1 P
+X Pin_12 12 300 -300 150 L 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+X Pin_7 7 300 200 150 L 50 50 1 1 P
+X Pin_8 8 300 100 150 L 50 50 1 1 P
+X Pin_9 9 300 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Makech-rescue_+3.3V-power-Makech-rescue
+#
+DEF Makech-rescue_+3.3V-power-Makech-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Makech-rescue_+3.3V-power" 0 140 50 H V C CNN
+F1 "Makech-rescue_+3.3V-power-Makech-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +55,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_+6V-power
+# Makech-rescue_+6V-power-Makech-rescue
 #
-DEF Makech-rescue_+6V-power #PWR 0 0 Y Y 1 F P
+DEF Makech-rescue_+6V-power-Makech-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Makech-rescue_+6V-power" 0 140 50 H V C CNN
+F1 "Makech-rescue_+6V-power-Makech-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +70,11 @@ X +6V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_ATSAMD21E18A-MU-electroniccats
+# Makech-rescue_ATSAMD21E18A-MU-electroniccats-Makech-rescue
 #
-DEF Makech-rescue_ATSAMD21E18A-MU-electroniccats U 0 40 Y Y 1 L N
+DEF Makech-rescue_ATSAMD21E18A-MU-electroniccats-Makech-rescue U 0 40 Y Y 1 L N
 F0 "U" -500 1251 50 H V L BNN
-F1 "Makech-rescue_ATSAMD21E18A-MU-electroniccats" -501 -1202 50 H V L BNN
+F1 "Makech-rescue_ATSAMD21E18A-MU-electroniccats-Makech-rescue" -501 -1202 50 H V L BNN
 F2 "QFN50P500X500X100-33N" 0 0 50 H I L BNN
 F3 "SAMD21E Series 256 KB Flash 32 KB SRAM 48 MHz 32-Bit Microcontroller - QFN-32" 0 0 50 H I L BNN
 F4 "ATSAMD21E18A-MU-ND" 0 0 50 H I L BNN
@@ -84,11 +123,11 @@ X VDDANA 9 700 1000 200 L 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue
+# Makech-rescue_C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue C 0 10 N Y 1 F N
+DEF Makech-rescue_C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue C 0 10 N Y 1 F N
 F0 "C" 50 10 50 H V L CNN
-F1 "Makech-rescue_C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue" 50 -60 50 H V L CNN
+F1 "Makech-rescue_C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue" 50 -60 50 H V L CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -99,11 +138,11 @@ X ~ 2 0 -100 50 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_CONN_01X02--Ogaki-rescue-Makech-rescue
+# Makech-rescue_CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_CONN_01X02--Ogaki-rescue-Makech-rescue J 0 40 Y N 1 F N
+DEF Makech-rescue_CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "Makech-rescue_CONN_01X02--Ogaki-rescue-Makech-rescue" 100 0 50 V V C CNN
+F1 "Makech-rescue_CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -121,11 +160,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_CONN_01X04--Ogaki-rescue-Makech-rescue
+# Makech-rescue_CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_CONN_01X04--Ogaki-rescue-Makech-rescue J 0 40 Y N 1 F N
+DEF Makech-rescue_CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue J 0 40 Y N 1 F N
 F0 "J" 0 250 50 H V C CNN
-F1 "Makech-rescue_CONN_01X04--Ogaki-rescue-Makech-rescue" 100 0 50 V V C CNN
+F1 "Makech-rescue_CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -147,11 +186,11 @@ X P4 4 -200 -150 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_CONN_01X05--Ogaki-rescue-Makech-rescue
+# Makech-rescue_CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_CONN_01X05--Ogaki-rescue-Makech-rescue J 0 40 Y N 1 F N
+DEF Makech-rescue_CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Makech-rescue_CONN_01X05--Ogaki-rescue-Makech-rescue" 100 0 50 V V C CNN
+F1 "Makech-rescue_CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -175,11 +214,11 @@ X P5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_CONN_01X09--Ogaki-rescue-Makech-rescue
+# Makech-rescue_CONN_01X09--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_CONN_01X09--Ogaki-rescue-Makech-rescue J 0 40 Y N 1 F N
+DEF Makech-rescue_CONN_01X09--Ogaki-rescue-Makech-rescue-Makech-rescue J 0 40 Y N 1 F N
 F0 "J" 0 500 50 H V C CNN
-F1 "Makech-rescue_CONN_01X09--Ogaki-rescue-Makech-rescue" 100 0 50 V V C CNN
+F1 "Makech-rescue_CONN_01X09--Ogaki-rescue-Makech-rescue-Makech-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -211,11 +250,11 @@ X P9 9 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_CONN_02X08--Ogaki-rescue-Makech-rescue
+# Makech-rescue_CONN_02X08--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_CONN_02X08--Ogaki-rescue-Makech-rescue J 0 1 Y N 1 F N
+DEF Makech-rescue_CONN_02X08--Ogaki-rescue-Makech-rescue-Makech-rescue J 0 1 Y N 1 F N
 F0 "J" 0 450 50 H V C CNN
-F1 "Makech-rescue_CONN_02X08--Ogaki-rescue-Makech-rescue" 0 0 50 V V C CNN
+F1 "Makech-rescue_CONN_02X08--Ogaki-rescue-Makech-rescue-Makech-rescue" 0 0 50 V V C CNN
 F2 "" 0 -1200 50 H I C CNN
 F3 "" 0 -1200 50 H I C CNN
 $FPLIST
@@ -262,11 +301,11 @@ X P9 9 -250 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_C_Small-Device
+# Makech-rescue_C_Small-Device-Makech-rescue
 #
-DEF Makech-rescue_C_Small-Device C 0 10 N N 1 F N
+DEF Makech-rescue_C_Small-Device-Makech-rescue C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Makech-rescue_C_Small-Device" 10 -80 50 H V L CNN
+F1 "Makech-rescue_C_Small-Device-Makech-rescue" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -280,11 +319,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_Conn_02x02_Counter_Clockwise-Connector_Generic
+# Makech-rescue_Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue
 #
-DEF Makech-rescue_Conn_02x02_Counter_Clockwise-Connector_Generic J 0 40 Y N 1 F N
+DEF Makech-rescue_Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue J 0 40 Y N 1 F N
 F0 "J" 50 100 50 H V C CNN
-F1 "Makech-rescue_Conn_02x02_Counter_Clockwise-Connector_Generic" 50 -200 50 H V C CNN
+F1 "Makech-rescue_Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue" 50 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -303,11 +342,11 @@ X Pin_4 4 300 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_D_Schottky-Device
+# Makech-rescue_D_Schottky-Device-Makech-rescue
 #
-DEF Makech-rescue_D_Schottky-Device D 0 40 N N 1 F N
+DEF Makech-rescue_D_Schottky-Device-Makech-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Makech-rescue_D_Schottky-Device" 0 -100 50 H V C CNN
+F1 "Makech-rescue_D_Schottky-Device-Makech-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -325,32 +364,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_ESP01--Ogaki-rescue-Makech-rescue
+# Makech-rescue_FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_ESP01--Ogaki-rescue-Makech-rescue U 0 40 Y Y 1 F N
-F0 "U" 50 30 60 H V C CNN
-F1 "Makech-rescue_ESP01--Ogaki-rescue-Makech-rescue" 130 -560 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S 0 -520 500 -520 0 1 0 N
-S 0 0 660 -520 0 1 0 N
-X GND 1 -200 -70 200 R 50 50 1 1 P
-X GPIO2 2 -200 -200 200 R 50 50 1 1 P
-X GPIO0 3 -200 -340 200 R 50 50 1 1 P
-X RX 4 -200 -480 200 R 50 50 1 1 P
-X VCC 5 860 -480 200 L 50 50 1 1 P
-X RST 6 860 -340 200 L 50 50 1 1 P
-X CH_PD 7 860 -200 200 L 50 50 1 1 P
-X TXD 8 860 -70 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Makech-rescue_FUSE--Ogaki-rescue-Makech-rescue
-#
-DEF Makech-rescue_FUSE--Ogaki-rescue-Makech-rescue F 0 10 Y Y 1 F N
+DEF Makech-rescue_FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue F 0 10 Y Y 1 F N
 F0 "F" 100 50 40 H V C CNN
-F1 "Makech-rescue_FUSE--Ogaki-rescue-Makech-rescue" -100 -50 40 H V C CNN
+F1 "Makech-rescue_FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue" -100 -50 40 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -361,11 +379,11 @@ X ~ 2 150 0 50 L 40 40 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_Fuse-Device
+# Makech-rescue_Fuse-Device-Makech-rescue
 #
-DEF Makech-rescue_Fuse-Device F 0 0 N Y 1 F N
+DEF Makech-rescue_Fuse-Device-Makech-rescue F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "Makech-rescue_Fuse-Device" -75 0 50 V V C CNN
+F1 "Makech-rescue_Fuse-Device-Makech-rescue" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -379,11 +397,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_GND--Ogaki-rescue-Makech-rescue
+# Makech-rescue_GND--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_GND--Ogaki-rescue-Makech-rescue #PWR 0 0 Y Y 1 F P
+DEF Makech-rescue_GND--Ogaki-rescue-Makech-rescue-Makech-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "Makech-rescue_GND--Ogaki-rescue-Makech-rescue" 0 -150 50 H V C CNN
+F1 "Makech-rescue_GND--Ogaki-rescue-Makech-rescue-Makech-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -392,11 +410,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_GND-power
+# Makech-rescue_GND-power-Makech-rescue
 #
-DEF Makech-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF Makech-rescue_GND-power-Makech-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "Makech-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "Makech-rescue_GND-power-Makech-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -405,11 +423,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_JUMPER--Ogaki-rescue-Makech-rescue
+# Makech-rescue_JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_JUMPER--Ogaki-rescue-Makech-rescue JP 0 30 Y N 1 F N
+DEF Makech-rescue_JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue JP 0 30 Y N 1 F N
 F0 "JP" 0 150 60 H V C CNN
-F1 "Makech-rescue_JUMPER--Ogaki-rescue-Makech-rescue" 0 -80 40 H V C CNN
+F1 "Makech-rescue_JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue" 0 -80 40 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -419,11 +437,11 @@ X 2 2 150 0 100 L 60 60 0 1 P I
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue
+# Makech-rescue_LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue LD 0 40 N N 1 F N
+DEF Makech-rescue_LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue LD 0 40 N N 1 F N
 F0 "LD" 0 100 40 H V C CNN
-F1 "Makech-rescue_LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue" 0 -100 40 H V C CNN
+F1 "Makech-rescue_LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue" 0 -100 40 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -438,11 +456,11 @@ X A 2 -50 0 50 R 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_LM1117-SOT--Ogaki-rescue-Makech-rescue
+# Makech-rescue_LM1117-SOT--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_LM1117-SOT--Ogaki-rescue-Makech-rescue U 0 40 Y Y 1 F N
+DEF Makech-rescue_LM1117-SOT--Ogaki-rescue-Makech-rescue-Makech-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 200 60 H V C CNN
-F1 "Makech-rescue_LM1117-SOT--Ogaki-rescue-Makech-rescue" 0 100 60 H V C CNN
+F1 "Makech-rescue_LM1117-SOT--Ogaki-rescue-Makech-rescue-Makech-rescue" 0 100 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -458,11 +476,11 @@ X VIN 3 -350 0 100 R 50 39 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue
+# Makech-rescue_R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue R 0 0 N Y 1 F N
+DEF Makech-rescue_R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue R 0 0 N Y 1 F N
 F0 "R" -50 50 50 V V C CNN
-F1 "Makech-rescue_R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue" 50 50 50 V V C CNN
+F1 "Makech-rescue_R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue" 50 50 50 V V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -472,11 +490,11 @@ X ~ 2 0 -100 50 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue
+# Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue R 0 0 Y N 4 F N
+DEF Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue R 0 0 Y N 4 F N
 F0 "R" -55 5 50 V V C CNN
-F1 "Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue" 65 0 50 V V C CNN
+F1 "Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue" 65 0 50 V V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -492,11 +510,11 @@ X ~ 8 0 -100 50 U 27 60 4 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_SW_Push-Switch
+# Makech-rescue_SW_Push-Switch-Makech-rescue
 #
-DEF Makech-rescue_SW_Push-Switch SW 0 40 N N 1 F N
+DEF Makech-rescue_SW_Push-Switch-Makech-rescue SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "Makech-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
+F1 "Makech-rescue_SW_Push-Switch-Makech-rescue" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -509,11 +527,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue
+# Makech-rescue_Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue J 0 30 Y N 1 F N
+DEF Makech-rescue_Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue-Makech-rescue J 0 30 Y N 1 F N
 F0 "J" 0 250 50 H V C TNN
-F1 "Makech-rescue_Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue" -150 0 50 V V C TNN
+F1 "Makech-rescue_Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue-Makech-rescue" -150 0 50 V V C TNN
 F2 "" 0 -225 50 H I C CNN
 F3 "" -25 0 50 H I C CNN
 $FPLIST
@@ -533,11 +551,11 @@ X ~ 2 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_ULN2803--Ogaki-rescue-Makech-rescue
+# Makech-rescue_ULN2803--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_ULN2803--Ogaki-rescue-Makech-rescue U 0 40 Y Y 1 F N
+DEF Makech-rescue_ULN2803--Ogaki-rescue-Makech-rescue-Makech-rescue U 0 40 Y Y 1 F N
 F0 "U" 150 550 60 H V C CNN
-F1 "Makech-rescue_ULN2803--Ogaki-rescue-Makech-rescue" 250 450 60 H V C CNN
+F1 "Makech-rescue_ULN2803--Ogaki-rescue-Makech-rescue-Makech-rescue" 250 450 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -563,11 +581,11 @@ X GND 9 0 -500 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_USB_B_Micro-Connector
+# Makech-rescue_USB_B_Micro-Connector-Makech-rescue
 #
-DEF Makech-rescue_USB_B_Micro-Connector J 0 40 Y Y 1 F N
+DEF Makech-rescue_USB_B_Micro-Connector-Makech-rescue J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "Makech-rescue_USB_B_Micro-Connector" -200 350 50 H V L CNN
+F1 "Makech-rescue_USB_B_Micro-Connector-Makech-rescue" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 $FPLIST
@@ -598,11 +616,11 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_VCC-power
+# Makech-rescue_VCC-power-Makech-rescue
 #
-DEF Makech-rescue_VCC-power #PWR 0 0 Y Y 1 F P
+DEF Makech-rescue_VCC-power-Makech-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Makech-rescue_VCC-power" 0 150 50 H V C CNN
+F1 "Makech-rescue_VCC-power-Makech-rescue" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -612,11 +630,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue
+# Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue D 0 40 N N 1 F N
+DEF Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 40 H V C CNN
-F1 "Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue" 0 -100 40 H V C CNN
+F1 "Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue" 0 -100 40 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -627,11 +645,11 @@ X A 2 -50 0 50 R 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue
+# Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue BZ 0 10 N N 1 F N
+DEF Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue BZ 0 10 N N 1 F N
 F0 "BZ" 75 50 50 H V L CNN
-F1 "Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue" 75 -50 50 H V L CNN
+F1 "Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue" 75 -50 50 H V L CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -644,11 +662,11 @@ X ~ 2 -50 -50 47 R 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_switch--Ogaki-rescue-Makech-rescue
+# Makech-rescue_switch--Ogaki-rescue-Makech-rescue-Makech-rescue
 #
-DEF Makech-rescue_switch--Ogaki-rescue-Makech-rescue S 0 40 Y Y 1 F N
+DEF Makech-rescue_switch--Ogaki-rescue-Makech-rescue-Makech-rescue S 0 40 Y Y 1 F N
 F0 "S" -90 0 60 H V C CNN
-F1 "Makech-rescue_switch--Ogaki-rescue-Makech-rescue" 80 -250 60 H V C CNN
+F1 "Makech-rescue_switch--Ogaki-rescue-Makech-rescue-Makech-rescue" 80 -250 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -664,6 +682,35 @@ X ~ 1 -80 -100 79 R 50 50 1 1 P
 X ~ 2 -80 -200 79 R 50 50 1 1 P
 X ~ 3 230 -200 79 L 50 50 1 1 P
 X ~ 4 230 -100 79 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
