@@ -1,9 +1,33 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
 LIBS:audio
 LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:switch
 LIBS:analog
 LIBS:Makech-cache
@@ -18,11 +42,11 @@ Rev "v0.1"
 Comp "Electronic Cats"
 Comment1 "Andres Sabas"
 Comment2 "electroniccats.com"
-Comment3 "Thanks escornabot.com and abierto.cc"
+Comment3 "Thanks escornabot.com, Pablo Rubio, XDeSIG and abierto.cc"
 Comment4 "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
 $EndDescr
 $Comp
-L Makech-rescue:CONN_02X08--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue SV1
+L Makech-rescue:CONN_02X08--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SV1
 U 1 1 58B7EE74
 P 1190 7150
 F 0 "SV1" H 1230 6715 50  0000 C CNN
@@ -59,7 +83,7 @@ Text Label 1585 7000 2    60   ~ 0
 Text Label 1585 6800 2    60   ~ 0
 3V3
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR01
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR01
 U 1 1 58B8045D
 P 2535 5645
 F 0 "#PWR01" H 2535 5395 50  0001 C CNN
@@ -80,7 +104,7 @@ A1
 Text Label 2105 6390 2    60   ~ 0
 A0
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R7.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R7.1
 U 1 1 58B80BCC
 P 5070 1080
 F 0 "R7.1" V 5020 1130 50  0000 C CNN
@@ -92,7 +116,7 @@ F 4 "CRCW080510K0FKEAC" V 5070 1080 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1.1
 U 1 1 58B80C4C
 P 5445 1135
 F 0 "R1.1" V 5395 1185 50  0000 C CNN
@@ -104,7 +128,7 @@ F 4 "CRCW080510K0FKEAC" V 5445 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3.1
 U 1 1 58B813B6
 P 6370 1135
 F 0 "R3.1" V 6320 1185 50  0000 C CNN
@@ -116,7 +140,7 @@ F 4 "CRCW080510K0FKEAC" V 6370 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4.1
 U 1 1 58B813C2
 P 6830 1135
 F 0 "R4.1" V 6780 1185 50  0000 C CNN
@@ -128,7 +152,7 @@ F 4 "CRCW080510K0FKEAC" V 6830 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5.1
 U 1 1 58B8152F
 P 7290 1135
 F 0 "R5.1" V 7240 1185 50  0000 C CNN
@@ -140,7 +164,7 @@ F 4 "CRCW080510K0FKEAC" V 7290 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2.2
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2.2
 U 1 1 58B820CE
 P 5910 1135
 F 0 "R2.2" V 5860 1185 50  0000 R CNN
@@ -154,7 +178,7 @@ $EndComp
 Text Label 4545 1240 0    60   ~ 0
 BUT
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S1
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S1
 U 1 1 58B81D93
 P 5555 1740
 F 0 "S1" V 5415 1710 60  0000 C CNN
@@ -166,7 +190,7 @@ F 4 "KSC441G70SHLFSPF" V 5555 1740 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S2
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S2
 U 1 1 58B82276
 P 5980 1745
 F 0 "S2" V 5845 1745 60  0000 C CNN
@@ -178,7 +202,7 @@ F 4 "KSC441G70SHLFSPF" V 5980 1745 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5
 U 1 1 58B82532
 P 6910 1745
 F 0 "S5" V 6775 1745 60  0000 C CNN
@@ -190,7 +214,7 @@ F 4 "KSC441G70SHLFSPF" V 6910 1745 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR02
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR02
 U 1 1 58B83653
 P 6595 1940
 F 0 "#PWR02" H 6595 1690 50  0001 C CNN
@@ -201,7 +225,7 @@ F 3 "" H 6595 1940 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S4
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S4
 U 1 1 58B859F2
 P 7370 1740
 F 0 "S4" V 7235 1740 60  0000 C CNN
@@ -215,7 +239,7 @@ $EndComp
 Text Notes 4410 1775 0    59   ~ 0
 Choose one\nRx.1 --> SMD\nRx  -->  THT
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5.1
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5.1
 U 1 1 58B87EA4
 P 10285 1740
 F 0 "S5.1" H 10365 1430 60  0000 C CNN
@@ -226,7 +250,7 @@ F 3 "" H 10285 1740 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S4.1
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S4.1
 U 1 1 58B880D3
 P 10750 1740
 F 0 "S4.1" H 10830 1435 60  0000 C CNN
@@ -237,7 +261,7 @@ F 3 "" H 10750 1740 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S2.1
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S2.1
 U 1 1 58B88F4B
 P 9355 1740
 F 0 "S2.1" H 9435 1430 60  0000 C CNN
@@ -248,7 +272,7 @@ F 3 "" H 9355 1740 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3.1
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3.1
 U 1 1 58B88F51
 P 9820 1740
 F 0 "S3.1" H 9905 1430 60  0000 C CNN
@@ -259,7 +283,7 @@ F 3 "" H 9820 1740 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S1.1
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S1.1
 U 1 1 58B89199
 P 8890 1740
 F 0 "S1.1" H 8970 1420 60  0000 C CNN
@@ -270,7 +294,7 @@ F 3 "" H 8890 1740 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR03
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR03
 U 1 1 58B89785
 P 9670 2070
 F 0 "#PWR03" H 9670 1820 50  0001 C CNN
@@ -293,7 +317,7 @@ S1
 Text Notes 8440 1040 0    59   ~ 0
 Choose one\nSx.1 --> B3F-4050\nSx  -->  B3F-1050
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3
 U 1 1 58B8236A
 P 6445 1745
 F 0 "S3" V 6310 1745 60  0000 C CNN
@@ -307,7 +331,7 @@ $EndComp
 Text Notes 8330 725  2    118  ~ 0
 KEYPAD\n
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R6.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R6.1
 U 1 1 58B9AF74
 P 5440 2685
 F 0 "R6.1" V 5370 2685 50  0000 C CNN
@@ -319,7 +343,7 @@ F 4 "CRCW08051K00FKEAC" V 5440 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R8.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R8.1
 U 1 1 58B9B08A
 P 6070 2685
 F 0 "R8.1" V 6000 2685 50  0000 C CNN
@@ -331,7 +355,7 @@ F 4 "CRCW08051K00FKEAC" V 6070 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R9.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R9.1
 U 1 1 58B9B99C
 P 6700 2685
 F 0 "R9.1" V 6630 2685 50  0000 C CNN
@@ -343,7 +367,7 @@ F 4 "CRCW08051K00FKEAC" V 6700 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R10.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R10.1
 U 1 1 58B9BF48
 P 7330 2685
 F 0 "R10.1" V 7260 2685 50  0000 C CNN
@@ -355,7 +379,7 @@ F 4 "CRCW08051K00FKEAC" V 7330 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1.1
 U 1 1 58B9C616
 P 5440 2960
 F 0 "LED1.1" H 5440 2870 40  0000 C CNN
@@ -367,7 +391,7 @@ F 4 "APT2012LVBC/D" H 5440 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1
 U 1 1 58B9C917
 P 5755 2960
 F 0 "LED1" H 5755 3060 40  0000 C CNN
@@ -379,7 +403,7 @@ F 4 "APT2012LVBC/D" H 5755 2960 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2.1
 U 1 1 58B9CA39
 P 6070 2960
 F 0 "LED2.1" H 6070 2875 40  0000 C CNN
@@ -391,7 +415,7 @@ F 4 "APT2012SRCPRV" H 6070 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2
 U 1 1 58B9CE0B
 P 6385 2960
 F 0 "LED2" H 6385 3060 40  0000 C CNN
@@ -403,7 +427,7 @@ F 4 "APT2012SRCPRV" H 6385 2960 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3.1
 U 1 1 58B9D1EF
 P 6700 2960
 F 0 "LED3.1" H 6700 2870 40  0000 C CNN
@@ -415,7 +439,7 @@ F 4 "APT2012SECK" H 6700 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3
 U 1 1 58B9D5FD
 P 7015 2960
 F 0 "LED3" H 7015 3060 40  0000 C CNN
@@ -427,7 +451,7 @@ F 4 "APT2012SECK" H 7015 2960 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4.1
 U 1 1 58B9D948
 P 7330 2960
 F 0 "LED4.1" H 7330 2870 40  0000 C CNN
@@ -439,7 +463,7 @@ F 4 "APT2012SGC" H 7330 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4
 U 1 1 58B9DCD6
 P 7645 2960
 F 0 "LED4" H 7645 3060 40  0000 C CNN
@@ -471,7 +495,7 @@ S4
 Text Notes 7920 2760 0    59   ~ 0
 Choose one\nRx.1 --> SMD\nRx  -->  THT
 $Comp
-L Makech-rescue:JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue SJ2
+L Makech-rescue:JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SJ2
 U 1 1 58BAD83A
 P 8095 3120
 F 0 "SJ2" H 8095 3270 60  0000 C CNN
@@ -482,7 +506,7 @@ F 3 "" H 8095 3120 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR04
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR04
 U 1 1 58BADC73
 P 8365 3185
 F 0 "#PWR04" H 8365 2935 50  0001 C CNN
@@ -495,7 +519,7 @@ $EndComp
 Text Notes 7730 3460 0    60   ~ 0
 Enabling LEDs, Default ON\n
 $Comp
-L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP1
+L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP1
 U 1 1 58BAEF93
 P 3340 5695
 F 0 "JP1" H 3340 5845 50  0000 C CNN
@@ -508,7 +532,7 @@ $EndComp
 Text Notes 4265 5975 2    118  ~ 0
 BUZZ
 $Comp
-L Makech-rescue:buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue Z1
+L Makech-rescue:buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue Z1
 U 1 1 58BAFB72
 P 3205 6090
 F 0 "Z1" H 3280 6140 50  0000 L CNN
@@ -521,7 +545,7 @@ $EndComp
 Text Label 2920 5645 0    60   ~ 0
 D11
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR05
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR05
 U 1 1 58BB0676
 P 3095 6220
 F 0 "#PWR05" H 3095 5970 50  0001 C CNN
@@ -534,7 +558,7 @@ $EndComp
 Text Notes 3555 5985 1    60   ~ 0
 Buzz ON
 $Comp
-L Makech-rescue:CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue U1
+L Makech-rescue:CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U1
 U 1 1 58BB1148
 P 5600 5210
 F 0 "U1" H 5600 5460 50  0000 C CNN
@@ -545,7 +569,7 @@ F 3 "" H 5600 5210 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR06
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR06
 U 1 1 58BB1E98
 P 5220 5485
 F 0 "#PWR06" H 5220 5235 50  0001 C CNN
@@ -564,7 +588,7 @@ I2C
 Text Notes 6825 3770 2    118  ~ 0
 Expasions
 $Comp
-L Makech-rescue:ULN2803--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue IC1
+L Makech-rescue:ULN2803--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue IC1
 U 1 1 58BBAA7B
 P 9880 5205
 F 0 "IC1" H 9635 5655 60  0000 C CNN
@@ -576,7 +600,7 @@ F 4 "ULN2803ADWR" H 9880 5205 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2
 U 1 1 58BBF2CA
 P 8600 5605
 F 0 "C2" V 8500 5530 50  0000 L CNN
@@ -588,7 +612,7 @@ F 4 "08051C104J4T4A" V 8600 5605 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2.1
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2.1
 U 1 1 58BBF631
 P 8820 5620
 F 0 "C2.1" V 8730 5505 50  0000 L CNN
@@ -600,7 +624,7 @@ F 4 "08051C104J4T4A" V 8820 5620 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR010
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR010
 U 1 1 58BBFB3B
 P 8600 6295
 F 0 "#PWR010" H 8600 6045 50  0001 C CNN
@@ -1738,7 +1762,7 @@ DC BC 53 63 63 E3 C9 7E CB A1 28 8A 92 6F D4 45 49 29 7A 22 91 C8 10 63 CC 36 7E
 EndData
 $EndBitmap
 $Comp
-L Makech-rescue:Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue X1
+L Makech-rescue:Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue X1
 U 1 1 58BB0114
 P 2040 7165
 F 0 "X1" H 2040 7415 50  0000 C TNN
@@ -1749,7 +1773,7 @@ F 3 "" H 2015 7165 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP2
+L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP2
 U 1 1 58BAEDD6
 P 3045 7170
 F 0 "JP2" H 3045 7320 50  0000 C CNN
@@ -1760,7 +1784,7 @@ F 3 "" H 3045 7170 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1.1
+L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1.1
 U 1 1 58BB50CA
 P 3705 6880
 F 0 "F1.1" H 3750 6965 40  0000 C CNN
@@ -1771,7 +1795,7 @@ F 3 "" H 3705 6880 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1
+L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1
 U 1 1 58BB5A4E
 P 3710 7120
 F 0 "F1" H 3760 7160 40  0000 C CNN
@@ -1782,7 +1806,7 @@ F 3 "" H 3710 7120 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1.1
+L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1.1
 U 1 1 58BB6B77
 P 4210 7280
 F 0 "D1.1" H 4210 7350 40  0000 C CNN
@@ -1794,7 +1818,7 @@ F 4 "S-152T" H 4210 7280 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1
+L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1
 U 1 1 58BB6DB1
 P 4305 7280
 F 0 "D1" H 4305 7220 40  0000 C CNN
@@ -1805,7 +1829,7 @@ F 3 "" H 4305 7280 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR011
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR011
 U 1 1 58BB81E0
 P 4260 7505
 F 0 "#PWR011" H 4260 7255 50  0001 C CNN
@@ -1818,7 +1842,7 @@ $EndComp
 Text Notes 4250 7630 2    60   ~ 0
 Choose on X.1 --> SMD,  X --> THT
 $Comp
-L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH4
+L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH4
 U 1 1 58B999D4
 P 11045 5705
 F 0 "XH4" H 11045 6005 50  0000 C CNN
@@ -1829,7 +1853,7 @@ F 3 "" H 11045 5705 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH3
+L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH3
 U 1 1 58B9E95E
 P 11045 4810
 F 0 "XH3" H 11045 4520 50  0000 C CNN
@@ -1848,7 +1872,7 @@ Orange
 Text Notes 7360 3205 0    60   ~ 0
 Green
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
 U 1 1 58CC3CD5
 P 7290 1340
 F 0 "R3" V 7235 1345 50  0000 C CNN
@@ -1860,7 +1884,7 @@ F 4 "743C043103JP" V 7290 1340 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
 U 1 1 58CC5704
 P 5445 1340
 F 0 "R1" V 5390 1345 50  0000 C CNN
@@ -1872,7 +1896,7 @@ F 4 "743C043103JP" V 5445 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
 U 2 1 58CC6075
 P 5910 1340
 F 0 "R1" V 5855 1345 50  0000 C CNN
@@ -1884,7 +1908,7 @@ F 4 "743C043103JP" V 5910 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
 U 1 1 58CC678A
 P 6370 1340
 F 0 "R2" V 6315 1345 50  0000 C CNN
@@ -1896,7 +1920,7 @@ F 4 "743C043103JP" V 6370 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
 U 2 1 58CC71D8
 P 6830 1340
 F 0 "R2" V 6775 1345 50  0000 C CNN
@@ -1908,7 +1932,7 @@ F 4 "743C043103JP" V 6830 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
 U 1 1 58CC7A26
 P 5755 2685
 F 0 "R4" V 5700 2690 50  0000 C CNN
@@ -1920,7 +1944,7 @@ F 4 "743C043102JP" V 5755 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
 U 2 1 58CC84DE
 P 6385 2685
 F 0 "R4" V 6330 2690 50  0000 C CNN
@@ -1932,7 +1956,7 @@ F 4 "743C043102JP" V 6385 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
 U 1 1 58CC898F
 P 7015 2685
 F 0 "R5" V 6960 2690 50  0000 C CNN
@@ -1944,7 +1968,7 @@ F 4 "743C043102JP" V 7015 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
 U 2 1 58CC91A7
 P 4885 1080
 F 0 "R3" V 4830 1085 50  0000 C CNN
@@ -1960,7 +1984,7 @@ A5
 Text Label 2105 5890 2    60   ~ 0
 A4
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR012
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR012
 U 1 1 58D30B35
 P 645 5645
 F 0 "#PWR012" H 645 5395 50  0001 C CNN
@@ -1985,7 +2009,7 @@ A5
 Text Label 1075 5890 0    60   ~ 0
 A4
 $Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
 U 2 1 58D3E57A
 P 7645 2685
 F 0 "R5" V 7590 2690 50  0000 C CNN
@@ -1997,7 +2021,7 @@ F 4 "743C043102JP" V 7645 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue S7
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S7
 U 1 1 58D3FEDC
 P 4705 6910
 F 0 "S7" H 4615 6910 60  0000 C CNN
@@ -2009,7 +2033,7 @@ F 4 "1825232-1" H 4705 6910 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:LM1117-SOT--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue U6
+L Makech-rescue:LM1117-SOT--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U6
 U 1 1 58DC178E
 P 6295 6765
 F 0 "U6" H 6295 6965 60  0000 C CNN
@@ -2021,7 +2045,7 @@ F 4 "AP2114HA-3.3TRG1" H 6295 6765 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR013
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR013
 U 1 1 58DC633A
 P 6295 7635
 F 0 "#PWR013" H 6295 7385 50  0001 C CNN
@@ -2032,7 +2056,7 @@ F 3 "" H 6295 7635 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4
 U 1 1 58DD1A4B
 P 6520 7175
 F 0 "C4" V 6435 7105 50  0000 L CNN
@@ -2044,7 +2068,7 @@ F 4 "C0805X106K8RACAUTO" V 6520 7175 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3
 U 1 1 58DD2438
 P 6070 7175
 F 0 "C3" V 5985 7105 50  0000 L CNN
@@ -2579,7 +2603,7 @@ Wire Wire Line
 	6570 7175 6675 7175
 Connection ~ 6675 7175
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3.1
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3.1
 U 1 1 58DE2448
 P 6070 7470
 F 0 "C3.1" V 5985 7355 50  0000 L CNN
@@ -2591,7 +2615,7 @@ F 4 "C0805X106K8RACAUTO" V 6070 7470 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4.1
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4.1
 U 1 1 58DE26E6
 P 6520 7470
 F 0 "C4.1" V 6435 7400 50  0000 L CNN
@@ -2617,7 +2641,7 @@ Wire Wire Line
 Connection ~ 6295 7175
 Connection ~ 6295 7470
 $Comp
-L Makech-rescue:CONN_01X09--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue SV4
+L Makech-rescue:CONN_01X09--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SV4
 U 1 1 58DF772E
 P 1760 5990
 F 0 "SV4" H 1760 6490 50  0000 C CNN
@@ -2628,7 +2652,7 @@ F 3 "" H 1760 5990 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:CONN_01X09--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue SV6
+L Makech-rescue:CONN_01X09--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SV6
 U 1 1 58DF7F23
 P 1420 5990
 F 0 "SV6" H 1420 6490 50  0000 C CNN
@@ -2829,7 +2853,7 @@ Wire Wire Line
 Wire Wire Line
 	2915 1160 3035 1160
 $Comp
-L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue C1
+L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue C1
 U 1 1 5CFEDF86
 P 3185 1130
 F 0 "C1" H 3277 1176 50  0000 L CNN
@@ -2845,7 +2869,7 @@ Wire Wire Line
 Wire Wire Line
 	2915 960  3185 960 
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0101
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0101
 U 1 1 5D026F59
 P 3035 855
 F 0 "#PWR0101" H 3035 705 50  0001 C CNN
@@ -2861,7 +2885,7 @@ Connection ~ 3035 1060
 Wire Wire Line
 	3185 1230 3185 1295
 $Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue #PWR0102
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0102
 U 1 1 5D09946E
 P 3185 1295
 F 0 "#PWR0102" H 3185 1045 50  0001 C CNN
@@ -2879,7 +2903,7 @@ Connection ~ 4990 920
 Wire Wire Line
 	4990 920  5070 920 
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0103
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0103
 U 1 1 5D10D595
 P 4990 855
 F 0 "#PWR0103" H 4990 705 50  0001 C CNN
@@ -2894,7 +2918,7 @@ Wire Wire Line
 Wire Wire Line
 	6795 7175 6795 7170
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0104
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0104
 U 1 1 5D14A643
 P 6795 7170
 F 0 "#PWR0104" H 6795 7020 50  0001 C CNN
@@ -2905,7 +2929,7 @@ F 3 "" H 6795 7170 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:ATSAMD21E18A-MU-electroniccats-Makech-rescue-Makech-rescue U7
+L Makech-rescue:ATSAMD21E18A-MU-electroniccats-Makech-rescue-Makech-rescue-Makech-rescue U7
 U 1 1 5D3402CD
 P 2215 2060
 F 0 "U7" H 2215 3427 50  0000 C CNN
@@ -2932,7 +2956,7 @@ Connection ~ 3020 3010
 Wire Wire Line
 	3020 3010 3020 3200
 $Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue #PWR0105
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0105
 U 1 1 5D3F1AF5
 P 3020 3200
 F 0 "#PWR0105" H 3020 2950 50  0001 C CNN
@@ -2955,7 +2979,7 @@ D-
 Text Label 3075 1960 0    60   ~ 0
 D+
 $Comp
-L Makech-rescue:USB_B_Micro-Connector-Makech-rescue-Makech-rescue J1
+L Makech-rescue:USB_B_Micro-Connector-Makech-rescue-Makech-rescue-Makech-rescue J1
 U 1 1 5D522F31
 P 1025 4470
 F 0 "J1" H 1080 4937 50  0000 C CNN
@@ -2988,7 +3012,7 @@ Connection ~ 980  4920
 Wire Wire Line
 	980  4920 1025 4920
 $Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue #PWR0106
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0106
 U 1 1 5D699F03
 P 980 4975
 F 0 "#PWR0106" H 980 4725 50  0001 C CNN
@@ -3000,7 +3024,7 @@ F 3 "" H 980 4975 50  0001 C CNN
 $EndComp
 NoConn ~ 1325 4670
 $Comp
-L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue #PWR0107
+L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0107
 U 1 1 5D6DA421
 P 1890 4205
 F 0 "#PWR0107" H 1890 4055 50  0001 C CNN
@@ -3030,7 +3054,7 @@ Wire Wire Line
 	5685 7175 5685 7040
 Connection ~ 5685 7175
 $Comp
-L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue #PWR0108
+L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0108
 U 1 1 5D7E4CD1
 P 5685 6715
 F 0 "#PWR0108" H 5685 6565 50  0001 C CNN
@@ -3043,7 +3067,7 @@ $EndComp
 Text Notes 4575 7610 0    60   ~ 0
 NOTA: Revisar \ndiodos \nde proteccion
 $Comp
-L Makech-rescue:SW_Push-Switch-Makech-rescue-Makech-rescue SW1
+L Makech-rescue:SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue SW1
 U 1 1 5D7E7124
 P 1185 1360
 F 0 "SW1" H 1185 1645 50  0000 C CNN
@@ -3058,7 +3082,7 @@ Wire Wire Line
 Wire Wire Line
 	880  1360 880  1390
 $Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue #PWR0109
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0109
 U 1 1 5D829084
 P 880 1390
 F 0 "#PWR0109" H 880 1140 50  0001 C CNN
@@ -3073,7 +3097,7 @@ Wire Wire Line
 Wire Wire Line
 	5540 7175 5685 7175
 $Comp
-L Makech-rescue:Fuse-Device-Makech-rescue-Makech-rescue F2
+L Makech-rescue:Fuse-Device-Makech-rescue-Makech-rescue-Makech-rescue F2
 U 1 1 5D9CAE20
 P 1675 4270
 F 0 "F2" V 1478 4270 50  0000 C CNN
@@ -3092,7 +3116,7 @@ SWCLK
 Text Label 3055 1560 0    60   ~ 0
 SWDIO
 $Comp
-L Makech-rescue:Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue-Makech-rescue J2
+L Makech-rescue:Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue-Makech-rescue-Makech-rescue J2
 U 1 1 5D9FC5AA
 P 3160 4425
 F 0 "J2" H 3210 4642 50  0000 C CNN
@@ -3111,7 +3135,7 @@ SWDIO
 Text Label 3555 4525 0    60   ~ 0
 SWCLK
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0113
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0113
 U 1 1 5DAEAF62
 P 2440 4485
 F 0 "#PWR0113" H 2440 4335 50  0001 C CNN
@@ -3130,7 +3154,7 @@ Wire Wire Line
 Wire Wire Line
 	3460 4425 4015 4425
 $Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue #PWR0114
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0114
 U 1 1 5DB4C8AA
 P 4015 4475
 F 0 "#PWR0114" H 4015 4225 50  0001 C CNN
@@ -3225,7 +3249,7 @@ NoConn ~ 3090 2360
 Text Notes 1800 605  0    60   ~ 0
 MICROCONTROLLER
 $Comp
-L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue D3
+L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue-Makech-rescue D3
 U 1 1 5E159714
 P 5685 6890
 F 0 "D3" V 5731 6811 50  0000 R CNN
@@ -3238,7 +3262,7 @@ $EndComp
 Wire Wire Line
 	5685 6740 5685 6715
 $Comp
-L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue D2
+L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue-Makech-rescue D2
 U 1 1 5E1C9EAE
 P 5540 6800
 F 0 "D2" V 5635 6790 50  0000 R CNN
@@ -3251,7 +3275,7 @@ $EndComp
 Wire Wire Line
 	5540 6650 5540 6630
 $Comp
-L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue C5
+L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue C5
 U 1 1 5E202A2F
 P 3720 1760
 F 0 "C5" H 3600 1845 50  0000 L CNN
@@ -3263,7 +3287,7 @@ F 4 "08051C104J4T4A" H 3720 1760 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue C6
+L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue C6
 U 1 1 5E203088
 P 3925 1760
 F 0 "C6" H 4017 1806 50  0000 L CNN
@@ -3297,7 +3321,7 @@ Connection ~ 3820 1905
 Wire Wire Line
 	3820 1905 3720 1905
 $Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue #PWR0115
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0115
 U 1 1 5E2EA696
 P 3820 1945
 F 0 "#PWR0115" H 3820 1695 50  0001 C CNN
@@ -3308,7 +3332,7 @@ F 3 "" H 3820 1945 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0116
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0116
 U 1 1 5E2EA7C9
 P 3825 1585
 F 0 "#PWR0116" H 3825 1435 50  0001 C CNN
@@ -3321,7 +3345,7 @@ $EndComp
 Text Notes 4845 4310 0    60   ~ 0
 Support:\n- ESP32 NINA - Bluetooth and WiFi\n- I2C
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0117
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0117
 U 1 1 5E2EDFA9
 P 2105 5690
 F 0 "#PWR0117" H 2105 5540 50  0001 C CNN
@@ -3332,7 +3356,7 @@ F 3 "" H 2105 5690 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0118
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0118
 U 1 1 5E2EE0CE
 P 1075 5690
 F 0 "#PWR0118" H 1075 5540 50  0001 C CNN
@@ -3345,7 +3369,7 @@ $EndComp
 Text Label 1320 2660 0    60   ~ 0
 A5
 $Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue #PWR0120
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0120
 U 1 1 5E35FE1F
 P 4930 5165
 F 0 "#PWR0120" H 4930 5015 50  0001 C CNN
@@ -3360,7 +3384,7 @@ Wire Wire Line
 Wire Wire Line
 	4930 5260 5400 5260
 $Comp
-L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue #PWR0121
+L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0121
 U 1 1 5E509C4B
 P 5050 6995
 F 0 "#PWR0121" H 5050 6845 50  0001 C CNN
@@ -3380,7 +3404,7 @@ Connection ~ 4975 7060
 Wire Wire Line
 	4975 7060 4975 7110
 $Comp
-L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue #PWR0122
+L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0122
 U 1 1 5E53E29B
 P 5540 6630
 F 0 "#PWR0122" H 5540 6480 50  0001 C CNN
@@ -3393,7 +3417,7 @@ $EndComp
 Wire Wire Line
 	8820 4620 8820 4555
 $Comp
-L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue #PWR0123
+L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0123
 U 1 1 5E5A8D41
 P 8820 4555
 F 0 "#PWR0123" H 8820 4405 50  0001 C CNN
