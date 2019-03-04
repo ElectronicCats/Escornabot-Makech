@@ -37,8 +37,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Escornabot Makech"
-Date "2019-02-01"
-Rev "v0.1"
+Date "2019-03-03"
+Rev "v0.2"
 Comp "Electronic Cats"
 Comment1 "Andres Sabas"
 Comment2 "electroniccats.com"
@@ -461,12 +461,12 @@ Enabling LEDs, Default ON\n
 $Comp
 L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP1
 U 1 1 58BAEF93
-P 4315 5805
-F 0 "JP1" H 4315 5955 50  0000 C CNN
-F 1 "CONN_01X02" V 4415 5805 50  0001 C CNN
-F 2 "Pines:61300211121" H 4315 5805 50  0001 C CNN
-F 3 "" H 4315 5805 50  0000 C CNN
-	1    4315 5805
+P 4300 5565
+F 0 "JP1" H 4300 5715 50  0000 C CNN
+F 1 "CONN_01X02" V 4400 5565 50  0001 C CNN
+F 2 "Pines:61300211121" H 4300 5565 50  0001 C CNN
+F 3 "" H 4300 5565 50  0000 C CNN
+	1    4300 5565
 	1    0    0    -1  
 $EndComp
 Text Notes 4445 5095 2    118  ~ 0
@@ -474,28 +474,28 @@ BUZZ
 $Comp
 L Makech-rescue:buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue Z1
 U 1 1 58BAFB72
-P 4180 6200
-F 0 "Z1" H 4255 6250 50  0000 L CNN
-F 1 "buzzer" H 4255 6150 50  0000 L CNN
-F 2 "Buzzers_Beepers:MagneticBuzzer_StarMicronics_HMB-06_HMB-12" H 4180 6200 60  0001 C CNN
-F 3 "" H 4180 6200 60  0000 C CNN
-	1    4180 6200
+P 4165 5960
+F 0 "Z1" H 4240 6010 50  0000 L CNN
+F 1 "buzzer" H 4240 5910 50  0000 L CNN
+F 2 "Buzzers_Beepers:MagneticBuzzer_StarMicronics_HMB-06_HMB-12" H 4165 5960 60  0001 C CNN
+F 3 "" H 4165 5960 60  0000 C CNN
+	1    4165 5960
 	1    0    0    -1  
 $EndComp
-Text Label 3895 5755 0    60   ~ 0
+Text Label 3880 5515 0    60   ~ 0
 D11
 $Comp
 L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR05
 U 1 1 58BB0676
-P 4070 6330
-F 0 "#PWR05" H 4070 6080 50  0001 C CNN
-F 1 "GND" H 4070 6180 50  0000 C CNN
-F 2 "" H 4070 6330 50  0000 C CNN
-F 3 "" H 4070 6330 50  0000 C CNN
-	1    4070 6330
+P 4055 6090
+F 0 "#PWR05" H 4055 5840 50  0001 C CNN
+F 1 "GND" H 4055 5940 50  0000 C CNN
+F 2 "" H 4055 6090 50  0000 C CNN
+F 3 "" H 4055 6090 50  0000 C CNN
+	1    4055 6090
 	-1   0    0    -1  
 $EndComp
-Text Notes 4530 6095 1    60   ~ 0
+Text Notes 4515 5855 1    60   ~ 0
 Buzz ON
 $Comp
 L Makech-rescue:CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U1
@@ -2266,17 +2266,17 @@ Wire Wire Line
 Wire Wire Line
 	8365 3120 8365 3185
 Wire Wire Line
-	4115 5755 3895 5755
+	4100 5515 3880 5515
 Wire Wire Line
-	4130 6150 4090 6150
+	4115 5910 4075 5910
 Wire Wire Line
-	4090 6150 4090 5855
+	4075 5910 4075 5615
 Wire Wire Line
-	4090 5855 4115 5855
+	4075 5615 4100 5615
 Wire Wire Line
-	4070 6330 4070 6250
+	4055 6090 4055 6010
 Wire Wire Line
-	4070 6250 4130 6250
+	4055 6010 4115 6010
 Wire Wire Line
 	5400 5060 5090 5060
 Wire Wire Line
@@ -2652,51 +2652,51 @@ Wire Notes Line
 Wire Notes Line
 	4645 3560 4645 6565
 Wire Wire Line
-	2795 1810 2915 1810
+	2820 1305 2940 1305
 Wire Wire Line
-	2795 1910 2915 1910
+	2820 1405 2940 1405
 $Comp
 L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue C1
 U 1 1 5CFEDF86
-P 3065 1880
-F 0 "C1" H 3157 1926 50  0000 L CNN
-F 1 "1uF" H 3157 1835 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3065 1880 50  0001 C CNN
-F 3 "~" H 3065 1880 50  0001 C CNN
-F 4 "CGA4J1X8R1E105M125AE" H 3065 1880 50  0001 C CNN "manf#"
-	1    3065 1880
+P 3090 1875
+F 0 "C1" H 3182 1921 50  0000 L CNN
+F 1 "1uF" H 3182 1830 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3090 1875 50  0001 C CNN
+F 3 "~" H 3090 1875 50  0001 C CNN
+F 4 "CGA4J1X8R1E105M125AE" H 3090 1875 50  0001 C CNN "manf#"
+	1    3090 1875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3065 1710 3065 1780
+	3090 1705 3090 1775
 Wire Wire Line
-	2795 1710 3065 1710
+	2820 1705 3090 1705
 $Comp
 L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0101
 U 1 1 5D026F59
-P 2915 1605
-F 0 "#PWR0101" H 2915 1455 50  0001 C CNN
-F 1 "+3.3V" H 2930 1778 50  0000 C CNN
-F 2 "" H 2915 1605 50  0001 C CNN
-F 3 "" H 2915 1605 50  0001 C CNN
-	1    2915 1605
+P 2940 1100
+F 0 "#PWR0101" H 2940 950 50  0001 C CNN
+F 1 "+3.3V" H 2955 1273 50  0000 C CNN
+F 2 "" H 2940 1100 50  0001 C CNN
+F 3 "" H 2940 1100 50  0001 C CNN
+	1    2940 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3065 1980 3065 2045
+	3090 1975 3090 2040
 $Comp
 L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0102
 U 1 1 5D09946E
-P 3065 2045
-F 0 "#PWR0102" H 3065 1795 50  0001 C CNN
-F 1 "GND" H 3070 1872 50  0000 C CNN
-F 2 "" H 3065 2045 50  0001 C CNN
-F 3 "" H 3065 2045 50  0001 C CNN
-	1    3065 2045
+P 3090 2040
+F 0 "#PWR0102" H 3090 1790 50  0001 C CNN
+F 1 "GND" H 3095 1867 50  0000 C CNN
+F 2 "" H 3090 2040 50  0001 C CNN
+F 3 "" H 3090 2040 50  0001 C CNN
+	1    3090 2040
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1395 2110 1265 2110
+	1420 1305 1290 1305
 Wire Wire Line
 	4990 920  4990 855 
 Connection ~ 4990 920 
@@ -2728,55 +2728,35 @@ F 3 "" H 6500 7220 50  0001 C CNN
 	1    6500 7220
 	1    0    0    -1  
 $EndComp
-$Comp
-L Makech-rescue:ATSAMD21E18A-MU-electroniccats-Makech-rescue-Makech-rescue-Makech-rescue U7
-U 1 1 5D3402CD
-P 2095 2810
-F 0 "U7" H 2095 4177 50  0000 C CNN
-F 1 "ATSAMD21E18A-MU" H 2095 4086 50  0000 C CNN
-F 2 "QFN50P500X500X100-33N" H 2095 2810 50  0001 L BNN
-F 3 "SAMD21E Series 256 KB Flash 32 KB SRAM 48 MHz 32-Bit Microcontroller - QFN-32" H 2095 2810 50  0001 L BNN
-F 4 "ATSAMD21E18A-MU-ND" H 2095 2810 50  0001 L BNN "Campo4"
-F 5 "https://www.digikey.com.mx/product-detail/en/microchip-technology/ATSAMD21E18A-MU/ATSAMD21E18A-MU-ND/4935887?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 2095 2810 50  0001 L BNN "Campo5"
-F 6 "Microchip" H 2095 2810 50  0001 L BNN "Campo6"
-F 7 "ATSAMD21E18A-MU" H 2095 2810 50  0001 L BNN "Campo7"
-F 8 "QFN-32 Microchip" H 2095 2810 50  0001 L BNN "Campo8"
-F 9 "ATSAMD21E18A-MU" H 2095 2810 50  0001 C CNN "manf#"
-	1    2095 2810
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2795 3860
 Wire Wire Line
-	2795 3660 2900 3660
+	2820 4205 2925 4205
 Wire Wire Line
-	2900 3660 2900 3760
+	2925 4205 2925 4305
 Wire Wire Line
-	2795 3760 2900 3760
-Connection ~ 2900 3760
+	2820 4305 2925 4305
+Connection ~ 2925 4305
 Wire Wire Line
-	2900 3760 2900 3950
+	2925 4305 2925 4495
 $Comp
 L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0105
 U 1 1 5D3F1AF5
-P 2900 3950
-F 0 "#PWR0105" H 2900 3700 50  0001 C CNN
-F 1 "GND" H 2905 3777 50  0000 C CNN
-F 2 "" H 2900 3950 50  0001 C CNN
-F 3 "" H 2900 3950 50  0001 C CNN
-	1    2900 3950
+P 2925 4495
+F 0 "#PWR0105" H 2925 4245 50  0001 C CNN
+F 1 "GND" H 2930 4322 50  0000 C CNN
+F 2 "" H 2925 4495 50  0001 C CNN
+F 3 "" H 2925 4495 50  0001 C CNN
+	1    2925 4495
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2795 2310 2935 2310
+	1420 4505 1280 4505
 Wire Wire Line
-	2795 2410 2945 2410
+	1420 4405 1270 4405
 Wire Wire Line
-	2795 2710 2955 2710
-Wire Wire Line
-	2795 2810 2955 2810
-Text Label 2955 2810 0    60   ~ 0
+	1420 4105 1260 4105
+Text Label 1260 4005 2    60   ~ 0
 D-
-Text Label 2955 2710 0    60   ~ 0
+Text Label 1260 4105 2    60   ~ 0
 D+
 $Comp
 L Makech-rescue:USB_B_Micro-Connector-Makech-rescue-Makech-rescue-Makech-rescue J1
@@ -2863,27 +2843,27 @@ NOTA: Revisar \ndiodos \nde proteccion
 $Comp
 L Makech-rescue:SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue SW1
 U 1 1 5D7E7124
-P 1065 2110
-F 0 "SW1" H 1065 2395 50  0000 C CNN
-F 1 "RST" H 1065 2304 50  0000 C CNN
-F 2 "TIH:SW_B3U-1000P" H 1065 2310 50  0001 C CNN
-F 3 "" H 1065 2310 50  0001 C CNN
-	1    1065 2110
+P 1090 1305
+F 0 "SW1" H 1090 1590 50  0000 C CNN
+F 1 "RST" H 1090 1499 50  0000 C CNN
+F 2 "TIH:SW_B3U-1000P" H 1090 1505 50  0001 C CNN
+F 3 "" H 1090 1505 50  0001 C CNN
+	1    1090 1305
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	865  2110 760  2110
+	890  1305 785  1305
 Wire Wire Line
-	760  2110 760  2140
+	785  1305 785  1335
 $Comp
 L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue #PWR0109
 U 1 1 5D829084
-P 760 2140
-F 0 "#PWR0109" H 760 1890 50  0001 C CNN
-F 1 "GND" H 765 1967 50  0000 C CNN
-F 2 "" H 760 2140 50  0001 C CNN
-F 3 "" H 760 2140 50  0001 C CNN
-	1    760  2140
+P 785 1335
+F 0 "#PWR0109" H 785 1085 50  0001 C CNN
+F 1 "GND" H 790 1162 50  0000 C CNN
+F 2 "" H 785 1335 50  0001 C CNN
+F 3 "" H 785 1335 50  0001 C CNN
+	1    785  1335
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2905,9 +2885,9 @@ Wire Wire Line
 	3450 5590 3515 5590
 Wire Wire Line
 	3515 5590 3515 5525
-Text Label 2945 2410 0    60   ~ 0
+Text Label 1270 4405 2    60   ~ 0
 SWCLK
-Text Label 2935 2310 0    60   ~ 0
+Text Label 1280 4505 2    60   ~ 0
 SWDIO
 $Comp
 L Makech-rescue:Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue-Makech-rescue-Makech-rescue J2
@@ -2959,82 +2939,82 @@ F 3 "" H 2110 5730 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1395 2310 1205 2310
+	1420 1605 1230 1605
 Wire Wire Line
-	1395 2410 1200 2410
+	1420 1705 1225 1705
 Wire Wire Line
-	1395 2510 1200 2510
+	1420 1805 1225 1805
 Wire Wire Line
-	1395 2610 1200 2610
+	1420 1905 1225 1905
 Wire Wire Line
-	1395 2710 1205 2710
+	1420 2005 1230 2005
 Wire Wire Line
-	1395 2810 1205 2810
+	1420 2105 1230 2105
 Wire Wire Line
-	1395 2910 1200 2910
+	1420 2205 1225 2205
 Wire Wire Line
-	1395 3010 1200 3010
+	1420 2305 1225 2305
 Wire Wire Line
-	1395 3110 1200 3110
+	1420 2405 1225 2405
 Wire Wire Line
-	1395 3210 1200 3210
+	1420 2505 1225 2505
 Wire Wire Line
-	1395 3310 1200 3310
+	1420 2605 1225 2605
 Wire Wire Line
-	1395 3410 1200 3410
+	1420 2705 1225 2705
 Wire Wire Line
-	1395 3510 1245 3510
+	1420 2805 1270 2805
 Wire Wire Line
-	2795 3510 2970 3510
+	1420 3105 1245 3105
 Wire Wire Line
-	2795 3410 2970 3410
+	1420 3205 1245 3205
 Wire Wire Line
-	2795 3310 2970 3310
+	1420 3305 1245 3305
 Wire Wire Line
-	2795 3210 2970 3210
+	1420 3405 1245 3405
 Wire Wire Line
-	2795 3110 2970 3110
+	1420 3505 1245 3505
 Wire Wire Line
-	2795 3010 2970 3010
+	1420 3805 1245 3805
 Wire Wire Line
-	2795 2910 2970 2910
+	1420 3905 1245 3905
 Wire Wire Line
-	2795 2610 2950 2610
+	1420 4205 1265 4205
 Wire Wire Line
-	2795 2510 2950 2510
-Text Label 1205 2310 0    60   ~ 0
+	1420 4305 1265 4305
+Text Label 1230 1605 0    60   ~ 0
 TX
-Text Label 1200 2410 0    60   ~ 0
+Text Label 1225 1705 0    60   ~ 0
 RX
-Text Label 1200 2510 0    60   ~ 0
+Text Label 1225 1805 0    60   ~ 0
 A0
-Text Label 1205 2710 0    60   ~ 0
+Text Label 1230 2005 0    60   ~ 0
 A1
-Text Label 1205 2810 0    60   ~ 0
+Text Label 1230 2105 0    60   ~ 0
 A2
-Text Label 1200 3310 0    60   ~ 0
+Text Label 1225 2605 0    60   ~ 0
 A3
-Text Label 1200 3110 0    60   ~ 0
+Text Label 1225 2405 0    60   ~ 0
 SDA
-Text Label 1200 3210 0    60   ~ 0
+Text Label 1225 2505 0    60   ~ 0
 SCL
-Text Label 2970 3010 0    60   ~ 0
+Text Label 1245 3805 2    60   ~ 0
 D4
-Text Label 2970 3510 0    60   ~ 0
+Text Label 1245 3105 2    60   ~ 0
 D5
-Text Label 2950 2610 0    60   ~ 0
+Text Label 1265 4205 2    60   ~ 0
 D6
-Text Label 2950 2510 0    60   ~ 0
+Text Label 1265 4305 2    60   ~ 0
 D7
-Text Label 1200 2910 0    60   ~ 0
+Text Label 1225 2205 0    60   ~ 0
 D8
-Text Label 1200 3010 0    60   ~ 0
+Text Label 1225 2305 0    60   ~ 0
 D9
-Text Label 2970 3210 0    60   ~ 0
+Text Label 1245 3405 2    60   ~ 0
 D10
-Text Label 2970 3310 0    60   ~ 0
+Text Label 1245 3305 2    60   ~ 0
 D13
-Text Label 2970 3410 0    60   ~ 0
+Text Label 1245 3205 2    60   ~ 0
 D11
 Text Notes 1400 700  0    118  ~ 0
 MICROCONTROLLER
@@ -3276,23 +3256,23 @@ Wire Wire Line
 	5440 2835 5440 2910
 Text Label 4545 1240 0    60   ~ 0
 A6
-Text Label 1245 3510 0    60   ~ 0
+Text Label 1270 2805 0    60   ~ 0
 A6
-Text Label 2970 2910 0    60   ~ 0
+Text Label 1245 3905 2    60   ~ 0
 ESP_GPIO
-Text Label 2970 3110 0    60   ~ 0
+Text Label 1245 3505 2    60   ~ 0
 ESP_MOSI
-Text Label 1200 3410 2    60   ~ 0
+Text Label 1225 2705 2    60   ~ 0
 ESP_BUSY
-Text Label 1210 3210 2    60   ~ 0
+Text Label 1235 2505 2    60   ~ 0
 ESP_SCK
-Text Label 1210 3110 2    60   ~ 0
+Text Label 1235 2405 2    60   ~ 0
 ESP_MISO
-Connection ~ 2915 1810
+Connection ~ 2940 1305
 Wire Wire Line
-	2915 1605 2915 1810
+	2940 1100 2940 1305
 Wire Wire Line
-	2915 1810 2915 1910
+	2940 1305 2940 1405
 $Comp
 L Device:R_Small R6
 U 1 1 5C89865A
@@ -3349,7 +3329,7 @@ F 3 "" H 8165 6015 50  0001 C CNN
 	1    8165 6015
 	1    0    0    -1  
 $EndComp
-Text Label 1200 2610 2    60   ~ 0
+Text Label 1225 1905 2    60   ~ 0
 ESP_RESET
 Text Notes 1180 5110 0    118  ~ 0
 SWD
@@ -3370,17 +3350,39 @@ ESP_CS
 $Comp
 L electroniccats:ATSAMD21G18A-AU U?
 U 1 1 5CBBAA5C
-P -1540 3140
-F 0 "U?" H -1540 5007 50  0000 C CNN
-F 1 "ATSAMD21G18A-AU" H -1540 4916 50  0000 C CNN
-F 2 "QFP50P900X900X120-48N" H -1540 3140 50  0001 L BNN
-F 3 "3.01 USD" H -1540 3140 50  0001 L BNN
-F 4 "Microchip" H -1540 3140 50  0001 L BNN "Campo4"
-F 5 "TQFP-48 Microchip" H -1540 3140 50  0001 L BNN "Campo5"
-F 6 "SAMD21G Series 256 kB Flash 32 kB SRAM 48 MHz 32-Bit Microcontroller - TQFP-48" H -1540 3140 50  0001 L BNN "Campo6"
-F 7 "Good" H -1540 3140 50  0001 L BNN "Campo7"
-F 8 "ATSAMD21G18A-AU" H -1540 3140 50  0001 L BNN "Campo8"
-	1    -1540 3140
+P 2120 2905
+F 0 "U?" H 2120 4772 50  0000 C CNN
+F 1 "ATSAMD21G18A-AU" H 2120 4681 50  0000 C CNN
+F 2 "QFP50P900X900X120-48N" H 2120 2905 50  0001 L BNN
+F 3 "3.01 USD" H 2120 2905 50  0001 L BNN
+F 4 "Microchip" H 2120 2905 50  0001 L BNN "Campo4"
+F 5 "TQFP-48 Microchip" H 2120 2905 50  0001 L BNN "Campo5"
+F 6 "SAMD21G Series 256 kB Flash 32 kB SRAM 48 MHz 32-Bit Microcontroller - TQFP-48" H 2120 2905 50  0001 L BNN "Campo6"
+F 7 "Good" H 2120 2905 50  0001 L BNN "Campo7"
+F 8 "ATSAMD21G18A-AU" H 2120 2905 50  0001 L BNN "Campo8"
+	1    2120 2905
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2820 1505 2940 1505
+Wire Wire Line
+	2940 1505 2940 1405
+Connection ~ 2940 1405
+Wire Wire Line
+	2820 1605 2940 1605
+Wire Wire Line
+	2940 1605 2940 1505
+Connection ~ 2940 1505
+Wire Wire Line
+	2820 4005 2925 4005
+Wire Wire Line
+	2925 4005 2925 4105
+Connection ~ 2925 4205
+Wire Wire Line
+	2820 4105 2925 4105
+Connection ~ 2925 4105
+Wire Wire Line
+	2925 4105 2925 4205
+Wire Wire Line
+	1420 4005 1260 4005
 $EndSCHEMATC
