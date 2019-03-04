@@ -1,33 +1,9 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
 LIBS:audio
 LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:switch
 LIBS:analog
 LIBS:Makech-cache
@@ -46,7 +22,7 @@ Comment3 "Thanks escornabot.com, Pablo Rubio, XDeSIG and abierto.cc"
 Comment4 "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
 $EndDescr
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R7.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R7.1
 U 1 1 58B80BCC
 P 5070 1080
 F 0 "R7.1" V 5020 1130 50  0000 C CNN
@@ -58,7 +34,7 @@ F 4 "CRCW080510K0FKEAC" V 5070 1080 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1.1
 U 1 1 58B80C4C
 P 5445 1135
 F 0 "R1.1" V 5395 1185 50  0000 C CNN
@@ -70,7 +46,7 @@ F 4 "CRCW080510K0FKEAC" V 5445 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3.1
 U 1 1 58B813B6
 P 6370 1135
 F 0 "R3.1" V 6320 1185 50  0000 C CNN
@@ -82,7 +58,7 @@ F 4 "CRCW080510K0FKEAC" V 6370 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4.1
 U 1 1 58B813C2
 P 6830 1135
 F 0 "R4.1" V 6780 1185 50  0000 C CNN
@@ -94,7 +70,7 @@ F 4 "CRCW080510K0FKEAC" V 6830 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5.1
 U 1 1 58B8152F
 P 7290 1135
 F 0 "R5.1" V 7240 1185 50  0000 C CNN
@@ -106,7 +82,7 @@ F 4 "CRCW080510K0FKEAC" V 7290 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2.2
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2.2
 U 1 1 58B820CE
 P 5910 1135
 F 0 "R2.2" V 5860 1185 50  0000 R CNN
@@ -118,43 +94,43 @@ F 4 "CRCW080510K0FKEAC" V 5910 1135 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S1
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S1
 U 1 1 58B81D93
 P 5555 1740
 F 0 "S1" V 5415 1710 60  0000 C CNN
 F 1 "switch" H 5635 1490 60  0000 C CNN
-F 2 "Switch:Button" H 5555 1740 60  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm_Wuerth-430476085716" H 5555 1740 60  0001 C CNN
 F 3 "" H 5555 1740 60  0001 C CNN
-F 4 "KSC441G70SHLFSPF" V 5555 1740 50  0001 C CNN "manf#"
+F 4 "50pcs Tactile Push Button Switch Momentary Tact & Cap Assorted Kit 12x12x7.3mm Key Caps" V 5555 1740 50  0001 C CNN "manf#"
 	1    5555 1740
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S2
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S2
 U 1 1 58B82276
 P 5980 1745
 F 0 "S2" V 5845 1745 60  0000 C CNN
 F 1 "switch" H 6060 1495 60  0000 C CNN
-F 2 "Switch:Button" H 5980 1745 60  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm_Wuerth-430476085716" H 5980 1745 60  0001 C CNN
 F 3 "" H 5980 1745 60  0001 C CNN
-F 4 "KSC441G70SHLFSPF" V 5980 1745 50  0001 C CNN "manf#"
+F 4 "50pcs Tactile Push Button Switch Momentary Tact & Cap Assorted Kit 12x12x7.3mm Key Caps" V 5980 1745 50  0001 C CNN "manf#"
 	1    5980 1745
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5
 U 1 1 58B82532
 P 6910 1745
 F 0 "S5" V 6775 1745 60  0000 C CNN
 F 1 "switch" H 6990 1495 60  0000 C CNN
-F 2 "Switch:Button" H 6910 1745 60  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm_Wuerth-430476085716" H 6910 1745 60  0001 C CNN
 F 3 "" H 6910 1745 60  0001 C CNN
-F 4 "KSC441G70SHLFSPF" V 6910 1745 50  0001 C CNN "manf#"
+F 4 "50pcs Tactile Push Button Switch Momentary Tact & Cap Assorted Kit 12x12x7.3mm Key Caps" V 6910 1745 50  0001 C CNN "manf#"
 	1    6910 1745
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR02
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR02
 U 1 1 58B83653
 P 6595 1940
 F 0 "#PWR02" H 6595 1690 50  0001 C CNN
@@ -165,109 +141,33 @@ F 3 "" H 6595 1940 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S4
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S4
 U 1 1 58B859F2
 P 7370 1740
 F 0 "S4" V 7235 1740 60  0000 C CNN
 F 1 "switch" H 7450 1490 60  0000 C CNN
-F 2 "Switch:Button" H 7370 1740 60  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm_Wuerth-430476085716" H 7370 1740 60  0001 C CNN
 F 3 "" H 7370 1740 60  0001 C CNN
-F 4 "KSC441G70SHLFSPF" V 7370 1740 50  0001 C CNN "manf#"
+F 4 "50pcs Tactile Push Button Switch Momentary Tact & Cap Assorted Kit 12x12x7.3mm Key Caps" V 7370 1740 50  0001 C CNN "manf#"
 	1    7370 1740
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5.1
-U 1 1 58B87EA4
-P 10285 1740
-F 0 "S5.1" H 10365 1430 60  0000 C CNN
-F 1 "switch" H 10600 1740 60  0000 C CNN
-F 2 "Switch:SW_PUSH_6mm" H 10285 1740 60  0001 C CNN
-F 3 "" H 10285 1740 60  0001 C CNN
-	1    10285 1740
-	0    1    -1   0   
-$EndComp
-$Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S4.1
-U 1 1 58B880D3
-P 10750 1740
-F 0 "S4.1" H 10830 1435 60  0000 C CNN
-F 1 "switch" H 11065 1740 60  0000 C CNN
-F 2 "Switch:SW_PUSH_6mm" H 10750 1740 60  0001 C CNN
-F 3 "" H 10750 1740 60  0001 C CNN
-	1    10750 1740
-	0    1    -1   0   
-$EndComp
-$Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S2.1
-U 1 1 58B88F4B
-P 9355 1740
-F 0 "S2.1" H 9435 1430 60  0000 C CNN
-F 1 "switch" H 9665 1735 60  0000 C CNN
-F 2 "Switch:SW_PUSH_6mm" H 9355 1740 60  0001 C CNN
-F 3 "" H 9355 1740 60  0001 C CNN
-	1    9355 1740
-	0    1    -1   0   
-$EndComp
-$Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3.1
-U 1 1 58B88F51
-P 9820 1740
-F 0 "S3.1" H 9905 1430 60  0000 C CNN
-F 1 "switch" H 10135 1740 60  0000 C CNN
-F 2 "Switch:SW_PUSH_6mm" H 9820 1740 60  0001 C CNN
-F 3 "" H 9820 1740 60  0001 C CNN
-	1    9820 1740
-	0    1    -1   0   
-$EndComp
-$Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S1.1
-U 1 1 58B89199
-P 8890 1740
-F 0 "S1.1" H 8970 1420 60  0000 C CNN
-F 1 "switch" H 9200 1740 60  0000 C CNN
-F 2 "Switch:SW_PUSH_6mm" H 8890 1740 60  0001 C CNN
-F 3 "" H 8890 1740 60  0001 C CNN
-	1    8890 1740
-	0    1    -1   0   
-$EndComp
-$Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR03
-U 1 1 58B89785
-P 9670 2070
-F 0 "#PWR03" H 9670 1820 50  0001 C CNN
-F 1 "GND" H 9670 1920 50  0000 C CNN
-F 2 "" H 9670 2070 50  0000 C CNN
-F 3 "" H 9670 2070 50  0000 C CNN
-	1    9670 2070
-	-1   0    0    -1  
-$EndComp
-Text Label 10650 1295 1    60   ~ 0
-S4
-Text Label 10185 1295 1    60   ~ 0
-S5
-Text Label 9720 1295 1    60   ~ 0
-S3
-Text Label 9255 1295 1    60   ~ 0
-S2
-Text Label 8790 1295 1    60   ~ 0
-S1
-$Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3
 U 1 1 58B8236A
 P 6445 1745
 F 0 "S3" V 6310 1745 60  0000 C CNN
 F 1 "switch" H 6525 1495 60  0000 C CNN
-F 2 "Switch:Button" H 6445 1745 60  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 6445 1745 60  0001 C CNN
 F 3 "" H 6445 1745 60  0001 C CNN
-F 4 "KSC441G70SHLFSPF" V 6445 1745 50  0001 C CNN "manf#"
+F 4 "50pcs Tactile Push Button Switch Momentary Tact & Cap Assorted Kit 12x12x7.3mm Key Caps" V 6445 1745 50  0001 C CNN "manf#"
 	1    6445 1745
 	0    -1   -1   0   
 $EndComp
 Text Notes 8330 725  2    118  ~ 0
 KEYPAD\n
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R6.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R6.1
 U 1 1 58B9AF74
 P 5440 2685
 F 0 "R6.1" V 5370 2685 50  0000 C CNN
@@ -279,7 +179,7 @@ F 4 "CRCW08051K00FKEAC" V 5440 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R8.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R8.1
 U 1 1 58B9B08A
 P 6070 2685
 F 0 "R8.1" V 6000 2685 50  0000 C CNN
@@ -291,7 +191,7 @@ F 4 "CRCW08051K00FKEAC" V 6070 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R9.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R9.1
 U 1 1 58B9B99C
 P 6700 2685
 F 0 "R9.1" V 6630 2685 50  0000 C CNN
@@ -303,7 +203,7 @@ F 4 "CRCW08051K00FKEAC" V 6700 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R10.1
+L Makech-rescue:R-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R10.1
 U 1 1 58B9BF48
 P 7330 2685
 F 0 "R10.1" V 7260 2685 50  0000 C CNN
@@ -315,7 +215,7 @@ F 4 "CRCW08051K00FKEAC" V 7330 2685 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1.1
 U 1 1 58B9C616
 P 5440 2960
 F 0 "LED1.1" H 5440 2870 40  0000 C CNN
@@ -327,7 +227,7 @@ F 4 "APT2012LVBC/D" H 5440 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED1
 U 1 1 58B9C917
 P 5755 2960
 F 0 "LED1" H 5755 3060 40  0000 C CNN
@@ -339,7 +239,7 @@ F 4 "APT2012LVBC/D" H 5755 2960 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2.1
 U 1 1 58B9CA39
 P 6070 2960
 F 0 "LED2.1" H 6070 2875 40  0000 C CNN
@@ -351,7 +251,7 @@ F 4 "APT2012SRCPRV" H 6070 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED2
 U 1 1 58B9CE0B
 P 6385 2960
 F 0 "LED2" H 6385 3060 40  0000 C CNN
@@ -363,7 +263,7 @@ F 4 "APT2012SRCPRV" H 6385 2960 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3.1
 U 1 1 58B9D1EF
 P 6700 2960
 F 0 "LED3.1" H 6700 2870 40  0000 C CNN
@@ -375,7 +275,7 @@ F 4 "APT2012SECK" H 6700 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED3
 U 1 1 58B9D5FD
 P 7015 2960
 F 0 "LED3" H 7015 3060 40  0000 C CNN
@@ -387,7 +287,7 @@ F 4 "APT2012SECK" H 7015 2960 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4.1
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4.1
 U 1 1 58B9D948
 P 7330 2960
 F 0 "LED4.1" H 7330 2870 40  0000 C CNN
@@ -399,7 +299,7 @@ F 4 "APT2012SGC" H 7330 2960 50  0001 C CNN "manf#"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4
+L Makech-rescue:LED-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue LED4
 U 1 1 58B9DCD6
 P 7645 2960
 F 0 "LED4" H 7645 3060 40  0000 C CNN
@@ -429,7 +329,7 @@ S5
 Text Label 7570 1270 1    60   ~ 0
 S4
 $Comp
-L Makech-rescue:JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SJ2
+L Makech-rescue:JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SJ2
 U 1 1 58BAD83A
 P 8095 3120
 F 0 "SJ2" H 8095 3270 60  0000 C CNN
@@ -440,7 +340,7 @@ F 3 "" H 8095 3120 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR04
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR04
 U 1 1 58BADC73
 P 8365 3185
 F 0 "#PWR04" H 8365 2935 50  0001 C CNN
@@ -453,7 +353,7 @@ $EndComp
 Text Notes 7730 3460 0    60   ~ 0
 Enabling LEDs, Default ON\n
 $Comp
-L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP1
+L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP1
 U 1 1 58BAEF93
 P 4300 5565
 F 0 "JP1" H 4300 5715 50  0000 C CNN
@@ -466,20 +366,21 @@ $EndComp
 Text Notes 4445 5095 2    118  ~ 0
 BUZZ
 $Comp
-L Makech-rescue:buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue Z1
+L Makech-rescue:buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue Z1
 U 1 1 58BAFB72
 P 4165 5960
 F 0 "Z1" H 4240 6010 50  0000 L CNN
 F 1 "buzzer" H 4240 5910 50  0000 L CNN
 F 2 "Buzzers_Beepers:MagneticBuzzer_StarMicronics_HMB-06_HMB-12" H 4165 5960 60  0001 C CNN
 F 3 "" H 4165 5960 60  0000 C CNN
+F 4 "F/CM12P-LF" H 4165 5960 50  0001 C CNN "manf#"
 	1    4165 5960
 	1    0    0    -1  
 $EndComp
 Text Label 3880 5515 0    60   ~ 0
 D11
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR05
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR05
 U 1 1 58BB0676
 P 4055 6090
 F 0 "#PWR05" H 4055 5840 50  0001 C CNN
@@ -492,7 +393,7 @@ $EndComp
 Text Notes 4515 5855 1    60   ~ 0
 Buzz ON
 $Comp
-L Makech-rescue:CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U1
+L Makech-rescue:CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U1
 U 1 1 58BB1148
 P 5600 5210
 F 0 "U1" H 5600 5460 50  0000 C CNN
@@ -503,7 +404,7 @@ F 3 "" H 5600 5210 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR06
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR06
 U 1 1 58BB1E98
 P 5220 5485
 F 0 "#PWR06" H 5220 5235 50  0001 C CNN
@@ -522,7 +423,7 @@ I2C
 Text Notes 6825 3770 2    118  ~ 0
 Expasions
 $Comp
-L Makech-rescue:ULN2803--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue IC1
+L Makech-rescue:ULN2803--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue IC1
 U 1 1 58BBAA7B
 P 9880 5205
 F 0 "IC1" H 9635 5655 60  0000 C CNN
@@ -534,7 +435,7 @@ F 4 "ULN2803ADWR" H 9880 5205 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2
 U 1 1 58BBF2CA
 P 8600 5605
 F 0 "C2" V 8500 5530 50  0000 L CNN
@@ -546,7 +447,7 @@ F 4 "08051C104J4T4A" V 8600 5605 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2.1
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C2.1
 U 1 1 58BBF631
 P 8820 5620
 F 0 "C2.1" V 8730 5505 50  0000 L CNN
@@ -558,7 +459,7 @@ F 4 "08051C104J4T4A" V 8820 5620 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR010
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR010
 U 1 1 58BBFB3B
 P 8600 6295
 F 0 "#PWR010" H 8600 6045 50  0001 C CNN
@@ -604,8 +505,1555 @@ Text Label 10695 5705 0    60   ~ 0
 MR3
 Text Label 10695 5805 0    60   ~ 0
 MR4
+$Comp
+L Makech-rescue:Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue X1
+U 1 1 58BB0114
+P 815 7170
+F 0 "X1" H 815 7420 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 665 7170 50  0001 C TNN
+F 2 "Connect:bornier2" H 815 6945 50  0001 C CNN
+F 3 "" H 790 7170 50  0001 C CNN
+	1    815  7170
+	1    0    0    1   
+$EndComp
+$Comp
+L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1
+U 1 1 58BB5A4E
+P 2705 7015
+F 0 "F1" H 2755 7055 40  0000 C CNN
+F 1 "FUSE" H 2605 6965 40  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_TE5_Littlefuse-395Series" H 2705 7015 60  0001 C CNN
+F 3 "" H 2705 7015 60  0000 C CNN
+F 4 "0ZCF0050FF2C" H 2705 7015 50  0001 C CNN "manf#"
+	1    2705 7015
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1
+U 1 1 58BB6DB1
+P 3080 7285
+F 0 "D1" H 3080 7225 40  0000 C CNN
+F 1 "ZENER" H 3080 7185 40  0001 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Castellated" H 3080 7285 60  0001 C CNN
+F 3 "" H 3080 7285 60  0000 C CNN
+F 4 "BZY55C4V7 RYG" H 3080 7285 50  0001 C CNN "manf#"
+	1    3080 7285
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR011
+U 1 1 58BB81E0
+P 3035 7510
+F 0 "#PWR011" H 3035 7260 50  0001 C CNN
+F 1 "GND" H 3035 7360 50  0000 C CNN
+F 2 "" H 3035 7510 50  0000 C CNN
+F 3 "" H 3035 7510 50  0000 C CNN
+	1    3035 7510
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH4
+U 1 1 58B999D4
+P 11045 5705
+F 0 "XH4" H 11045 6005 50  0000 C CNN
+F 1 "CONN_01X05" V 11145 5705 50  0001 C CNN
+F 2 "user_molex:B5B-XH-A" H 11045 5705 50  0001 C CNN
+F 3 "" H 11045 5705 50  0000 C CNN
+F 4 "B5B-XH-A (LF)(SN) " H 11045 5705 50  0001 C CNN "manf#"
+	1    11045 5705
+	1    0    0    1   
+$EndComp
+$Comp
+L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH3
+U 1 1 58B9E95E
+P 11045 4810
+F 0 "XH3" H 11045 4520 50  0000 C CNN
+F 1 "CONN_01X05" V 11145 4810 50  0001 C CNN
+F 2 "user_molex:B5B-XH-A" H 11045 4810 50  0001 C CNN
+F 3 "" H 11045 4810 50  0000 C CNN
+F 4 "B5B-XH-A (LF)(SN) " H 11045 4810 50  0001 C CNN "manf#"
+	1    11045 4810
+	1    0    0    1   
+$EndComp
+Text Notes 5500 3210 0    60   ~ 0
+Blue
+Text Notes 6140 3205 0    60   ~ 0
+Red
+Text Notes 6700 3205 0    60   ~ 0
+Orange
+Text Notes 7360 3205 0    60   ~ 0
+Green
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
+U 1 1 58CC3CD5
+P 7290 1340
+F 0 "R3" V 7235 1345 50  0000 C CNN
+F 1 "10K" V 7355 1340 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 7290 1340 60  0001 C CNN
+F 3 "" H 7290 1340 60  0000 C CNN
+F 4 "743C043103JP" V 7290 1340 50  0001 C CNN "manf#"
+	1    7290 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
+U 1 1 58CC5704
+P 5445 1340
+F 0 "R1" V 5390 1345 50  0000 C CNN
+F 1 "10K" V 5510 1340 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 5445 1340 60  0001 C CNN
+F 3 "" H 5445 1340 60  0000 C CNN
+F 4 "743C043103JP" V 5445 1340 50  0001 C CNN "manf#"
+	1    5445 1340
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
+U 2 1 58CC6075
+P 5910 1340
+F 0 "R1" V 5855 1345 50  0000 C CNN
+F 1 "10K" V 5975 1340 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 5910 1340 60  0001 C CNN
+F 3 "" H 5910 1340 60  0000 C CNN
+F 4 "743C043103JP" V 5910 1340 50  0001 C CNN "manf#"
+	2    5910 1340
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
+U 1 1 58CC678A
+P 6370 1340
+F 0 "R2" V 6315 1345 50  0000 C CNN
+F 1 "10K" V 6435 1340 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6370 1340 60  0001 C CNN
+F 3 "" H 6370 1340 60  0000 C CNN
+F 4 "743C043103JP" V 6370 1340 50  0001 C CNN "manf#"
+	1    6370 1340
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
+U 2 1 58CC71D8
+P 6830 1340
+F 0 "R2" V 6775 1345 50  0000 C CNN
+F 1 "10K" V 6895 1340 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6830 1340 60  0001 C CNN
+F 3 "" H 6830 1340 60  0000 C CNN
+F 4 "743C043103JP" V 6830 1340 50  0001 C CNN "manf#"
+	2    6830 1340
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
+U 1 1 58CC7A26
+P 5755 2685
+F 0 "R4" V 5700 2690 50  0000 C CNN
+F 1 "1K" V 5820 2685 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Array_SIP4" H 5755 2685 60  0001 C CNN
+F 3 "" H 5755 2685 60  0000 C CNN
+F 4 "743C043102JP" V 5755 2685 50  0001 C CNN "manf#"
+	1    5755 2685
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
+U 2 1 58CC84DE
+P 6385 2685
+F 0 "R4" V 6330 2690 50  0000 C CNN
+F 1 "1K" V 6450 2685 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Array_SIP4" H 6385 2685 60  0001 C CNN
+F 3 "" H 6385 2685 60  0000 C CNN
+F 4 "743C043102JP" V 6385 2685 50  0001 C CNN "manf#"
+	2    6385 2685
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
+U 1 1 58CC898F
+P 7015 2685
+F 0 "R5" V 6960 2690 50  0000 C CNN
+F 1 "1K" V 7080 2685 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Array_SIP4" H 7015 2685 60  0001 C CNN
+F 3 "" H 7015 2685 60  0000 C CNN
+F 4 "743C043102JP" V 7015 2685 50  0001 C CNN "manf#"
+	1    7015 2685
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
+U 2 1 58CC91A7
+P 4885 1080
+F 0 "R3" V 4830 1085 50  0000 C CNN
+F 1 "10K" V 4950 1080 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 4885 1080 60  0001 C CNN
+F 3 "" H 4885 1080 60  0000 C CNN
+F 4 "743C043103JP" V 4885 1080 50  0001 C CNN "manf#"
+	2    4885 1080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
+U 2 1 58D3E57A
+P 7645 2685
+F 0 "R5" V 7590 2690 50  0000 C CNN
+F 1 "1K" V 7710 2685 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Array_SIP4" H 7645 2685 60  0001 C CNN
+F 3 "" H 7645 2685 60  0000 C CNN
+F 4 "743C043102JP" V 7645 2685 50  0001 C CNN "manf#"
+	2    7645 2685
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S7
+U 1 1 58D3FEDC
+P 3480 6915
+F 0 "S7" H 3390 6915 60  0000 C CNN
+F 1 "switch" H 3560 6665 60  0000 C CNN
+F 2 "Switch:on_off_Switch" H 3480 6915 60  0001 C CNN
+F 3 "" H 3480 6915 60  0001 C CNN
+F 4 "1825232-1" H 3480 6915 50  0001 C CNN "manf#"
+	1    3480 6915
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:LM1117-SOT--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U6
+U 1 1 58DC178E
+P 6000 6815
+F 0 "U6" H 6000 7015 60  0000 C CNN
+F 1 "AP2114_3.3v" H 6000 6915 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6000 6815 60  0001 C CNN
+F 3 "" H 6000 6815 60  0000 C CNN
+F 4 "AP2114HA-3.3TRG1" H 6000 6815 50  0001 C CNN "manf#"
+	1    6000 6815
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR013
+U 1 1 58DC633A
+P 6000 7685
+F 0 "#PWR013" H 6000 7435 50  0001 C CNN
+F 1 "GND" H 5860 7625 50  0000 C CNN
+F 2 "" H 6000 7685 50  0000 C CNN
+F 3 "" H 6000 7685 50  0000 C CNN
+	1    6000 7685
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4
+U 1 1 58DD1A4B
+P 6225 7225
+F 0 "C4" V 6140 7155 50  0000 L CNN
+F 1 "10uF" V 6255 7000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6225 7225 60  0001 C CNN
+F 3 "" H 6225 7225 60  0000 C CNN
+F 4 "C0805X106K8RACAUTO" V 6225 7225 50  0001 C CNN "manf#"
+	1    6225 7225
+	0    1    1    0   
+$EndComp
+$Comp
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3
+U 1 1 58DD2438
+P 5775 7225
+F 0 "C3" V 5690 7155 50  0000 L CNN
+F 1 "10uF" V 5810 7235 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5775 7225 60  0001 C CNN
+F 3 "" H 5775 7225 60  0000 C CNN
+F 4 "C0805X106K8RACAUTO" V 5775 7225 50  0001 C CNN "manf#"
+	1    5775 7225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7645 2785 7645 2835
+Wire Wire Line
+	7330 2785 7330 2835
+Wire Wire Line
+	7015 2785 7015 2835
+Wire Wire Line
+	6700 2785 6700 2835
+Wire Wire Line
+	6385 2785 6385 2835
+Wire Wire Line
+	6070 2785 6070 2835
+Connection ~ 7645 3120
+Wire Wire Line
+	7645 3120 7645 3060
+Connection ~ 7330 3120
+Wire Wire Line
+	7330 3120 7330 3060
+Connection ~ 7015 3120
+Wire Wire Line
+	7015 3120 7015 3060
+Connection ~ 6700 3120
+Wire Wire Line
+	6700 3120 6700 3060
+Connection ~ 6385 3120
+Wire Wire Line
+	6385 3120 6385 3060
+Connection ~ 6070 3120
+Wire Wire Line
+	6070 3120 6070 3060
+Connection ~ 5755 3120
+Wire Wire Line
+	5755 3060 5755 3120
+Wire Wire Line
+	5440 3120 5755 3120
+Wire Wire Line
+	5440 3060 5440 3120
+Connection ~ 7645 2525
+Wire Wire Line
+	7330 2525 7330 2585
+Wire Wire Line
+	7645 2525 7330 2525
+Wire Wire Line
+	7645 2390 7645 2525
+Connection ~ 7015 2525
+Wire Wire Line
+	6700 2525 6700 2585
+Wire Wire Line
+	7015 2525 6700 2525
+Wire Wire Line
+	7015 2390 7015 2525
+Connection ~ 6385 2525
+Wire Wire Line
+	6070 2525 6070 2585
+Wire Wire Line
+	6385 2525 6070 2525
+Wire Wire Line
+	6385 2390 6385 2525
+Wire Wire Line
+	5755 2785 5755 2835
+Wire Wire Line
+	5440 2785 5440 2835
+Connection ~ 5755 2525
+Wire Wire Line
+	5440 2525 5440 2585
+Wire Wire Line
+	5755 2525 5440 2525
+Wire Wire Line
+	5755 2390 5755 2525
+Connection ~ 5755 1920
+Wire Wire Line
+	5755 1820 5755 1920
+Connection ~ 6080 1920
+Wire Wire Line
+	6080 1920 6080 1825
+Connection ~ 6180 1920
+Wire Wire Line
+	6180 1920 6180 1825
+Connection ~ 6595 1920
+Wire Wire Line
+	6595 1920 6595 1940
+Connection ~ 6545 1920
+Wire Wire Line
+	6545 1920 6545 1825
+Connection ~ 6645 1920
+Wire Wire Line
+	6645 1920 6645 1825
+Connection ~ 7010 1920
+Wire Wire Line
+	7010 1920 7010 1825
+Connection ~ 7110 1920
+Wire Wire Line
+	7110 1920 7110 1825
+Connection ~ 7470 1920
+Wire Wire Line
+	7470 1920 7470 1820
+Wire Wire Line
+	7570 1920 7570 1820
+Wire Wire Line
+	5655 1920 5755 1920
+Wire Wire Line
+	5655 1820 5655 1920
+Connection ~ 5755 1440
+Wire Wire Line
+	5755 1440 5655 1440
+Wire Wire Line
+	5655 1440 5655 1510
+Connection ~ 6180 1430
+Wire Wire Line
+	6180 1430 6080 1430
+Connection ~ 5755 1135
+Connection ~ 5755 1340
+Wire Wire Line
+	5755 1135 5755 1340
+Wire Wire Line
+	5545 1135 5755 1135
+Connection ~ 6180 1135
+Wire Wire Line
+	6010 1135 6180 1135
+Connection ~ 6180 1340
+Wire Wire Line
+	6180 1135 6180 1340
+Connection ~ 6645 1435
+Wire Wire Line
+	6645 1435 6545 1435
+Wire Wire Line
+	6545 1435 6545 1515
+Connection ~ 6645 1135
+Wire Wire Line
+	6470 1135 6645 1135
+Connection ~ 6645 1340
+Wire Wire Line
+	6645 1135 6645 1340
+Connection ~ 7110 1435
+Wire Wire Line
+	7010 1435 7010 1515
+Wire Wire Line
+	7110 1435 7010 1435
+Wire Wire Line
+	7470 1510 7470 1430
+Connection ~ 7110 1135
+Connection ~ 7110 1340
+Wire Wire Line
+	7110 1135 7110 1340
+Wire Wire Line
+	6930 1135 7110 1135
+Connection ~ 7570 1430
+Wire Wire Line
+	7470 1430 7570 1430
+Connection ~ 7570 1340
+Wire Wire Line
+	7390 1340 7570 1340
+Wire Wire Line
+	7570 1135 7390 1135
+Wire Wire Line
+	7570 1135 7570 1340
+Wire Wire Line
+	6930 1340 7110 1340
+Wire Wire Line
+	6470 1340 6645 1340
+Wire Wire Line
+	6010 1340 6180 1340
+Wire Wire Line
+	5545 1340 5755 1340
+Wire Wire Line
+	5285 1340 5345 1340
+Wire Wire Line
+	5285 1135 5345 1135
+Connection ~ 4885 1240
+Wire Wire Line
+	4885 1180 4885 1240
+Connection ~ 5070 1240
+Connection ~ 5285 1240
+Wire Wire Line
+	4545 1240 4885 1240
+Wire Wire Line
+	5070 1180 5070 1240
+Wire Wire Line
+	5285 1135 5285 1240
+Wire Wire Line
+	5070 920  5070 980 
+Wire Wire Line
+	4885 920  4990 920 
+Wire Wire Line
+	4885 980  4885 920 
+Wire Notes Line
+	4190 495  4190 3360
+Wire Wire Line
+	5440 2835 5755 2835
+Connection ~ 5755 2835
+Connection ~ 5440 2835
+Wire Wire Line
+	6070 2835 6385 2835
+Connection ~ 6385 2835
+Connection ~ 6070 2835
+Wire Wire Line
+	6700 2835 7015 2835
+Connection ~ 7015 2835
+Connection ~ 6700 2835
+Wire Wire Line
+	7330 2835 7645 2835
+Connection ~ 7645 2835
+Connection ~ 7330 2835
+Wire Wire Line
+	8245 3120 8365 3120
+Wire Wire Line
+	8365 3120 8365 3185
+Wire Wire Line
+	4100 5515 3880 5515
+Wire Wire Line
+	4115 5910 4075 5910
+Wire Wire Line
+	4075 5910 4075 5615
+Wire Wire Line
+	4075 5615 4100 5615
+Wire Wire Line
+	4055 6090 4055 6010
+Wire Wire Line
+	4055 6010 4115 6010
+Wire Wire Line
+	5400 5060 5090 5060
+Wire Wire Line
+	5400 5160 5090 5160
+Wire Wire Line
+	5400 5360 5220 5360
+Wire Wire Line
+	5220 5360 5220 5485
+Wire Notes Line
+	7750 6670 7750 6675
+Wire Wire Line
+	9330 4855 9480 4855
+Wire Wire Line
+	9480 4955 9330 4955
+Wire Wire Line
+	9480 5055 9330 5055
+Wire Wire Line
+	9480 5155 9335 5155
+Wire Wire Line
+	9480 5255 9330 5255
+Wire Wire Line
+	9480 5355 9330 5355
+Wire Wire Line
+	9480 5455 9330 5455
+Wire Wire Line
+	9480 5555 9330 5555
+Wire Wire Line
+	8600 4620 8820 4620
+Wire Wire Line
+	9880 4620 9880 4705
+Wire Wire Line
+	8600 5940 8820 5940
+Connection ~ 8600 5940
+Wire Wire Line
+	10280 4855 10360 4855
+Wire Wire Line
+	10280 4955 10415 4955
+Wire Wire Line
+	10460 5055 10280 5055
+Wire Wire Line
+	10505 5155 10280 5155
+Wire Wire Line
+	10280 5255 10505 5255
+Wire Wire Line
+	10505 5255 10505 5505
+Wire Wire Line
+	10280 5355 10460 5355
+Wire Wire Line
+	10280 5455 10410 5455
+Wire Wire Line
+	10280 5555 10360 5555
+Wire Notes Line
+	11170 6210 11175 6210
+Wire Wire Line
+	1015 7070 1015 6885
+Wire Wire Line
+	1015 6885 2105 6885
+Wire Wire Line
+	1015 7270 1015 7455
+Wire Wire Line
+	3035 7510 3035 7455
+Connection ~ 3035 7455
+Wire Wire Line
+	3080 7015 3080 7185
+Wire Wire Line
+	3080 7455 3080 7335
+Connection ~ 3080 7015
+Wire Wire Line
+	6080 1430 6080 1515
+Wire Wire Line
+	10505 5505 10845 5505
+Wire Wire Line
+	10845 5605 10460 5605
+Wire Wire Line
+	10460 5605 10460 5355
+Wire Wire Line
+	10845 5705 10410 5705
+Wire Wire Line
+	10410 5705 10410 5455
+Wire Wire Line
+	10845 5805 10360 5805
+Wire Wire Line
+	10360 5805 10360 5555
+Wire Wire Line
+	10845 5905 10695 5905
+Wire Wire Line
+	10460 4810 10845 4810
+Wire Wire Line
+	10505 4910 10845 4910
+Wire Wire Line
+	10845 4610 10360 4610
+Wire Wire Line
+	10360 4610 10360 4855
+Wire Wire Line
+	10845 4710 10415 4710
+Wire Wire Line
+	10415 4710 10415 4955
+Wire Wire Line
+	10460 5055 10460 4810
+Wire Wire Line
+	10505 5155 10505 4910
+Wire Wire Line
+	10845 5010 10695 5010
+Wire Wire Line
+	8600 5655 8600 5940
+Wire Wire Line
+	8820 5940 8820 5670
+Connection ~ 8820 5940
+Wire Wire Line
+	9880 5940 9880 5705
+Wire Wire Line
+	8600 5505 8600 4620
+Wire Wire Line
+	8820 5520 8820 4620
+Connection ~ 8820 4620
+Wire Wire Line
+	3400 7115 3315 7115
+Wire Wire Line
+	3315 7115 3315 7015
+Connection ~ 3315 7015
+Wire Wire Line
+	3750 7115 3710 7115
+Wire Wire Line
+	3750 7015 3710 7015
+Wire Wire Line
+	6380 6815 6350 6815
+Wire Wire Line
+	5600 6815 5650 6815
+Wire Wire Line
+	5675 7225 5600 7225
+Connection ~ 5600 7225
+Wire Wire Line
+	5825 7225 6000 7225
+Wire Wire Line
+	6275 7225 6380 7225
+Connection ~ 6380 7225
+$Comp
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3.1
+U 1 1 58DE2448
+P 5775 7520
+F 0 "C3.1" V 5690 7405 50  0000 L CNN
+F 1 "10uF" V 5810 7530 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5775 7520 60  0001 C CNN
+F 3 "" H 5775 7520 60  0000 C CNN
+F 4 "C0805X106K8RACAUTO" V 5775 7520 50  0001 C CNN "manf#"
+	1    5775 7520
+	0    1    1    0   
+$EndComp
+$Comp
+L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4.1
+U 1 1 58DE26E6
+P 6225 7520
+F 0 "C4.1" V 6140 7450 50  0000 L CNN
+F 1 "10uF" V 6255 7295 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6225 7520 60  0001 C CNN
+F 3 "" H 6225 7520 60  0000 C CNN
+F 4 "C0805X106K8RACAUTO" V 6225 7520 50  0001 C CNN "manf#"
+	1    6225 7520
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5825 7520 6000 7520
+Wire Wire Line
+	5600 7520 5675 7520
+Wire Wire Line
+	6380 7520 6275 7520
+Wire Wire Line
+	6380 6815 6380 7225
+Wire Wire Line
+	5600 6815 5600 7225
+Wire Wire Line
+	6000 7165 6000 7225
+Connection ~ 6000 7225
+Connection ~ 6000 7520
+Wire Wire Line
+	7645 3120 7945 3120
+Wire Wire Line
+	7330 3120 7645 3120
+Wire Wire Line
+	7015 3120 7330 3120
+Wire Wire Line
+	6700 3120 7015 3120
+Wire Wire Line
+	6385 3120 6700 3120
+Wire Wire Line
+	6070 3120 6385 3120
+Wire Wire Line
+	5755 3120 6070 3120
+Wire Wire Line
+	7645 2525 7645 2585
+Wire Wire Line
+	7015 2525 7015 2585
+Wire Wire Line
+	6385 2525 6385 2585
+Wire Wire Line
+	5755 2525 5755 2585
+Wire Wire Line
+	5755 1920 6080 1920
+Wire Wire Line
+	6080 1920 6180 1920
+Wire Wire Line
+	6180 1920 6545 1920
+Wire Wire Line
+	6595 1920 6645 1920
+Wire Wire Line
+	6545 1920 6595 1920
+Wire Wire Line
+	6645 1920 7010 1920
+Wire Wire Line
+	7010 1920 7110 1920
+Wire Wire Line
+	7110 1920 7470 1920
+Wire Wire Line
+	7470 1920 7570 1920
+Wire Wire Line
+	5755 1440 5755 1510
+Wire Wire Line
+	6180 1430 6180 1515
+Wire Wire Line
+	5755 1135 5810 1135
+Wire Wire Line
+	5755 1340 5755 1440
+Wire Wire Line
+	5755 1340 5810 1340
+Wire Wire Line
+	6180 1135 6270 1135
+Wire Wire Line
+	6180 1340 6180 1430
+Wire Wire Line
+	6180 1340 6270 1340
+Wire Wire Line
+	6645 1435 6645 1515
+Wire Wire Line
+	6645 1135 6730 1135
+Wire Wire Line
+	6645 1340 6645 1435
+Wire Wire Line
+	6645 1340 6730 1340
+Wire Wire Line
+	7110 1435 7110 1515
+Wire Wire Line
+	7110 1135 7190 1135
+Wire Wire Line
+	7110 1340 7110 1435
+Wire Wire Line
+	7110 1340 7190 1340
+Wire Wire Line
+	7570 1430 7570 1510
+Wire Wire Line
+	7570 1340 7570 1430
+Wire Wire Line
+	4885 1240 5070 1240
+Wire Wire Line
+	5070 1240 5285 1240
+Wire Wire Line
+	5285 1240 5285 1340
+Wire Wire Line
+	5755 2835 5755 2910
+Wire Wire Line
+	6070 2835 6070 2910
+Wire Wire Line
+	7015 2835 7015 2910
+Wire Wire Line
+	6700 2835 6700 2910
+Wire Wire Line
+	7645 2835 7645 2910
+Wire Wire Line
+	7330 2835 7330 2910
+Wire Wire Line
+	8600 5940 8600 6295
+Wire Wire Line
+	3035 7455 3080 7455
+Wire Wire Line
+	3080 7015 3315 7015
+Wire Wire Line
+	8820 5940 9880 5940
+Wire Wire Line
+	8820 4620 9880 4620
+Wire Wire Line
+	3315 7015 3400 7015
+Wire Wire Line
+	5600 7225 5600 7520
+Wire Wire Line
+	6380 7225 6380 7520
+Wire Wire Line
+	6000 7225 6125 7225
+Wire Wire Line
+	6000 7225 6000 7520
+Wire Wire Line
+	6000 7520 6125 7520
+Wire Wire Line
+	6000 7520 6000 7685
+Wire Notes Line
+	8460 6535 8460 3555
+Wire Notes Line
+	475  6535 475  6525
+Wire Notes Line
+	8455 3560 11220 3560
+Wire Notes Line
+	11220 3560 11220 3550
+Wire Notes Line
+	8465 3550 4190 3550
+Wire Notes Line
+	4190 3550 4190 3370
+Wire Notes Line
+	4645 3560 4645 6565
+Wire Wire Line
+	2820 1305 2940 1305
+Wire Wire Line
+	2820 1405 2940 1405
+$Comp
+L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C1
+U 1 1 5CFEDF86
+P 3090 1875
+F 0 "C1" H 3182 1921 50  0000 L CNN
+F 1 "1uF" H 3182 1830 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3090 1875 50  0001 C CNN
+F 3 "~" H 3090 1875 50  0001 C CNN
+F 4 "CGA4J1X8R1E105M125AE" H 3090 1875 50  0001 C CNN "manf#"
+	1    3090 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3090 1705 3090 1775
+Wire Wire Line
+	2820 1705 3090 1705
+$Comp
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0101
+U 1 1 5D026F59
+P 2940 1100
+F 0 "#PWR0101" H 2940 950 50  0001 C CNN
+F 1 "+3.3V" H 2955 1273 50  0000 C CNN
+F 2 "" H 2940 1100 50  0001 C CNN
+F 3 "" H 2940 1100 50  0001 C CNN
+	1    2940 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3090 1975 3090 2040
+$Comp
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0102
+U 1 1 5D09946E
+P 3090 2040
+F 0 "#PWR0102" H 3090 1790 50  0001 C CNN
+F 1 "GND" H 3095 1867 50  0000 C CNN
+F 2 "" H 3090 2040 50  0001 C CNN
+F 3 "" H 3090 2040 50  0001 C CNN
+	1    3090 2040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1420 1305 1290 1305
+Wire Wire Line
+	4990 920  4990 855 
+Connection ~ 4990 920 
+Wire Wire Line
+	4990 920  5070 920 
+$Comp
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0103
+U 1 1 5D10D595
+P 4990 855
+F 0 "#PWR0103" H 4990 705 50  0001 C CNN
+F 1 "+3.3V" H 5005 1028 50  0000 C CNN
+F 2 "" H 4990 855 50  0001 C CNN
+F 3 "" H 4990 855 50  0001 C CNN
+	1    4990 855 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6385 7225 6500 7225
+Wire Wire Line
+	6500 7225 6500 7220
+$Comp
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0104
+U 1 1 5D14A643
+P 6500 7220
+F 0 "#PWR0104" H 6500 7070 50  0001 C CNN
+F 1 "+3.3V" H 6515 7393 50  0000 C CNN
+F 2 "" H 6500 7220 50  0001 C CNN
+F 3 "" H 6500 7220 50  0001 C CNN
+	1    6500 7220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2820 4205 2925 4205
+Wire Wire Line
+	2925 4205 2925 4305
+Wire Wire Line
+	2820 4305 2925 4305
+Connection ~ 2925 4305
+Wire Wire Line
+	2925 4305 2925 4495
+$Comp
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0105
+U 1 1 5D3F1AF5
+P 2925 4495
+F 0 "#PWR0105" H 2925 4245 50  0001 C CNN
+F 1 "GND" H 2930 4322 50  0000 C CNN
+F 2 "" H 2925 4495 50  0001 C CNN
+F 3 "" H 2925 4495 50  0001 C CNN
+	1    2925 4495
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1420 4505 1280 4505
+Wire Wire Line
+	1420 4405 1270 4405
+Wire Wire Line
+	1420 4105 1260 4105
+Text Label 1260 4005 2    60   ~ 0
+D-
+Text Label 1260 4105 2    60   ~ 0
+D+
+$Comp
+L Makech-rescue:USB_B_Micro-Connector-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue J1
+U 1 1 5D522F31
+P 2650 5790
+F 0 "J1" H 2705 6257 50  0000 C CNN
+F 1 "USB_B_Micro" H 2705 6166 50  0000 C CNN
+F 2 "Connect:USB_Micro-B_10103594-0001LF" H 2800 5740 50  0001 C CNN
+F 3 "~" H 2800 5740 50  0001 C CNN
+F 4 "629105150521" H 2650 5790 50  0001 C CNN "manf#"
+	1    2650 5790
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	470  3550 470  3555
+Wire Wire Line
+	2950 5790 3160 5790
+Wire Wire Line
+	2950 5890 3155 5890
+Wire Wire Line
+	2950 5590 3150 5590
+Wire Wire Line
+	2550 6190 2550 6240
+Wire Wire Line
+	2550 6240 2605 6240
+Wire Wire Line
+	2650 6240 2650 6190
+Wire Wire Line
+	2605 6240 2605 6295
+Connection ~ 2605 6240
+Wire Wire Line
+	2605 6240 2650 6240
+$Comp
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0106
+U 1 1 5D699F03
+P 2605 6295
+F 0 "#PWR0106" H 2605 6045 50  0001 C CNN
+F 1 "GND" H 2610 6122 50  0000 C CNN
+F 2 "" H 2605 6295 50  0001 C CNN
+F 3 "" H 2605 6295 50  0001 C CNN
+	1    2605 6295
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2950 5990
+$Comp
+L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0107
+U 1 1 5D6DA421
+P 3515 5525
+F 0 "#PWR0107" H 3515 5375 50  0001 C CNN
+F 1 "VCC" H 3532 5698 50  0000 C CNN
+F 2 "" H 3515 5525 50  0001 C CNN
+F 3 "" H 3515 5525 50  0001 C CNN
+	1    3515 5525
+	1    0    0    -1  
+$EndComp
+Text Notes 860  6735 0    60   ~ 0
+4 x Battery AA = 6V
+Text Label 3160 5790 0    60   ~ 0
+D+
+Text Label 3155 5890 0    60   ~ 0
+D-
+Wire Notes Line
+	4630 5425 4630 5440
+Wire Notes Line
+	2725 6530 2720 6530
+Wire Wire Line
+	5595 7225 5390 7225
+Wire Wire Line
+	5390 7225 5390 7090
+Connection ~ 5390 7225
+$Comp
+L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0108
+U 1 1 5D7E4CD1
+P 5390 6765
+F 0 "#PWR0108" H 5390 6615 50  0001 C CNN
+F 1 "VCC" H 5407 6938 50  0000 C CNN
+F 2 "" H 5390 6765 50  0001 C CNN
+F 3 "" H 5390 6765 50  0001 C CNN
+	1    5390 6765
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 7615 0    60   ~ 0
+NOTA: Revisar \ndiodo \nde proteccion
+$Comp
+L Makech-rescue:SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SW1
+U 1 1 5D7E7124
+P 1090 1305
+F 0 "SW1" H 1090 1590 50  0000 C CNN
+F 1 "RST" H 1090 1499 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 1090 1505 50  0001 C CNN
+F 3 "" H 1090 1505 50  0001 C CNN
+F 4 "Boton Generico" H 1090 1305 50  0001 C CNN "manf#"
+	1    1090 1305
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	890  1305 785  1305
+Wire Wire Line
+	785  1305 785  1335
+$Comp
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0109
+U 1 1 5D829084
+P 785 1335
+F 0 "#PWR0109" H 785 1085 50  0001 C CNN
+F 1 "GND" H 790 1162 50  0000 C CNN
+F 2 "" H 785 1335 50  0001 C CNN
+F 3 "" H 785 1335 50  0001 C CNN
+	1    785  1335
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5245 7225 5245 7000
+Wire Wire Line
+	5245 7225 5390 7225
+$Comp
+L Makech-rescue:Fuse-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F2
+U 1 1 5D9CAE20
+P 3300 5590
+F 0 "F2" V 3103 5590 50  0000 C CNN
+F 1 "0.5" V 3194 5590 50  0000 C CNN
+F 2 "" V 3230 5590 50  0001 C CNN
+F 3 "~" H 3300 5590 50  0001 C CNN
+F 4 "0ZCG0030FF2C" V 3300 5590 50  0001 C CNN "manf#"
+	1    3300 5590
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 5590 3515 5590
+Wire Wire Line
+	3515 5590 3515 5525
+Text Label 1270 4405 2    60   ~ 0
+SWCLK
+Text Label 1280 4505 2    60   ~ 0
+SWDIO
+$Comp
+L Makech-rescue:Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue J2
+U 1 1 5D9FC5AA
+P 1255 5680
+F 0 "J2" H 1305 5897 50  0000 C CNN
+F 1 "SWD programmer" H 1305 5806 50  0000 C CNN
+F 2 "Pines:62000421121" H 1255 5680 50  0001 C CNN
+F 3 "~" H 1255 5680 50  0001 C CNN
+	1    1255 5680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1555 5780 1650 5780
+Wire Wire Line
+	1055 5680 960  5680
+Text Label 960  5680 2    60   ~ 0
+SWDIO
+Text Label 1650 5780 0    60   ~ 0
+SWCLK
+$Comp
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0113
+U 1 1 5DAEAF62
+P 535 5740
+F 0 "#PWR0113" H 535 5590 50  0001 C CNN
+F 1 "+3.3V" H 550 5913 50  0000 C CNN
+F 2 "" H 535 5740 50  0001 C CNN
+F 3 "" H 535 5740 50  0001 C CNN
+	1    535  5740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	535  5740 535  5780
+Wire Wire Line
+	535  5780 1055 5780
+Wire Wire Line
+	2110 5680 2110 5730
+Wire Wire Line
+	1555 5680 2110 5680
+$Comp
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0114
+U 1 1 5DB4C8AA
+P 2110 5730
+F 0 "#PWR0114" H 2110 5480 50  0001 C CNN
+F 1 "GND" H 2115 5557 50  0000 C CNN
+F 2 "" H 2110 5730 50  0001 C CNN
+F 3 "" H 2110 5730 50  0001 C CNN
+	1    2110 5730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1420 1605 1230 1605
+Wire Wire Line
+	1420 1705 1225 1705
+Wire Wire Line
+	1420 1805 1225 1805
+Wire Wire Line
+	1420 1905 1225 1905
+Wire Wire Line
+	1420 2005 1230 2005
+Wire Wire Line
+	1420 2105 1230 2105
+Wire Wire Line
+	1420 2205 1225 2205
+Wire Wire Line
+	1420 2305 1225 2305
+Wire Wire Line
+	1420 2405 1225 2405
+Wire Wire Line
+	1420 2505 1225 2505
+Wire Wire Line
+	1420 2605 1225 2605
+Wire Wire Line
+	1420 2705 1225 2705
+Wire Wire Line
+	1420 3105 1245 3105
+Wire Wire Line
+	1420 3205 1245 3205
+Wire Wire Line
+	1420 3305 1245 3305
+Wire Wire Line
+	1420 3405 1245 3405
+Wire Wire Line
+	1420 3505 1245 3505
+Wire Wire Line
+	1420 3805 1245 3805
+Wire Wire Line
+	1420 3905 1245 3905
+Wire Wire Line
+	1420 4205 1265 4205
+Wire Wire Line
+	1420 4305 1265 4305
+Text Label 1230 1605 2    60   ~ 0
+TX
+Text Label 1225 1705 2    60   ~ 0
+RX
+Text Label 1225 1805 2    60   ~ 0
+A0
+Text Label 1230 2005 2    60   ~ 0
+A1
+Text Label 1230 2105 2    60   ~ 0
+A2
+Text Label 1225 2605 2    60   ~ 0
+A3
+Text Label 1225 2405 2    60   ~ 0
+SDA
+Text Label 1225 2505 2    60   ~ 0
+SCL
+Text Label 1245 3805 2    60   ~ 0
+D4
+Text Label 1225 2705 2    60   ~ 0
+D5
+Text Label 1265 4205 2    60   ~ 0
+D6
+Text Label 1265 4305 2    60   ~ 0
+D7
+Text Label 1225 2205 2    60   ~ 0
+D8
+Text Label 1225 2305 2    60   ~ 0
+D9
+Text Label 1245 3405 2    60   ~ 0
+D10
+Text Label 1245 3305 2    60   ~ 0
+D13
+Text Label 1245 3205 2    60   ~ 0
+D11
+Text Notes 1400 700  0    118  ~ 0
+MICROCONTROLLER
+$Comp
+L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D3
+U 1 1 5E159714
+P 5390 6940
+F 0 "D3" V 5436 6861 50  0000 R CNN
+F 1 "D_Schottky" H 5375 6850 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 5390 6940 50  0001 C CNN
+F 3 "~" H 5390 6940 50  0001 C CNN
+F 4 "STPS1L60ZFY" V 5390 6940 50  0001 C CNN "manf#"
+	1    5390 6940
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5390 6790 5390 6765
+$Comp
+L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D2
+U 1 1 5E1C9EAE
+P 5245 6850
+F 0 "D2" V 5340 6840 50  0000 R CNN
+F 1 "D_Schottky" H 5325 6945 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 5245 6850 50  0001 C CNN
+F 3 "~" H 5245 6850 50  0001 C CNN
+F 4 "STPS1L60ZFY" V 5245 6850 50  0001 C CNN "manf#"
+	1    5245 6850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5245 6700 5245 6680
+$Comp
+L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C5
+U 1 1 5E202A2F
+P 3600 2510
+F 0 "C5" H 3480 2595 50  0000 L CNN
+F 1 "0.1uF" H 3380 2430 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3600 2510 50  0001 C CNN
+F 3 "~" H 3600 2510 50  0001 C CNN
+F 4 "08051C104J4T4A" H 3600 2510 50  0001 C CNN "manf#"
+	1    3600 2510
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C6
+U 1 1 5E203088
+P 3805 2510
+F 0 "C6" H 3897 2556 50  0000 L CNN
+F 1 "0.1uF" H 3835 2415 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3805 2510 50  0001 C CNN
+F 3 "~" H 3805 2510 50  0001 C CNN
+F 4 "08051C104J4T4A" H 3805 2510 50  0001 C CNN "manf#"
+	1    3805 2510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2410 3600 2380
+Wire Wire Line
+	3600 2380 3705 2380
+Wire Wire Line
+	3805 2380 3805 2410
+Wire Wire Line
+	3805 2610 3805 2655
+Wire Wire Line
+	3805 2655 3700 2655
+Wire Wire Line
+	3600 2655 3600 2610
+Wire Wire Line
+	3705 2380 3705 2335
+Connection ~ 3705 2380
+Wire Wire Line
+	3705 2380 3805 2380
+Wire Wire Line
+	3700 2655 3700 2695
+Connection ~ 3700 2655
+Wire Wire Line
+	3700 2655 3600 2655
+$Comp
+L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0115
+U 1 1 5E2EA696
+P 3700 2695
+F 0 "#PWR0115" H 3700 2445 50  0001 C CNN
+F 1 "GND" H 3705 2522 50  0000 C CNN
+F 2 "" H 3700 2695 50  0001 C CNN
+F 3 "" H 3700 2695 50  0001 C CNN
+	1    3700 2695
+	1    0    0    -1  
+$EndComp
+$Comp
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0116
+U 1 1 5E2EA7C9
+P 3705 2335
+F 0 "#PWR0116" H 3705 2185 50  0001 C CNN
+F 1 "+3.3V" H 3720 2508 50  0000 C CNN
+F 2 "" H 3705 2335 50  0001 C CNN
+F 3 "" H 3705 2335 50  0001 C CNN
+	1    3705 2335
+	1    0    0    -1  
+$EndComp
+Text Notes 4815 4125 0    60   ~ 0
+Support:\n- ESP32 NINA - Bluetooth and WiFi\n- I2C
+$Comp
+L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0120
+U 1 1 5E35FE1F
+P 4930 5165
+F 0 "#PWR0120" H 4930 5015 50  0001 C CNN
+F 1 "+3.3V" H 4945 5338 50  0000 C CNN
+F 2 "" H 4930 5165 50  0001 C CNN
+F 3 "" H 4930 5165 50  0001 C CNN
+	1    4930 5165
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4930 5260 4930 5165
+Wire Wire Line
+	4930 5260 5400 5260
+$Comp
+L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0121
+U 1 1 5E509C4B
+P 3825 7000
+F 0 "#PWR0121" H 3825 6850 50  0001 C CNN
+F 1 "+6V" H 3840 7173 50  0000 C CNN
+F 2 "" H 3825 7000 50  0001 C CNN
+F 3 "" H 3825 7000 50  0001 C CNN
+	1    3825 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 7015 3750 7065
+Wire Wire Line
+	3750 7065 3825 7065
+Wire Wire Line
+	3825 7065 3825 7000
+Connection ~ 3750 7065
+Wire Wire Line
+	3750 7065 3750 7115
+$Comp
+L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0122
+U 1 1 5E53E29B
+P 5245 6680
+F 0 "#PWR0122" H 5245 6530 50  0001 C CNN
+F 1 "+6V" H 5260 6853 50  0000 C CNN
+F 2 "" H 5245 6680 50  0001 C CNN
+F 3 "" H 5245 6680 50  0001 C CNN
+	1    5245 6680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8820 4620 8820 4555
+$Comp
+L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0123
+U 1 1 5E5A8D41
+P 8820 4555
+F 0 "#PWR0123" H 8820 4405 50  0001 C CNN
+F 1 "+6V" H 8835 4728 50  0000 C CNN
+F 2 "" H 8820 4555 50  0001 C CNN
+F 3 "" H 8820 4555 50  0001 C CNN
+	1    8820 4555
+	1    0    0    -1  
+$EndComp
+Text Notes 9225 3745 0    118  ~ 0
+DRIVERS MOTOR
+Text Notes 2950 5120 0    118  ~ 0
+USB
+Wire Wire Line
+	6880 5250 6720 5250
+Wire Wire Line
+	6880 5350 6720 5350
+Wire Wire Line
+	6880 5550 6720 5550
+Wire Wire Line
+	6880 5650 6720 5650
+Wire Wire Line
+	7380 5250 7580 5250
+Wire Wire Line
+	7380 5350 7580 5350
+Wire Wire Line
+	7380 5450 7590 5450
+Wire Wire Line
+	7380 5550 7590 5550
+Text Label 6720 5250 0    60   ~ 0
+TX
+Text Label 6720 5350 0    60   ~ 0
+RX
+Text Label 6630 5110 3    60   ~ 0
+ESP_CS
+Text Label 6720 5550 2    60   ~ 0
+ESP_GPIO
+Text Label 6720 5650 2    60   ~ 0
+ESP_MOSI
+Text Label 7590 5750 0    60   ~ 0
+ESP_MISO
+Text Label 7580 5350 0    60   ~ 0
+ESP_BUSY
+Text Label 7590 5450 0    60   ~ 0
+ESP_RTS
+Text Label 7590 5550 0    60   ~ 0
+ESP_SCK
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J3
+U 1 1 5CAF1DA2
+P 7080 5450
+F 0 "J3" H 7130 5867 50  0000 C CNN
+F 1 "ESP32-Exp" H 7130 5776 50  0000 C CNN
+F 2 "Pines:610X1221821" H 7080 5450 50  0001 C CNN
+F 3 "~" H 7080 5450 50  0001 C CNN
+F 4 "ESP32" H 7080 5450 50  0001 C CNN "manf#"
+	1    7080 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6880 5750 6720 5750
+Wire Wire Line
+	7380 5750 7590 5750
+$Comp
+L power:GND #PWR0110
+U 1 1 5CB523FF
+P 6720 5750
+F 0 "#PWR0110" H 6720 5500 50  0001 C CNN
+F 1 "GND" H 6725 5577 50  0000 C CNN
+F 2 "" H 6720 5750 50  0001 C CNN
+F 3 "" H 6720 5750 50  0001 C CNN
+	1    6720 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 5CB5358A
+P 7580 5250
+F 0 "#PWR0111" H 7580 5100 50  0001 C CNN
+F 1 "+3.3V" H 7595 5423 50  0000 C CNN
+F 2 "" H 7580 5250 50  0001 C CNN
+F 3 "" H 7580 5250 50  0001 C CNN
+	1    7580 5250
+	1    0    0    -1  
+$EndComp
+Text Label 7605 5650 0    60   ~ 0
+ESP_RESET
+Wire Wire Line
+	6385 2835 6385 2910
+Wire Wire Line
+	5440 2835 5440 2910
+Text Label 4545 1240 0    60   ~ 0
+A6
+Text Label 1225 1905 2    60   ~ 0
+A6
+Text Label 1245 3605 2    60   ~ 0
+ESP_GPIO
+Text Label 1225 2805 2    60   ~ 0
+ESP_MOSI
+Text Label 1235 3705 2    60   ~ 0
+ESP_BUSY
+Text Label 1245 3105 2    60   ~ 0
+ESP_SCK
+Text Label 1220 2905 2    60   ~ 0
+ESP_MISO
+Connection ~ 2940 1305
+Wire Wire Line
+	2940 1100 2940 1305
+Wire Wire Line
+	2940 1305 2940 1405
+$Comp
+L Device:R_Small R6
+U 1 1 5C89865A
+P 6630 4980
+F 0 "R6" H 6689 5026 50  0000 L CNN
+F 1 "10K" H 6689 4935 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6630 4980 50  0001 C CNN
+F 3 "~" H 6630 4980 50  0001 C CNN
+F 4 "CRCW080510K0FKEAC" H 6630 4980 50  0001 C CNN "manf#"
+	1    6630 4980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6630 5450 6630 5080
+Wire Wire Line
+	6630 5450 6880 5450
+Wire Wire Line
+	6630 4880 6630 4820
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5C8EBAE6
+P 6630 4820
+F 0 "#PWR0112" H 6630 4670 50  0001 C CNN
+F 1 "+3.3V" H 6645 4993 50  0000 C CNN
+F 2 "" H 6630 4820 50  0001 C CNN
+F 3 "" H 6630 4820 50  0001 C CNN
+	1    6630 4820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8165 5650 8165 5780
+Wire Wire Line
+	7380 5650 8165 5650
+$Comp
+L Device:R_Small R7
+U 1 1 5C967BAB
+P 8165 5880
+F 0 "R7" H 8224 5926 50  0000 L CNN
+F 1 "10K" H 8224 5835 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8165 5880 50  0001 C CNN
+F 3 "~" H 8165 5880 50  0001 C CNN
+F 4 "CRCW080510K0FKEAC" H 8165 5880 50  0001 C CNN "manf#"
+	1    8165 5880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8165 5980 8165 6015
+$Comp
+L power:GND #PWR0117
+U 1 1 5C99179E
+P 8165 6015
+F 0 "#PWR0117" H 8165 5765 50  0001 C CNN
+F 1 "GND" H 8170 5842 50  0000 C CNN
+F 2 "" H 8165 6015 50  0001 C CNN
+F 3 "" H 8165 6015 50  0001 C CNN
+	1    8165 6015
+	1    0    0    -1  
+$EndComp
+Text Label 1245 3905 2    60   ~ 0
+ESP_RESET
+Text Notes 1180 5110 0    118  ~ 0
+SWD
+Wire Notes Line
+	475  4915 475  4905
+Wire Notes Line
+	3700 4930 3700 6535
+Wire Notes Line
+	475  6535 6965 6535
+Wire Notes Line
+	2275 6535 2275 4915
+Wire Notes Line
+	475  4915 4640 4915
+Text Label 1245 3505 2    60   ~ 0
+ESP_RTS
+Text Label 1220 3005 2    60   ~ 0
+ESP_CS
+$Comp
+L Makech-rescue:ATSAMD21G18A-AU-electroniccats U2
+U 1 1 5CBBAA5C
+P 2120 2905
+F 0 "U2" H 2120 4772 50  0000 C CNN
+F 1 "ATSAMD21G18A-AU" H 2120 4681 50  0000 C CNN
+F 2 "Housings_QFP:TQFP-48_7x7mm_Pitch0.5mm" H 2120 2905 50  0001 L BNN
+F 3 "3.01 USD" H 2120 2905 50  0001 L BNN
+F 4 "Microchip" H 2120 2905 50  0001 L BNN "Campo4"
+F 5 "TQFP-48 Microchip" H 2120 2905 50  0001 L BNN "Campo5"
+F 6 "SAMD21G Series 256 kB Flash 32 kB SRAM 48 MHz 32-Bit Microcontroller - TQFP-48" H 2120 2905 50  0001 L BNN "Campo6"
+F 7 "Good" H 2120 2905 50  0001 L BNN "Campo7"
+F 8 "ATSAMD21G18A-AU" H 2120 2905 50  0001 L BNN "Campo8"
+	1    2120 2905
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2820 1505 2940 1505
+Wire Wire Line
+	2940 1505 2940 1405
+Connection ~ 2940 1405
+Wire Wire Line
+	2820 1605 2940 1605
+Wire Wire Line
+	2940 1605 2940 1505
+Connection ~ 2940 1505
+Wire Wire Line
+	2820 4005 2925 4005
+Wire Wire Line
+	2925 4005 2925 4105
+Connection ~ 2925 4205
+Wire Wire Line
+	2820 4105 2925 4105
+Connection ~ 2925 4105
+Wire Wire Line
+	2925 4105 2925 4205
+Wire Wire Line
+	1420 4005 1260 4005
+Wire Wire Line
+	1225 2805 1420 2805
+Wire Wire Line
+	1420 2905 1220 2905
+Wire Wire Line
+	1420 3005 1220 3005
+NoConn ~ 2820 2205
+NoConn ~ 2820 2305
+NoConn ~ 2820 2405
+NoConn ~ 2820 2505
+NoConn ~ 2820 2605
+NoConn ~ 2820 2705
+Wire Wire Line
+	1420 3605 1245 3605
+Wire Wire Line
+	1420 3705 1235 3705
+NoConn ~ 2820 2805
+NoConn ~ 2820 2905
+Wire Wire Line
+	2555 7015 2105 7015
+Wire Wire Line
+	2855 7015 3080 7015
+Wire Wire Line
+	2105 6885 2105 7015
+Wire Wire Line
+	1015 7455 3035 7455
 $Bitmap
-Pos 10030 2765
+Pos 9630 2145
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 E1 00 00 01 C5 08 06 00 00 00 C5 77 41 
@@ -1693,1659 +3141,6 @@ DC BC 53 63 63 E3 C9 7E CB A1 28 8A 92 6F D4 45 49 29 7A 22 91 C8 10 63 CC 36 7E
 22 FD 81 04 39 88 15 A5 34 F8 7F BD EB 21 30 1B B8 87 A7 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-$Comp
-L Makech-rescue:Screw_Terminal_1x02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue X1
-U 1 1 58BB0114
-P 815 7170
-F 0 "X1" H 815 7420 50  0000 C TNN
-F 1 "Screw_Terminal_1x02" V 665 7170 50  0001 C TNN
-F 2 "Connect:bornier2" H 815 6945 50  0001 C CNN
-F 3 "" H 790 7170 50  0001 C CNN
-	1    815  7170
-	1    0    0    1   
-$EndComp
-$Comp
-L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP2
-U 1 1 58BAEDD6
-P 1820 7175
-F 0 "JP2" H 1820 7325 50  0000 C CNN
-F 1 "CONN_01X02" V 1920 7175 50  0001 C CNN
-F 2 "Pines:61300211121" H 1820 7175 50  0001 C CNN
-F 3 "" H 1820 7175 50  0000 C CNN
-	1    1820 7175
-	-1   0    0    1   
-$EndComp
-$Comp
-L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1
-U 1 1 58BB5A4E
-P 2705 7015
-F 0 "F1" H 2755 7055 40  0000 C CNN
-F 1 "FUSE" H 2605 6965 40  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_TE5_Littlefuse-395Series" H 2705 7015 60  0001 C CNN
-F 3 "" H 2705 7015 60  0000 C CNN
-	1    2705 7015
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1
-U 1 1 58BB6DB1
-P 3080 7285
-F 0 "D1" H 3080 7225 40  0000 C CNN
-F 1 "ZENER" H 3080 7185 40  0001 C CNN
-F 2 "Diodes_ThroughHole:D_DO-41_SOD81_P10.16mm_Horizontal" H 3080 7285 60  0001 C CNN
-F 3 "" H 3080 7285 60  0000 C CNN
-	1    3080 7285
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR011
-U 1 1 58BB81E0
-P 3035 7510
-F 0 "#PWR011" H 3035 7260 50  0001 C CNN
-F 1 "GND" H 3035 7360 50  0000 C CNN
-F 2 "" H 3035 7510 50  0000 C CNN
-F 3 "" H 3035 7510 50  0000 C CNN
-	1    3035 7510
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH4
-U 1 1 58B999D4
-P 11045 5705
-F 0 "XH4" H 11045 6005 50  0000 C CNN
-F 1 "CONN_01X05" V 11145 5705 50  0001 C CNN
-F 2 "user_molex:B5B-XH-A" H 11045 5705 50  0001 C CNN
-F 3 "" H 11045 5705 50  0000 C CNN
-	1    11045 5705
-	1    0    0    1   
-$EndComp
-$Comp
-L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH3
-U 1 1 58B9E95E
-P 11045 4810
-F 0 "XH3" H 11045 4520 50  0000 C CNN
-F 1 "CONN_01X05" V 11145 4810 50  0001 C CNN
-F 2 "user_molex:B5B-XH-A" H 11045 4810 50  0001 C CNN
-F 3 "" H 11045 4810 50  0000 C CNN
-	1    11045 4810
-	1    0    0    1   
-$EndComp
-Text Notes 5500 3210 0    60   ~ 0
-Blue
-Text Notes 6140 3205 0    60   ~ 0
-Red
-Text Notes 6700 3205 0    60   ~ 0
-Orange
-Text Notes 7360 3205 0    60   ~ 0
-Green
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
-U 1 1 58CC3CD5
-P 7290 1340
-F 0 "R3" V 7235 1345 50  0000 C CNN
-F 1 "10K" V 7355 1340 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 7290 1340 60  0001 C CNN
-F 3 "" H 7290 1340 60  0000 C CNN
-F 4 "743C043103JP" V 7290 1340 50  0001 C CNN "manf#"
-	1    7290 1340
-	0    1    1    0   
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
-U 1 1 58CC5704
-P 5445 1340
-F 0 "R1" V 5390 1345 50  0000 C CNN
-F 1 "10K" V 5510 1340 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 5445 1340 60  0001 C CNN
-F 3 "" H 5445 1340 60  0000 C CNN
-F 4 "743C043103JP" V 5445 1340 50  0001 C CNN "manf#"
-	1    5445 1340
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R1
-U 2 1 58CC6075
-P 5910 1340
-F 0 "R1" V 5855 1345 50  0000 C CNN
-F 1 "10K" V 5975 1340 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 5910 1340 60  0001 C CNN
-F 3 "" H 5910 1340 60  0000 C CNN
-F 4 "743C043103JP" V 5910 1340 50  0001 C CNN "manf#"
-	2    5910 1340
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
-U 1 1 58CC678A
-P 6370 1340
-F 0 "R2" V 6315 1345 50  0000 C CNN
-F 1 "10K" V 6435 1340 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6370 1340 60  0001 C CNN
-F 3 "" H 6370 1340 60  0000 C CNN
-F 4 "743C043103JP" V 6370 1340 50  0001 C CNN "manf#"
-	1    6370 1340
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R2
-U 2 1 58CC71D8
-P 6830 1340
-F 0 "R2" V 6775 1345 50  0000 C CNN
-F 1 "10K" V 6895 1340 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6830 1340 60  0001 C CNN
-F 3 "" H 6830 1340 60  0000 C CNN
-F 4 "743C043103JP" V 6830 1340 50  0001 C CNN "manf#"
-	2    6830 1340
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
-U 1 1 58CC7A26
-P 5755 2685
-F 0 "R4" V 5700 2690 50  0000 C CNN
-F 1 "1K" V 5820 2685 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Array_SIP4" H 5755 2685 60  0001 C CNN
-F 3 "" H 5755 2685 60  0000 C CNN
-F 4 "743C043102JP" V 5755 2685 50  0001 C CNN "manf#"
-	1    5755 2685
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R4
-U 2 1 58CC84DE
-P 6385 2685
-F 0 "R4" V 6330 2690 50  0000 C CNN
-F 1 "1K" V 6450 2685 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Array_SIP4" H 6385 2685 60  0001 C CNN
-F 3 "" H 6385 2685 60  0000 C CNN
-F 4 "743C043102JP" V 6385 2685 50  0001 C CNN "manf#"
-	2    6385 2685
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
-U 1 1 58CC898F
-P 7015 2685
-F 0 "R5" V 6960 2690 50  0000 C CNN
-F 1 "1K" V 7080 2685 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Array_SIP4" H 7015 2685 60  0001 C CNN
-F 3 "" H 7015 2685 60  0000 C CNN
-F 4 "743C043102JP" V 7015 2685 50  0001 C CNN "manf#"
-	1    7015 2685
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R3
-U 2 1 58CC91A7
-P 4885 1080
-F 0 "R3" V 4830 1085 50  0000 C CNN
-F 1 "10K" V 4950 1080 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_2x0603" H 4885 1080 60  0001 C CNN
-F 3 "" H 4885 1080 60  0000 C CNN
-F 4 "743C043103JP" V 4885 1080 50  0001 C CNN "manf#"
-	2    4885 1080
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R5
-U 2 1 58D3E57A
-P 7645 2685
-F 0 "R5" V 7590 2690 50  0000 C CNN
-F 1 "1K" V 7710 2685 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Array_SIP4" H 7645 2685 60  0001 C CNN
-F 3 "" H 7645 2685 60  0000 C CNN
-F 4 "743C043102JP" V 7645 2685 50  0001 C CNN "manf#"
-	2    7645 2685
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S7
-U 1 1 58D3FEDC
-P 3480 6915
-F 0 "S7" H 3390 6915 60  0000 C CNN
-F 1 "switch" H 3560 6665 60  0000 C CNN
-F 2 "Switch:on_off_Switch" H 3480 6915 60  0001 C CNN
-F 3 "" H 3480 6915 60  0001 C CNN
-F 4 "1825232-1" H 3480 6915 50  0001 C CNN "manf#"
-	1    3480 6915
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:LM1117-SOT--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U6
-U 1 1 58DC178E
-P 6000 6815
-F 0 "U6" H 6000 7015 60  0000 C CNN
-F 1 "AP2114_3.3v" H 6000 6915 60  0000 C CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6000 6815 60  0001 C CNN
-F 3 "" H 6000 6815 60  0000 C CNN
-F 4 "AP2114HA-3.3TRG1" H 6000 6815 50  0001 C CNN "manf#"
-	1    6000 6815
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR013
-U 1 1 58DC633A
-P 6000 7685
-F 0 "#PWR013" H 6000 7435 50  0001 C CNN
-F 1 "GND" H 5860 7625 50  0000 C CNN
-F 2 "" H 6000 7685 50  0000 C CNN
-F 3 "" H 6000 7685 50  0000 C CNN
-	1    6000 7685
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4
-U 1 1 58DD1A4B
-P 6225 7225
-F 0 "C4" V 6140 7155 50  0000 L CNN
-F 1 "10uF" V 6255 7000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6225 7225 60  0001 C CNN
-F 3 "" H 6225 7225 60  0000 C CNN
-F 4 "C0805X106K8RACAUTO" V 6225 7225 50  0001 C CNN "manf#"
-	1    6225 7225
-	0    1    1    0   
-$EndComp
-$Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3
-U 1 1 58DD2438
-P 5775 7225
-F 0 "C3" V 5690 7155 50  0000 L CNN
-F 1 "10uF" V 5810 7235 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5775 7225 60  0001 C CNN
-F 3 "" H 5775 7225 60  0000 C CNN
-F 4 "C0805X106K8RACAUTO" V 5775 7225 50  0001 C CNN "manf#"
-	1    5775 7225
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7645 2785 7645 2835
-Wire Wire Line
-	7330 2785 7330 2835
-Wire Wire Line
-	7015 2785 7015 2835
-Wire Wire Line
-	6700 2785 6700 2835
-Wire Wire Line
-	6385 2785 6385 2835
-Wire Wire Line
-	6070 2785 6070 2835
-Connection ~ 7645 3120
-Wire Wire Line
-	7645 3120 7645 3060
-Connection ~ 7330 3120
-Wire Wire Line
-	7330 3120 7330 3060
-Connection ~ 7015 3120
-Wire Wire Line
-	7015 3120 7015 3060
-Connection ~ 6700 3120
-Wire Wire Line
-	6700 3120 6700 3060
-Connection ~ 6385 3120
-Wire Wire Line
-	6385 3120 6385 3060
-Connection ~ 6070 3120
-Wire Wire Line
-	6070 3120 6070 3060
-Connection ~ 5755 3120
-Wire Wire Line
-	5755 3060 5755 3120
-Wire Wire Line
-	5440 3120 5755 3120
-Wire Wire Line
-	5440 3060 5440 3120
-Connection ~ 7645 2525
-Wire Wire Line
-	7330 2525 7330 2585
-Wire Wire Line
-	7645 2525 7330 2525
-Wire Wire Line
-	7645 2390 7645 2525
-Connection ~ 7015 2525
-Wire Wire Line
-	6700 2525 6700 2585
-Wire Wire Line
-	7015 2525 6700 2525
-Wire Wire Line
-	7015 2390 7015 2525
-Connection ~ 6385 2525
-Wire Wire Line
-	6070 2525 6070 2585
-Wire Wire Line
-	6385 2525 6070 2525
-Wire Wire Line
-	6385 2390 6385 2525
-Wire Wire Line
-	5755 2785 5755 2835
-Wire Wire Line
-	5440 2785 5440 2835
-Connection ~ 5755 2525
-Wire Wire Line
-	5440 2525 5440 2585
-Wire Wire Line
-	5755 2525 5440 2525
-Wire Wire Line
-	5755 2390 5755 2525
-Connection ~ 5755 1920
-Wire Wire Line
-	5755 1820 5755 1920
-Connection ~ 6080 1920
-Wire Wire Line
-	6080 1920 6080 1825
-Connection ~ 6180 1920
-Wire Wire Line
-	6180 1920 6180 1825
-Connection ~ 6595 1920
-Wire Wire Line
-	6595 1920 6595 1940
-Connection ~ 6545 1920
-Wire Wire Line
-	6545 1920 6545 1825
-Connection ~ 6645 1920
-Wire Wire Line
-	6645 1920 6645 1825
-Connection ~ 7010 1920
-Wire Wire Line
-	7010 1920 7010 1825
-Connection ~ 7110 1920
-Wire Wire Line
-	7110 1920 7110 1825
-Connection ~ 7470 1920
-Wire Wire Line
-	7470 1920 7470 1820
-Wire Wire Line
-	7570 1920 7570 1820
-Wire Wire Line
-	5655 1920 5755 1920
-Wire Wire Line
-	5655 1820 5655 1920
-Connection ~ 5755 1440
-Wire Wire Line
-	5755 1440 5655 1440
-Wire Wire Line
-	5655 1440 5655 1510
-Connection ~ 6180 1430
-Wire Wire Line
-	6180 1430 6080 1430
-Connection ~ 5755 1135
-Connection ~ 5755 1340
-Wire Wire Line
-	5755 1135 5755 1340
-Wire Wire Line
-	5545 1135 5755 1135
-Connection ~ 6180 1135
-Wire Wire Line
-	6010 1135 6180 1135
-Connection ~ 6180 1340
-Wire Wire Line
-	6180 1135 6180 1340
-Connection ~ 6645 1435
-Wire Wire Line
-	6645 1435 6545 1435
-Wire Wire Line
-	6545 1435 6545 1515
-Connection ~ 6645 1135
-Wire Wire Line
-	6470 1135 6645 1135
-Connection ~ 6645 1340
-Wire Wire Line
-	6645 1135 6645 1340
-Connection ~ 7110 1435
-Wire Wire Line
-	7010 1435 7010 1515
-Wire Wire Line
-	7110 1435 7010 1435
-Wire Wire Line
-	7470 1510 7470 1430
-Connection ~ 7110 1135
-Connection ~ 7110 1340
-Wire Wire Line
-	7110 1135 7110 1340
-Wire Wire Line
-	6930 1135 7110 1135
-Connection ~ 7570 1430
-Wire Wire Line
-	7470 1430 7570 1430
-Connection ~ 7570 1340
-Wire Wire Line
-	7390 1340 7570 1340
-Wire Wire Line
-	7570 1135 7390 1135
-Wire Wire Line
-	7570 1135 7570 1340
-Wire Wire Line
-	6930 1340 7110 1340
-Wire Wire Line
-	6470 1340 6645 1340
-Wire Wire Line
-	6010 1340 6180 1340
-Wire Wire Line
-	5545 1340 5755 1340
-Wire Wire Line
-	5285 1340 5345 1340
-Wire Wire Line
-	5285 1135 5345 1135
-Connection ~ 9670 1990
-Wire Wire Line
-	9670 1990 9670 2070
-Connection ~ 10650 1410
-Wire Wire Line
-	10550 1410 10650 1410
-Wire Wire Line
-	10650 1295 10650 1410
-Wire Wire Line
-	10550 1410 10550 1510
-Connection ~ 10185 1410
-Wire Wire Line
-	10085 1410 10185 1410
-Wire Wire Line
-	10185 1295 10185 1410
-Wire Wire Line
-	10085 1410 10085 1510
-Connection ~ 9720 1410
-Wire Wire Line
-	9620 1410 9720 1410
-Wire Wire Line
-	9720 1295 9720 1410
-Wire Wire Line
-	9620 1410 9620 1510
-Connection ~ 9255 1410
-Wire Wire Line
-	9155 1410 9255 1410
-Wire Wire Line
-	9255 1295 9255 1410
-Wire Wire Line
-	9155 1510 9155 1410
-Connection ~ 8790 1410
-Wire Wire Line
-	8790 1295 8790 1410
-Wire Wire Line
-	8690 1410 8790 1410
-Wire Wire Line
-	8690 1510 8690 1410
-Connection ~ 10550 1990
-Wire Wire Line
-	10550 1990 10550 1820
-Connection ~ 10185 1990
-Wire Wire Line
-	10185 1990 10185 1820
-Connection ~ 10085 1990
-Wire Wire Line
-	10085 1990 10085 1820
-Connection ~ 9720 1990
-Wire Wire Line
-	9720 1990 9720 1820
-Connection ~ 9620 1990
-Wire Wire Line
-	9620 1990 9620 1820
-Connection ~ 9255 1990
-Wire Wire Line
-	9255 1990 9255 1820
-Connection ~ 9155 1990
-Wire Wire Line
-	9155 1990 9155 1820
-Connection ~ 8790 1990
-Wire Wire Line
-	8790 1820 8790 1990
-Wire Wire Line
-	8690 1990 8690 1820
-Wire Wire Line
-	8690 1990 8790 1990
-Wire Wire Line
-	10650 1990 10650 1820
-Connection ~ 4885 1240
-Wire Wire Line
-	4885 1180 4885 1240
-Connection ~ 5070 1240
-Connection ~ 5285 1240
-Wire Wire Line
-	4545 1240 4885 1240
-Wire Wire Line
-	5070 1180 5070 1240
-Wire Wire Line
-	5285 1135 5285 1240
-Wire Wire Line
-	5070 920  5070 980 
-Wire Wire Line
-	4885 920  4990 920 
-Wire Wire Line
-	4885 980  4885 920 
-Wire Notes Line
-	4190 495  4190 3360
-Wire Wire Line
-	5440 2835 5755 2835
-Connection ~ 5755 2835
-Connection ~ 5440 2835
-Wire Wire Line
-	6070 2835 6385 2835
-Connection ~ 6385 2835
-Connection ~ 6070 2835
-Wire Wire Line
-	6700 2835 7015 2835
-Connection ~ 7015 2835
-Connection ~ 6700 2835
-Wire Wire Line
-	7330 2835 7645 2835
-Connection ~ 7645 2835
-Connection ~ 7330 2835
-Wire Wire Line
-	8245 3120 8365 3120
-Wire Wire Line
-	8365 3120 8365 3185
-Wire Wire Line
-	4100 5515 3880 5515
-Wire Wire Line
-	4115 5910 4075 5910
-Wire Wire Line
-	4075 5910 4075 5615
-Wire Wire Line
-	4075 5615 4100 5615
-Wire Wire Line
-	4055 6090 4055 6010
-Wire Wire Line
-	4055 6010 4115 6010
-Wire Wire Line
-	5400 5060 5090 5060
-Wire Wire Line
-	5400 5160 5090 5160
-Wire Wire Line
-	5400 5360 5220 5360
-Wire Wire Line
-	5220 5360 5220 5485
-Wire Notes Line
-	7750 6670 7750 6675
-Wire Wire Line
-	9330 4855 9480 4855
-Wire Wire Line
-	9480 4955 9330 4955
-Wire Wire Line
-	9480 5055 9330 5055
-Wire Wire Line
-	9480 5155 9335 5155
-Wire Wire Line
-	9480 5255 9330 5255
-Wire Wire Line
-	9480 5355 9330 5355
-Wire Wire Line
-	9480 5455 9330 5455
-Wire Wire Line
-	9480 5555 9330 5555
-Wire Wire Line
-	8600 4620 8820 4620
-Wire Wire Line
-	9880 4620 9880 4705
-Wire Wire Line
-	8600 5940 8820 5940
-Connection ~ 8600 5940
-Wire Wire Line
-	10280 4855 10360 4855
-Wire Wire Line
-	10280 4955 10415 4955
-Wire Wire Line
-	10460 5055 10280 5055
-Wire Wire Line
-	10505 5155 10280 5155
-Wire Wire Line
-	10280 5255 10505 5255
-Wire Wire Line
-	10505 5255 10505 5505
-Wire Wire Line
-	10280 5355 10460 5355
-Wire Wire Line
-	10280 5455 10410 5455
-Wire Wire Line
-	10280 5555 10360 5555
-Wire Notes Line
-	11170 6210 11175 6210
-Wire Wire Line
-	1015 7070 1015 6885
-Wire Wire Line
-	1015 6885 2105 6885
-Wire Wire Line
-	2020 7125 2105 7125
-Wire Wire Line
-	1015 7270 1015 7455
-Wire Wire Line
-	1015 7455 2105 7455
-Wire Wire Line
-	2105 7455 2105 7225
-Wire Wire Line
-	2105 7225 2020 7225
-Connection ~ 2105 7455
-Wire Wire Line
-	3035 7510 3035 7455
-Connection ~ 3035 7455
-Wire Wire Line
-	3080 7015 3080 7185
-Wire Wire Line
-	3080 7455 3080 7335
-Connection ~ 3080 7015
-Wire Wire Line
-	6080 1430 6080 1515
-Wire Wire Line
-	10505 5505 10845 5505
-Wire Wire Line
-	10845 5605 10460 5605
-Wire Wire Line
-	10460 5605 10460 5355
-Wire Wire Line
-	10845 5705 10410 5705
-Wire Wire Line
-	10410 5705 10410 5455
-Wire Wire Line
-	10845 5805 10360 5805
-Wire Wire Line
-	10360 5805 10360 5555
-Wire Wire Line
-	10845 5905 10695 5905
-Wire Wire Line
-	10460 4810 10845 4810
-Wire Wire Line
-	10505 4910 10845 4910
-Wire Wire Line
-	10845 4610 10360 4610
-Wire Wire Line
-	10360 4610 10360 4855
-Wire Wire Line
-	10845 4710 10415 4710
-Wire Wire Line
-	10415 4710 10415 4955
-Wire Wire Line
-	10460 5055 10460 4810
-Wire Wire Line
-	10505 5155 10505 4910
-Wire Wire Line
-	10845 5010 10695 5010
-Wire Wire Line
-	8600 5655 8600 5940
-Wire Wire Line
-	8820 5940 8820 5670
-Connection ~ 8820 5940
-Wire Wire Line
-	9880 5940 9880 5705
-Wire Wire Line
-	8600 5505 8600 4620
-Wire Wire Line
-	8820 5520 8820 4620
-Connection ~ 8820 4620
-Wire Wire Line
-	3400 7115 3315 7115
-Wire Wire Line
-	3315 7115 3315 7015
-Connection ~ 3315 7015
-Wire Wire Line
-	3750 7115 3710 7115
-Wire Wire Line
-	3750 7015 3710 7015
-Wire Wire Line
-	6380 6815 6350 6815
-Wire Wire Line
-	5600 6815 5650 6815
-Wire Wire Line
-	5675 7225 5600 7225
-Connection ~ 5600 7225
-Wire Wire Line
-	5825 7225 6000 7225
-Wire Wire Line
-	6275 7225 6380 7225
-Connection ~ 6380 7225
-$Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3.1
-U 1 1 58DE2448
-P 5775 7520
-F 0 "C3.1" V 5690 7405 50  0000 L CNN
-F 1 "10uF" V 5810 7530 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5775 7520 60  0001 C CNN
-F 3 "" H 5775 7520 60  0000 C CNN
-F 4 "C0805X106K8RACAUTO" V 5775 7520 50  0001 C CNN "manf#"
-	1    5775 7520
-	0    1    1    0   
-$EndComp
-$Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4.1
-U 1 1 58DE26E6
-P 6225 7520
-F 0 "C4.1" V 6140 7450 50  0000 L CNN
-F 1 "10uF" V 6255 7295 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6225 7520 60  0001 C CNN
-F 3 "" H 6225 7520 60  0000 C CNN
-F 4 "C0805X106K8RACAUTO" V 6225 7520 50  0001 C CNN "manf#"
-	1    6225 7520
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5825 7520 6000 7520
-Wire Wire Line
-	5600 7520 5675 7520
-Wire Wire Line
-	6380 7520 6275 7520
-Wire Wire Line
-	6380 6815 6380 7225
-Wire Wire Line
-	5600 6815 5600 7225
-Wire Wire Line
-	6000 7165 6000 7225
-Connection ~ 6000 7225
-Connection ~ 6000 7520
-Wire Wire Line
-	7645 3120 7945 3120
-Wire Wire Line
-	7330 3120 7645 3120
-Wire Wire Line
-	7015 3120 7330 3120
-Wire Wire Line
-	6700 3120 7015 3120
-Wire Wire Line
-	6385 3120 6700 3120
-Wire Wire Line
-	6070 3120 6385 3120
-Wire Wire Line
-	5755 3120 6070 3120
-Wire Wire Line
-	7645 2525 7645 2585
-Wire Wire Line
-	7015 2525 7015 2585
-Wire Wire Line
-	6385 2525 6385 2585
-Wire Wire Line
-	5755 2525 5755 2585
-Wire Wire Line
-	5755 1920 6080 1920
-Wire Wire Line
-	6080 1920 6180 1920
-Wire Wire Line
-	6180 1920 6545 1920
-Wire Wire Line
-	6595 1920 6645 1920
-Wire Wire Line
-	6545 1920 6595 1920
-Wire Wire Line
-	6645 1920 7010 1920
-Wire Wire Line
-	7010 1920 7110 1920
-Wire Wire Line
-	7110 1920 7470 1920
-Wire Wire Line
-	7470 1920 7570 1920
-Wire Wire Line
-	5755 1440 5755 1510
-Wire Wire Line
-	6180 1430 6180 1515
-Wire Wire Line
-	5755 1135 5810 1135
-Wire Wire Line
-	5755 1340 5755 1440
-Wire Wire Line
-	5755 1340 5810 1340
-Wire Wire Line
-	6180 1135 6270 1135
-Wire Wire Line
-	6180 1340 6180 1430
-Wire Wire Line
-	6180 1340 6270 1340
-Wire Wire Line
-	6645 1435 6645 1515
-Wire Wire Line
-	6645 1135 6730 1135
-Wire Wire Line
-	6645 1340 6645 1435
-Wire Wire Line
-	6645 1340 6730 1340
-Wire Wire Line
-	7110 1435 7110 1515
-Wire Wire Line
-	7110 1135 7190 1135
-Wire Wire Line
-	7110 1340 7110 1435
-Wire Wire Line
-	7110 1340 7190 1340
-Wire Wire Line
-	7570 1430 7570 1510
-Wire Wire Line
-	7570 1340 7570 1430
-Wire Wire Line
-	9670 1990 9720 1990
-Wire Wire Line
-	10650 1410 10650 1510
-Wire Wire Line
-	10185 1410 10185 1510
-Wire Wire Line
-	9720 1410 9720 1510
-Wire Wire Line
-	9255 1410 9255 1510
-Wire Wire Line
-	8790 1410 8790 1510
-Wire Wire Line
-	10550 1990 10650 1990
-Wire Wire Line
-	10185 1990 10550 1990
-Wire Wire Line
-	10085 1990 10185 1990
-Wire Wire Line
-	9720 1990 10085 1990
-Wire Wire Line
-	9620 1990 9670 1990
-Wire Wire Line
-	9255 1990 9620 1990
-Wire Wire Line
-	9155 1990 9255 1990
-Wire Wire Line
-	8790 1990 9155 1990
-Wire Wire Line
-	4885 1240 5070 1240
-Wire Wire Line
-	5070 1240 5285 1240
-Wire Wire Line
-	5285 1240 5285 1340
-Wire Wire Line
-	5755 2835 5755 2910
-Wire Wire Line
-	6070 2835 6070 2910
-Wire Wire Line
-	7015 2835 7015 2910
-Wire Wire Line
-	6700 2835 6700 2910
-Wire Wire Line
-	7645 2835 7645 2910
-Wire Wire Line
-	7330 2835 7330 2910
-Wire Wire Line
-	8600 5940 8600 6295
-Wire Wire Line
-	3035 7455 3080 7455
-Wire Wire Line
-	3080 7015 3315 7015
-Wire Wire Line
-	8820 5940 9880 5940
-Wire Wire Line
-	8820 4620 9880 4620
-Wire Wire Line
-	3315 7015 3400 7015
-Wire Wire Line
-	5600 7225 5600 7520
-Wire Wire Line
-	6380 7225 6380 7520
-Wire Wire Line
-	6000 7225 6125 7225
-Wire Wire Line
-	6000 7225 6000 7520
-Wire Wire Line
-	6000 7520 6125 7520
-Wire Wire Line
-	6000 7520 6000 7685
-Wire Notes Line
-	8460 6535 8460 3555
-Wire Notes Line
-	475  6535 475  6525
-Wire Notes Line
-	8455 3560 11220 3560
-Wire Notes Line
-	11220 3560 11220 3550
-Wire Notes Line
-	8465 3550 4190 3550
-Wire Notes Line
-	4190 3550 4190 3370
-Wire Notes Line
-	4645 3560 4645 6565
-Wire Wire Line
-	2820 1305 2940 1305
-Wire Wire Line
-	2820 1405 2940 1405
-$Comp
-L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C1
-U 1 1 5CFEDF86
-P 3090 1875
-F 0 "C1" H 3182 1921 50  0000 L CNN
-F 1 "1uF" H 3182 1830 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3090 1875 50  0001 C CNN
-F 3 "~" H 3090 1875 50  0001 C CNN
-F 4 "CGA4J1X8R1E105M125AE" H 3090 1875 50  0001 C CNN "manf#"
-	1    3090 1875
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3090 1705 3090 1775
-Wire Wire Line
-	2820 1705 3090 1705
-$Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0101
-U 1 1 5D026F59
-P 2940 1100
-F 0 "#PWR0101" H 2940 950 50  0001 C CNN
-F 1 "+3.3V" H 2955 1273 50  0000 C CNN
-F 2 "" H 2940 1100 50  0001 C CNN
-F 3 "" H 2940 1100 50  0001 C CNN
-	1    2940 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3090 1975 3090 2040
-$Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0102
-U 1 1 5D09946E
-P 3090 2040
-F 0 "#PWR0102" H 3090 1790 50  0001 C CNN
-F 1 "GND" H 3095 1867 50  0000 C CNN
-F 2 "" H 3090 2040 50  0001 C CNN
-F 3 "" H 3090 2040 50  0001 C CNN
-	1    3090 2040
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1420 1305 1290 1305
-Wire Wire Line
-	4990 920  4990 855 
-Connection ~ 4990 920 
-Wire Wire Line
-	4990 920  5070 920 
-$Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0103
-U 1 1 5D10D595
-P 4990 855
-F 0 "#PWR0103" H 4990 705 50  0001 C CNN
-F 1 "+3.3V" H 5005 1028 50  0000 C CNN
-F 2 "" H 4990 855 50  0001 C CNN
-F 3 "" H 4990 855 50  0001 C CNN
-	1    4990 855 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6385 7225 6500 7225
-Wire Wire Line
-	6500 7225 6500 7220
-$Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0104
-U 1 1 5D14A643
-P 6500 7220
-F 0 "#PWR0104" H 6500 7070 50  0001 C CNN
-F 1 "+3.3V" H 6515 7393 50  0000 C CNN
-F 2 "" H 6500 7220 50  0001 C CNN
-F 3 "" H 6500 7220 50  0001 C CNN
-	1    6500 7220
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2820 4205 2925 4205
-Wire Wire Line
-	2925 4205 2925 4305
-Wire Wire Line
-	2820 4305 2925 4305
-Connection ~ 2925 4305
-Wire Wire Line
-	2925 4305 2925 4495
-$Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0105
-U 1 1 5D3F1AF5
-P 2925 4495
-F 0 "#PWR0105" H 2925 4245 50  0001 C CNN
-F 1 "GND" H 2930 4322 50  0000 C CNN
-F 2 "" H 2925 4495 50  0001 C CNN
-F 3 "" H 2925 4495 50  0001 C CNN
-	1    2925 4495
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1420 4505 1280 4505
-Wire Wire Line
-	1420 4405 1270 4405
-Wire Wire Line
-	1420 4105 1260 4105
-Text Label 1260 4005 2    60   ~ 0
-D-
-Text Label 1260 4105 2    60   ~ 0
-D+
-$Comp
-L Makech-rescue:USB_B_Micro-Connector-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue J1
-U 1 1 5D522F31
-P 2650 5790
-F 0 "J1" H 2705 6257 50  0000 C CNN
-F 1 "USB_B_Micro" H 2705 6166 50  0000 C CNN
-F 2 "Connect:USB_Micro-B_10103594-0001LF" H 2800 5740 50  0001 C CNN
-F 3 "~" H 2800 5740 50  0001 C CNN
-F 4 "KMMX-BSMT35S-B30TR" H 2650 5790 50  0001 C CNN "manf#"
-	1    2650 5790
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	470  3550 470  3555
-Wire Wire Line
-	2950 5790 3160 5790
-Wire Wire Line
-	2950 5890 3155 5890
-Wire Wire Line
-	2950 5590 3150 5590
-Wire Wire Line
-	2550 6190 2550 6240
-Wire Wire Line
-	2550 6240 2605 6240
-Wire Wire Line
-	2650 6240 2650 6190
-Wire Wire Line
-	2605 6240 2605 6295
-Connection ~ 2605 6240
-Wire Wire Line
-	2605 6240 2650 6240
-$Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0106
-U 1 1 5D699F03
-P 2605 6295
-F 0 "#PWR0106" H 2605 6045 50  0001 C CNN
-F 1 "GND" H 2610 6122 50  0000 C CNN
-F 2 "" H 2605 6295 50  0001 C CNN
-F 3 "" H 2605 6295 50  0001 C CNN
-	1    2605 6295
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2950 5990
-$Comp
-L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0107
-U 1 1 5D6DA421
-P 3515 5525
-F 0 "#PWR0107" H 3515 5375 50  0001 C CNN
-F 1 "VCC" H 3532 5698 50  0000 C CNN
-F 2 "" H 3515 5525 50  0001 C CNN
-F 3 "" H 3515 5525 50  0001 C CNN
-	1    3515 5525
-	1    0    0    -1  
-$EndComp
-Text Notes 860  6735 0    60   ~ 0
-4 x Battery AA = 6V
-Text Label 3160 5790 0    60   ~ 0
-D+
-Text Label 3155 5890 0    60   ~ 0
-D-
-Wire Notes Line
-	4630 5425 4630 5440
-Wire Notes Line
-	2725 6530 2720 6530
-Wire Wire Line
-	5595 7225 5390 7225
-Wire Wire Line
-	5390 7225 5390 7090
-Connection ~ 5390 7225
-$Comp
-L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0108
-U 1 1 5D7E4CD1
-P 5390 6765
-F 0 "#PWR0108" H 5390 6615 50  0001 C CNN
-F 1 "VCC" H 5407 6938 50  0000 C CNN
-F 2 "" H 5390 6765 50  0001 C CNN
-F 3 "" H 5390 6765 50  0001 C CNN
-	1    5390 6765
-	1    0    0    -1  
-$EndComp
-Text Notes 3350 7615 0    60   ~ 0
-NOTA: Revisar \ndiodo \nde proteccion
-$Comp
-L Makech-rescue:SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SW1
-U 1 1 5D7E7124
-P 1090 1305
-F 0 "SW1" H 1090 1590 50  0000 C CNN
-F 1 "RST" H 1090 1499 50  0000 C CNN
-F 2 "TIH:SW_B3U-1000P" H 1090 1505 50  0001 C CNN
-F 3 "" H 1090 1505 50  0001 C CNN
-	1    1090 1305
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	890  1305 785  1305
-Wire Wire Line
-	785  1305 785  1335
-$Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0109
-U 1 1 5D829084
-P 785 1335
-F 0 "#PWR0109" H 785 1085 50  0001 C CNN
-F 1 "GND" H 790 1162 50  0000 C CNN
-F 2 "" H 785 1335 50  0001 C CNN
-F 3 "" H 785 1335 50  0001 C CNN
-	1    785  1335
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5245 7225 5245 7000
-Wire Wire Line
-	5245 7225 5390 7225
-$Comp
-L Makech-rescue:Fuse-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F2
-U 1 1 5D9CAE20
-P 3300 5590
-F 0 "F2" V 3103 5590 50  0000 C CNN
-F 1 "0.5" V 3194 5590 50  0000 C CNN
-F 2 "" V 3230 5590 50  0001 C CNN
-F 3 "~" H 3300 5590 50  0001 C CNN
-	1    3300 5590
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3450 5590 3515 5590
-Wire Wire Line
-	3515 5590 3515 5525
-Text Label 1270 4405 2    60   ~ 0
-SWCLK
-Text Label 1280 4505 2    60   ~ 0
-SWDIO
-$Comp
-L Makech-rescue:Conn_02x02_Counter_Clockwise-Connector_Generic-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue J2
-U 1 1 5D9FC5AA
-P 1255 5680
-F 0 "J2" H 1305 5897 50  0000 C CNN
-F 1 "SWD programmer" H 1305 5806 50  0000 C CNN
-F 2 "Pines:62000421121" H 1255 5680 50  0001 C CNN
-F 3 "~" H 1255 5680 50  0001 C CNN
-	1    1255 5680
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1555 5780 1650 5780
-Wire Wire Line
-	1055 5680 960  5680
-Text Label 960  5680 2    60   ~ 0
-SWDIO
-Text Label 1650 5780 0    60   ~ 0
-SWCLK
-$Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0113
-U 1 1 5DAEAF62
-P 535 5740
-F 0 "#PWR0113" H 535 5590 50  0001 C CNN
-F 1 "+3.3V" H 550 5913 50  0000 C CNN
-F 2 "" H 535 5740 50  0001 C CNN
-F 3 "" H 535 5740 50  0001 C CNN
-	1    535  5740
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	535  5740 535  5780
-Wire Wire Line
-	535  5780 1055 5780
-Wire Wire Line
-	2110 5680 2110 5730
-Wire Wire Line
-	1555 5680 2110 5680
-$Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0114
-U 1 1 5DB4C8AA
-P 2110 5730
-F 0 "#PWR0114" H 2110 5480 50  0001 C CNN
-F 1 "GND" H 2115 5557 50  0000 C CNN
-F 2 "" H 2110 5730 50  0001 C CNN
-F 3 "" H 2110 5730 50  0001 C CNN
-	1    2110 5730
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1420 1605 1230 1605
-Wire Wire Line
-	1420 1705 1225 1705
-Wire Wire Line
-	1420 1805 1225 1805
-Wire Wire Line
-	1420 1905 1225 1905
-Wire Wire Line
-	1420 2005 1230 2005
-Wire Wire Line
-	1420 2105 1230 2105
-Wire Wire Line
-	1420 2205 1225 2205
-Wire Wire Line
-	1420 2305 1225 2305
-Wire Wire Line
-	1420 2405 1225 2405
-Wire Wire Line
-	1420 2505 1225 2505
-Wire Wire Line
-	1420 2605 1225 2605
-Wire Wire Line
-	1420 2705 1225 2705
-Wire Wire Line
-	1420 3105 1245 3105
-Wire Wire Line
-	1420 3205 1245 3205
-Wire Wire Line
-	1420 3305 1245 3305
-Wire Wire Line
-	1420 3405 1245 3405
-Wire Wire Line
-	1420 3505 1245 3505
-Wire Wire Line
-	1420 3805 1245 3805
-Wire Wire Line
-	1420 3905 1245 3905
-Wire Wire Line
-	1420 4205 1265 4205
-Wire Wire Line
-	1420 4305 1265 4305
-Text Label 1230 1605 2    60   ~ 0
-TX
-Text Label 1225 1705 2    60   ~ 0
-RX
-Text Label 1225 1805 2    60   ~ 0
-A0
-Text Label 1230 2005 2    60   ~ 0
-A1
-Text Label 1230 2105 2    60   ~ 0
-A2
-Text Label 1225 2605 2    60   ~ 0
-A3
-Text Label 1225 2405 2    60   ~ 0
-SDA
-Text Label 1225 2505 2    60   ~ 0
-SCL
-Text Label 1245 3805 2    60   ~ 0
-D4
-Text Label 1225 2705 2    60   ~ 0
-D5
-Text Label 1265 4205 2    60   ~ 0
-D6
-Text Label 1265 4305 2    60   ~ 0
-D7
-Text Label 1225 2205 2    60   ~ 0
-D8
-Text Label 1225 2305 2    60   ~ 0
-D9
-Text Label 1245 3405 2    60   ~ 0
-D10
-Text Label 1245 3305 2    60   ~ 0
-D13
-Text Label 1245 3205 2    60   ~ 0
-D11
-Text Notes 1400 700  0    118  ~ 0
-MICROCONTROLLER
-$Comp
-L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D3
-U 1 1 5E159714
-P 5390 6940
-F 0 "D3" V 5436 6861 50  0000 R CNN
-F 1 "D_Schottky" H 5375 6850 50  0000 R CNN
-F 2 "Diodes_SMD:D_SOD-123" H 5390 6940 50  0001 C CNN
-F 3 "~" H 5390 6940 50  0001 C CNN
-	1    5390 6940
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5390 6790 5390 6765
-$Comp
-L Makech-rescue:D_Schottky-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D2
-U 1 1 5E1C9EAE
-P 5245 6850
-F 0 "D2" V 5340 6840 50  0000 R CNN
-F 1 "D_Schottky" H 5325 6945 50  0000 R CNN
-F 2 "Diodes_SMD:D_SOD-123" H 5245 6850 50  0001 C CNN
-F 3 "~" H 5245 6850 50  0001 C CNN
-	1    5245 6850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5245 6700 5245 6680
-$Comp
-L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C5
-U 1 1 5E202A2F
-P 3600 2510
-F 0 "C5" H 3480 2595 50  0000 L CNN
-F 1 "0.1uF" H 3380 2430 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3600 2510 50  0001 C CNN
-F 3 "~" H 3600 2510 50  0001 C CNN
-F 4 "08051C104J4T4A" H 3600 2510 50  0001 C CNN "manf#"
-	1    3600 2510
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C6
-U 1 1 5E203088
-P 3805 2510
-F 0 "C6" H 3897 2556 50  0000 L CNN
-F 1 "0.1uF" H 3835 2415 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3805 2510 50  0001 C CNN
-F 3 "~" H 3805 2510 50  0001 C CNN
-F 4 "08051C104J4T4A" H 3805 2510 50  0001 C CNN "manf#"
-	1    3805 2510
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 2410 3600 2380
-Wire Wire Line
-	3600 2380 3705 2380
-Wire Wire Line
-	3805 2380 3805 2410
-Wire Wire Line
-	3805 2610 3805 2655
-Wire Wire Line
-	3805 2655 3700 2655
-Wire Wire Line
-	3600 2655 3600 2610
-Wire Wire Line
-	3705 2380 3705 2335
-Connection ~ 3705 2380
-Wire Wire Line
-	3705 2380 3805 2380
-Wire Wire Line
-	3700 2655 3700 2695
-Connection ~ 3700 2655
-Wire Wire Line
-	3700 2655 3600 2655
-$Comp
-L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0115
-U 1 1 5E2EA696
-P 3700 2695
-F 0 "#PWR0115" H 3700 2445 50  0001 C CNN
-F 1 "GND" H 3705 2522 50  0000 C CNN
-F 2 "" H 3700 2695 50  0001 C CNN
-F 3 "" H 3700 2695 50  0001 C CNN
-	1    3700 2695
-	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0116
-U 1 1 5E2EA7C9
-P 3705 2335
-F 0 "#PWR0116" H 3705 2185 50  0001 C CNN
-F 1 "+3.3V" H 3720 2508 50  0000 C CNN
-F 2 "" H 3705 2335 50  0001 C CNN
-F 3 "" H 3705 2335 50  0001 C CNN
-	1    3705 2335
-	1    0    0    -1  
-$EndComp
-Text Notes 4815 4125 0    60   ~ 0
-Support:\n- ESP32 NINA - Bluetooth and WiFi\n- I2C
-$Comp
-L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0120
-U 1 1 5E35FE1F
-P 4930 5165
-F 0 "#PWR0120" H 4930 5015 50  0001 C CNN
-F 1 "+3.3V" H 4945 5338 50  0000 C CNN
-F 2 "" H 4930 5165 50  0001 C CNN
-F 3 "" H 4930 5165 50  0001 C CNN
-	1    4930 5165
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4930 5260 4930 5165
-Wire Wire Line
-	4930 5260 5400 5260
-$Comp
-L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0121
-U 1 1 5E509C4B
-P 3825 7000
-F 0 "#PWR0121" H 3825 6850 50  0001 C CNN
-F 1 "+6V" H 3840 7173 50  0000 C CNN
-F 2 "" H 3825 7000 50  0001 C CNN
-F 3 "" H 3825 7000 50  0001 C CNN
-	1    3825 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 7015 3750 7065
-Wire Wire Line
-	3750 7065 3825 7065
-Wire Wire Line
-	3825 7065 3825 7000
-Connection ~ 3750 7065
-Wire Wire Line
-	3750 7065 3750 7115
-$Comp
-L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0122
-U 1 1 5E53E29B
-P 5245 6680
-F 0 "#PWR0122" H 5245 6530 50  0001 C CNN
-F 1 "+6V" H 5260 6853 50  0000 C CNN
-F 2 "" H 5245 6680 50  0001 C CNN
-F 3 "" H 5245 6680 50  0001 C CNN
-	1    5245 6680
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8820 4620 8820 4555
-$Comp
-L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR0123
-U 1 1 5E5A8D41
-P 8820 4555
-F 0 "#PWR0123" H 8820 4405 50  0001 C CNN
-F 1 "+6V" H 8835 4728 50  0000 C CNN
-F 2 "" H 8820 4555 50  0001 C CNN
-F 3 "" H 8820 4555 50  0001 C CNN
-	1    8820 4555
-	1    0    0    -1  
-$EndComp
-Text Notes 9225 3745 0    118  ~ 0
-DRIVERS MOTOR
-Text Notes 2950 5120 0    118  ~ 0
-USB
-Wire Wire Line
-	6880 5250 6720 5250
-Wire Wire Line
-	6880 5350 6720 5350
-Wire Wire Line
-	6880 5550 6720 5550
-Wire Wire Line
-	6880 5650 6720 5650
-Wire Wire Line
-	7380 5250 7580 5250
-Wire Wire Line
-	7380 5350 7580 5350
-Wire Wire Line
-	7380 5450 7590 5450
-Wire Wire Line
-	7380 5550 7590 5550
-Text Label 6720 5250 0    60   ~ 0
-TX
-Text Label 6720 5350 0    60   ~ 0
-RX
-Text Label 6630 5110 3    60   ~ 0
-ESP_CS
-Text Label 6720 5550 2    60   ~ 0
-ESP_GPIO
-Text Label 6720 5650 2    60   ~ 0
-ESP_MOSI
-Text Label 7590 5750 0    60   ~ 0
-ESP_MISO
-Text Label 7580 5350 0    60   ~ 0
-ESP_BUSY
-Text Label 7590 5450 0    60   ~ 0
-ESP_RTS
-Text Label 7590 5550 0    60   ~ 0
-ESP_SCK
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J3
-U 1 1 5CAF1DA2
-P 7080 5450
-F 0 "J3" H 7130 5867 50  0000 C CNN
-F 1 "ESP32-Exp" H 7130 5776 50  0000 C CNN
-F 2 "Pines:610X1221821" H 7080 5450 50  0001 C CNN
-F 3 "~" H 7080 5450 50  0001 C CNN
-	1    7080 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6880 5750 6720 5750
-Wire Wire Line
-	7380 5750 7590 5750
-$Comp
-L power:GND #PWR0110
-U 1 1 5CB523FF
-P 6720 5750
-F 0 "#PWR0110" H 6720 5500 50  0001 C CNN
-F 1 "GND" H 6725 5577 50  0000 C CNN
-F 2 "" H 6720 5750 50  0001 C CNN
-F 3 "" H 6720 5750 50  0001 C CNN
-	1    6720 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0111
-U 1 1 5CB5358A
-P 7580 5250
-F 0 "#PWR0111" H 7580 5100 50  0001 C CNN
-F 1 "+3.3V" H 7595 5423 50  0000 C CNN
-F 2 "" H 7580 5250 50  0001 C CNN
-F 3 "" H 7580 5250 50  0001 C CNN
-	1    7580 5250
-	1    0    0    -1  
-$EndComp
-Text Label 7605 5650 0    60   ~ 0
-ESP_RESET
-Wire Wire Line
-	6385 2835 6385 2910
-Wire Wire Line
-	5440 2835 5440 2910
-Text Label 4545 1240 0    60   ~ 0
-A6
-Text Label 1225 1905 2    60   ~ 0
-A6
-Text Label 1245 3605 2    60   ~ 0
-ESP_GPIO
-Text Label 1225 2805 2    60   ~ 0
-ESP_MOSI
-Text Label 1235 3705 2    60   ~ 0
-ESP_BUSY
-Text Label 1245 3105 2    60   ~ 0
-ESP_SCK
-Text Label 1220 2905 2    60   ~ 0
-ESP_MISO
-Connection ~ 2940 1305
-Wire Wire Line
-	2940 1100 2940 1305
-Wire Wire Line
-	2940 1305 2940 1405
-$Comp
-L Device:R_Small R6
-U 1 1 5C89865A
-P 6630 4980
-F 0 "R6" H 6689 5026 50  0000 L CNN
-F 1 "10K" H 6689 4935 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6630 4980 50  0001 C CNN
-F 3 "~" H 6630 4980 50  0001 C CNN
-	1    6630 4980
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6630 5450 6630 5080
-Wire Wire Line
-	6630 5450 6880 5450
-Wire Wire Line
-	6630 4880 6630 4820
-$Comp
-L power:+3.3V #PWR0112
-U 1 1 5C8EBAE6
-P 6630 4820
-F 0 "#PWR0112" H 6630 4670 50  0001 C CNN
-F 1 "+3.3V" H 6645 4993 50  0000 C CNN
-F 2 "" H 6630 4820 50  0001 C CNN
-F 3 "" H 6630 4820 50  0001 C CNN
-	1    6630 4820
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8165 5650 8165 5780
-Wire Wire Line
-	7380 5650 8165 5650
-$Comp
-L Device:R_Small R7
-U 1 1 5C967BAB
-P 8165 5880
-F 0 "R7" H 8224 5926 50  0000 L CNN
-F 1 "10K" H 8224 5835 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 8165 5880 50  0001 C CNN
-F 3 "~" H 8165 5880 50  0001 C CNN
-	1    8165 5880
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8165 5980 8165 6015
-$Comp
-L power:GND #PWR0117
-U 1 1 5C99179E
-P 8165 6015
-F 0 "#PWR0117" H 8165 5765 50  0001 C CNN
-F 1 "GND" H 8170 5842 50  0000 C CNN
-F 2 "" H 8165 6015 50  0001 C CNN
-F 3 "" H 8165 6015 50  0001 C CNN
-	1    8165 6015
-	1    0    0    -1  
-$EndComp
-Text Label 1245 3905 2    60   ~ 0
-ESP_RESET
-Text Notes 1180 5110 0    118  ~ 0
-SWD
-Wire Notes Line
-	475  4915 475  4905
-Wire Notes Line
-	3700 4930 3700 6535
-Wire Notes Line
-	475  6535 6965 6535
-Wire Notes Line
-	2275 6535 2275 4915
-Wire Notes Line
-	475  4915 4640 4915
-Text Label 1245 3505 2    60   ~ 0
-ESP_RTS
-Text Label 1220 3005 2    60   ~ 0
-ESP_CS
-$Comp
-L electroniccats:ATSAMD21G18A-AU U2
-U 1 1 5CBBAA5C
-P 2120 2905
-F 0 "U2" H 2120 4772 50  0000 C CNN
-F 1 "ATSAMD21G18A-AU" H 2120 4681 50  0000 C CNN
-F 2 "Housings_QFP:TQFP-48_7x7mm_Pitch0.5mm" H 2120 2905 50  0001 L BNN
-F 3 "3.01 USD" H 2120 2905 50  0001 L BNN
-F 4 "Microchip" H 2120 2905 50  0001 L BNN "Campo4"
-F 5 "TQFP-48 Microchip" H 2120 2905 50  0001 L BNN "Campo5"
-F 6 "SAMD21G Series 256 kB Flash 32 kB SRAM 48 MHz 32-Bit Microcontroller - TQFP-48" H 2120 2905 50  0001 L BNN "Campo6"
-F 7 "Good" H 2120 2905 50  0001 L BNN "Campo7"
-F 8 "ATSAMD21G18A-AU" H 2120 2905 50  0001 L BNN "Campo8"
-	1    2120 2905
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2820 1505 2940 1505
-Wire Wire Line
-	2940 1505 2940 1405
-Connection ~ 2940 1405
-Wire Wire Line
-	2820 1605 2940 1605
-Wire Wire Line
-	2940 1605 2940 1505
-Connection ~ 2940 1505
-Wire Wire Line
-	2820 4005 2925 4005
-Wire Wire Line
-	2925 4005 2925 4105
-Connection ~ 2925 4205
-Wire Wire Line
-	2820 4105 2925 4105
-Connection ~ 2925 4105
-Wire Wire Line
-	2925 4105 2925 4205
-Wire Wire Line
-	1420 4005 1260 4005
-Wire Wire Line
-	1225 2805 1420 2805
-Wire Wire Line
-	1420 2905 1220 2905
-Wire Wire Line
-	1420 3005 1220 3005
-NoConn ~ 2820 2205
-NoConn ~ 2820 2305
-NoConn ~ 2820 2405
-NoConn ~ 2820 2505
-NoConn ~ 2820 2605
-NoConn ~ 2820 2705
-Wire Wire Line
-	1420 3605 1245 3605
-Wire Wire Line
-	1420 3705 1235 3705
-NoConn ~ 2820 2805
-NoConn ~ 2820 2905
-Wire Wire Line
-	2555 7015 2105 7015
-Wire Wire Line
-	2105 6885 2105 7015
-Connection ~ 2105 7015
-Wire Wire Line
-	2105 7015 2105 7125
-Wire Wire Line
-	2105 7455 3035 7455
-Wire Wire Line
-	2855 7015 3080 7015
+	9270 1370 10250 1370
 $EndSCHEMATC
