@@ -1,16 +1,17 @@
 # Escornabot
 
 
-## Furubot
-
-Diseño de robot basado en el Escornabot, completamente hecho en KiCAD. 
-
-Con amor para todo el mundo desde Malmo - Suecia.
 
 ## Makech
 Diseño de robot basado en el Escornabot Ogaki, creado con un chip SAMD21 completamente hecho en KiCAD. 
 
 Con amor para todo el mundo desde Aguascalientes - México.
+
+## Ogaki
+
+Diseño de robot basado en el Escornabot, completamente hecho en KiCAD. 
+
+Con amor para todo el mundo desde Malmo - Suecia.
 
 
 # Créditos

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Makech-rescue)(type Legacy)(uri ${KIPRJMOD}/Makech-rescue.lib)(options "")(descr ""))
+)

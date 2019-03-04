@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name serial)(type Legacy)(uri "$(KIPRJMOD)/silks/kicad/serial.mod")(options "")(descr ""))
-)
