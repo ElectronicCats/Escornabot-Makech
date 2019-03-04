@@ -176,8 +176,6 @@ F 4 "KSC441G70SHLFSPF" V 7370 1740 50  0001 C CNN "manf#"
 	1    7370 1740
 	0    -1   -1   0   
 $EndComp
-Text Notes 4410 1775 0    59   ~ 0
-Choose one\nRx.1 --> SMD\nRx  -->  THT
 $Comp
 L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S5.1
 U 1 1 58B87EA4
@@ -254,8 +252,6 @@ Text Label 9255 1295 1    60   ~ 0
 S2
 Text Label 8790 1295 1    60   ~ 0
 S1
-Text Notes 8440 1040 0    59   ~ 0
-Choose one\nSx.1 --> B3F-4050\nSx  -->  B3F-1050
 $Comp
 L Makech-rescue:switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S3
 U 1 1 58B8236A
@@ -432,8 +428,6 @@ Text Label 7110 1255 1    60   ~ 0
 S5
 Text Label 7570 1270 1    60   ~ 0
 S4
-Text Notes 7920 2760 0    59   ~ 0
-Choose one\nRx.1 --> SMD\nRx  -->  THT
 $Comp
 L Makech-rescue:JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SJ2
 U 1 1 58BAD83A
@@ -574,8 +568,6 @@ F 3 "" H 8600 6295 50  0000 C CNN
 	1    8600 6295
 	1    0    0    -1  
 $EndComp
-Text Notes 9745 6485 0    59   ~ 0
-Choose one\nCx.1 --> SMD\nCx   --> THT
 Text Label 9330 4855 0    60   ~ 0
 D13
 Text Label 9330 4955 0    60   ~ 0
@@ -1724,38 +1716,15 @@ F 3 "" H 1820 7175 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1.1
-U 1 1 58BB50CA
-P 2480 6885
-F 0 "F1.1" H 2525 6970 40  0000 C CNN
-F 1 "FUSE" H 2380 6835 40  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" H 2480 6885 60  0001 C CNN
-F 3 "" H 2480 6885 60  0000 C CNN
-	1    2480 6885
-	1    0    0    -1  
-$EndComp
-$Comp
 L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1
 U 1 1 58BB5A4E
-P 2485 7125
-F 0 "F1" H 2535 7165 40  0000 C CNN
-F 1 "FUSE" H 2385 7075 40  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_TE5_Littlefuse-395Series" H 2485 7125 60  0001 C CNN
-F 3 "" H 2485 7125 60  0000 C CNN
-	1    2485 7125
+P 2705 7015
+F 0 "F1" H 2755 7055 40  0000 C CNN
+F 1 "FUSE" H 2605 6965 40  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_TE5_Littlefuse-395Series" H 2705 7015 60  0001 C CNN
+F 3 "" H 2705 7015 60  0000 C CNN
+	1    2705 7015
 	1    0    0    -1  
-$EndComp
-$Comp
-L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1.1
-U 1 1 58BB6B77
-P 2985 7285
-F 0 "D1.1" H 2985 7355 40  0000 C CNN
-F 1 "ZENER" H 2985 7185 40  0001 C CNN
-F 2 "Diodes_SMD:D_0603" H 2985 7285 60  0001 C CNN
-F 3 "" H 2985 7285 60  0000 C CNN
-F 4 "S-152T" H 2985 7285 50  0001 C CNN "manf#"
-	1    2985 7285
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1
@@ -1779,8 +1748,6 @@ F 3 "" H 3035 7510 50  0000 C CNN
 	1    3035 7510
 	1    0    0    -1  
 $EndComp
-Text Notes 3025 7635 2    60   ~ 0
-Choose on X.1 --> SMD,  X --> THT
 $Comp
 L Makech-rescue:CONN_01X05--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue XH4
 U 1 1 58B999D4
@@ -2335,8 +2302,6 @@ Wire Wire Line
 Wire Wire Line
 	1015 6885 2105 6885
 Wire Wire Line
-	2105 6885 2105 7125
-Wire Wire Line
 	2020 7125 2105 7125
 Wire Wire Line
 	1015 7270 1015 7455
@@ -2346,31 +2311,14 @@ Wire Wire Line
 	2105 7455 2105 7225
 Wire Wire Line
 	2105 7225 2020 7225
-Connection ~ 2105 6885
-Connection ~ 2105 7125
-Wire Wire Line
-	2735 7125 2635 7125
-Wire Wire Line
-	2735 6885 2735 7015
-Wire Wire Line
-	2735 6885 2630 6885
 Connection ~ 2105 7455
-Connection ~ 2985 7455
 Wire Wire Line
 	3035 7510 3035 7455
 Connection ~ 3035 7455
 Wire Wire Line
-	2735 7015 2985 7015
-Wire Wire Line
-	2985 7015 2985 7185
-Connection ~ 2735 7015
-Wire Wire Line
 	3080 7015 3080 7185
-Connection ~ 2985 7015
 Wire Wire Line
 	3080 7455 3080 7335
-Wire Wire Line
-	2985 7335 2985 7455
 Connection ~ 3080 7015
 Wire Wire Line
 	6080 1430 6080 1515
@@ -2604,19 +2552,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 5940 8600 6295
 Wire Wire Line
-	2105 6885 2330 6885
-Wire Wire Line
-	2105 7125 2335 7125
-Wire Wire Line
-	2105 7455 2985 7455
-Wire Wire Line
-	2985 7455 3035 7455
-Wire Wire Line
 	3035 7455 3080 7455
-Wire Wire Line
-	2735 7015 2735 7125
-Wire Wire Line
-	2985 7015 3080 7015
 Wire Wire Line
 	3080 7015 3315 7015
 Wire Wire Line
@@ -2839,7 +2775,7 @@ F 3 "" H 5390 6765 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3350 7615 0    60   ~ 0
-NOTA: Revisar \ndiodos \nde proteccion
+NOTA: Revisar \ndiodo \nde proteccion
 $Comp
 L Makech-rescue:SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SW1
 U 1 1 5D7E7124
@@ -3215,7 +3151,7 @@ U 1 1 5CAF1DA2
 P 7080 5450
 F 0 "J3" H 7130 5867 50  0000 C CNN
 F 1 "ESP32-Exp" H 7130 5776 50  0000 C CNN
-F 2 "" H 7080 5450 50  0001 C CNN
+F 2 "Pines:610X1221821" H 7080 5450 50  0001 C CNN
 F 3 "~" H 7080 5450 50  0001 C CNN
 	1    7080 5450
 	1    0    0    -1  
@@ -3277,7 +3213,7 @@ U 1 1 5C89865A
 P 6630 4980
 F 0 "R6" H 6689 5026 50  0000 L CNN
 F 1 "10K" H 6689 4935 50  0000 L CNN
-F 2 "" H 6630 4980 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6630 4980 50  0001 C CNN
 F 3 "~" H 6630 4980 50  0001 C CNN
 	1    6630 4980
 	1    0    0    -1  
@@ -3309,7 +3245,7 @@ U 1 1 5C967BAB
 P 8165 5880
 F 0 "R7" H 8224 5926 50  0000 L CNN
 F 1 "10K" H 8224 5835 50  0000 L CNN
-F 2 "" H 8165 5880 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8165 5880 50  0001 C CNN
 F 3 "~" H 8165 5880 50  0001 C CNN
 	1    8165 5880
 	1    0    0    -1  
@@ -3346,12 +3282,12 @@ ESP_RTS
 Text Label 1220 3005 2    60   ~ 0
 ESP_CS
 $Comp
-L electroniccats:ATSAMD21G18A-AU U?
+L electroniccats:ATSAMD21G18A-AU U2
 U 1 1 5CBBAA5C
 P 2120 2905
-F 0 "U?" H 2120 4772 50  0000 C CNN
+F 0 "U2" H 2120 4772 50  0000 C CNN
 F 1 "ATSAMD21G18A-AU" H 2120 4681 50  0000 C CNN
-F 2 "QFP50P900X900X120-48N" H 2120 2905 50  0001 L BNN
+F 2 "Housings_QFP:TQFP-48_7x7mm_Pitch0.5mm" H 2120 2905 50  0001 L BNN
 F 3 "3.01 USD" H 2120 2905 50  0001 L BNN
 F 4 "Microchip" H 2120 2905 50  0001 L BNN "Campo4"
 F 5 "TQFP-48 Microchip" H 2120 2905 50  0001 L BNN "Campo5"
@@ -3401,4 +3337,15 @@ Wire Wire Line
 	1420 3705 1235 3705
 NoConn ~ 2820 2805
 NoConn ~ 2820 2905
+Wire Wire Line
+	2555 7015 2105 7015
+Wire Wire Line
+	2105 6885 2105 7015
+Connection ~ 2105 7015
+Wire Wire Line
+	2105 7015 2105 7125
+Wire Wire Line
+	2105 7455 3035 7455
+Wire Wire Line
+	2855 7015 3080 7015
 $EndSCHEMATC
