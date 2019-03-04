@@ -1,11 +1,15 @@
 # Escornabot
 
+Escornabot es un proyecto de código/hardware abierto cuyo objetivo es acercar la robótica y la programación a los niños y niñas.
 
+El Escornabot básico puede programarse con los botones para ejecutar secuencias de movimientos. A partir de aquí, la imaginación es el único límite en las posibilidades.
 
 ## Makech
-Diseño de robot basado en el Escornabot Ogaki, creado con un chip SAMD21 completamente hecho en KiCAD. 
+Diseño de robot basado en el Escornabot Ogaki, creado con un chip SAMD21 completamente hecho en KiCAD, especialmente creado para enseñar programación con Arduino, MakeCode y CircuitPython.
 
 Con amor para todo el mundo desde Aguascalientes - México.
+
+- Consigue tu kit, visita: [https://electroniccats.com](https://electroniccats.com)
 
 ## Ogaki
 
@@ -16,20 +20,35 @@ Con amor para todo el mundo desde Malmo - Suecia.
 
 # Créditos
 
-Los creadores originales de [Escornabot](www.escornabot.com) y su comunidad de usuarios y desarrolladores 
+- Escorna CPU 2.20 by [Xdesig]
+
+- Los creadores originales de [Escornabot](www.escornabot.com) y su comunidad de usuarios y desarrolladores 
 
 # Autor
 
-Furubot - J. Garcia at abierto.cc
+**Makech - Andrés Sabas at Electronic Cats**
+
+_Electronic Cats es una empresa de hardware libre hecho en México_
+
+**Ogaki - J. Garcia at abierto.cc**
 
 _Abierto es una inciativa de D. Cuartielles gracias a la generosa aportación de la Fundación PUIG por intermediación de la Fundación Ashoka de cara a contribuir a la creación de material educativo de libre acceso y circulación_
 
-Makech - Andrés Sabas at Electronic Cats
+**Escorna CPU 2.20 - XDESIG**
 
-_Electronic Cats es una empresa de hardware libre hecho en México_
+_Nature's walking, Percorrendo a Natureza. Deseñando Electrónica_
+
 
 # License
 
 Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+ 
+Makech - Designed by Electronic Cats.
+
+Hardware released under an CERN Open Hardware Licence v1.2. See the LICENSE_HARDWARE file for more information.
+
+Electronic Cats is a registered trademark, please do not use if you sell these PCBs.
+
+3 Mar 2019
 
 
