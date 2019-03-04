@@ -3258,15 +3258,15 @@ Text Label 4545 1240 0    60   ~ 0
 A6
 Text Label 1270 2805 0    60   ~ 0
 A6
-Text Label 1245 3905 2    60   ~ 0
+Text Label 3645 3955 2    60   ~ 0
 ESP_GPIO
-Text Label 1245 3505 2    60   ~ 0
+Text Label 3695 3770 2    60   ~ 0
 ESP_MOSI
-Text Label 1225 2705 2    60   ~ 0
+Text Label 3655 4155 2    60   ~ 0
 ESP_BUSY
-Text Label 1235 2505 2    60   ~ 0
+Text Label 3665 4320 2    60   ~ 0
 ESP_SCK
-Text Label 1235 2405 2    60   ~ 0
+Text Label 3730 4495 2    60   ~ 0
 ESP_MISO
 Connection ~ 2940 1305
 Wire Wire Line
@@ -3329,7 +3329,7 @@ F 3 "" H 8165 6015 50  0001 C CNN
 	1    8165 6015
 	1    0    0    -1  
 $EndComp
-Text Label 1225 1905 2    60   ~ 0
+Text Label 3750 4660 2    60   ~ 0
 ESP_RESET
 Text Notes 1180 5110 0    118  ~ 0
 SWD
@@ -3343,9 +3343,9 @@ Wire Notes Line
 	2275 6535 2275 4915
 Wire Notes Line
 	475  4915 4640 4915
-Text Label 4200 4350 0    60   ~ 0
+Text Label 3325 3405 0    60   ~ 0
 ESP_RTS
-Text Label 4200 4550 0    60   ~ 0
+Text Label 3325 3605 0    60   ~ 0
 ESP_CS
 $Comp
 L electroniccats:ATSAMD21G18A-AU U?
