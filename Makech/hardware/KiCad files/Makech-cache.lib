@@ -421,26 +421,6 @@ X VIN 3 -350 0 100 R 50 39 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue
-#
-DEF Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue R 0 0 Y N 4 F N
-F0 "R" -55 5 50 V V C CNN
-F1 "Makech-rescue_R-SIL_8NB--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue" 65 0 50 V V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-S 20 50 -20 -50 0 1 0 N
-X ~ 1 0 100 50 D 27 27 1 1 P
-X ~ 2 0 -100 50 U 27 60 1 1 P
-X ~ 3 0 100 50 D 27 27 2 1 P
-X ~ 4 0 -100 50 U 27 60 2 1 P
-X ~ 5 0 100 50 D 27 27 3 1 P
-X ~ 6 0 -100 50 U 27 60 3 1 P
-X ~ 7 0 100 50 D 27 27 4 1 P
-X ~ 8 0 -100 50 U 27 60 4 1 P
-ENDDRAW
-ENDDEF
-#
 # Makech-rescue_SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue
 #
 DEF Makech-rescue_SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SW 0 40 N N 1 F N
@@ -593,26 +573,27 @@ X ~ 2 -50 -50 47 R 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue
+# Switch_SW_DPDT_x2
 #
-DEF Makech-rescue_switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue S 0 40 Y Y 1 F N
-F0 "S" -90 0 60 H V C CNN
-F1 "Makech-rescue_switch--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue" 80 -250 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
+DEF Switch_SW_DPDT_x2 SW 0 0 Y N 2 F N
+F0 "SW" 0 170 50 H V C CNN
+F1 "Switch_SW_DPDT_x2" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SW*DPDT*
+$ENDFPLIST
 DRAW
-P 2 0 1 0 0 -100 0 -200 N
-P 2 0 1 0 0 -100 150 -50 N
-P 2 0 1 0 80 -60 80 -50 N
-P 2 0 1 0 80 -40 80 -30 N
-P 2 0 1 0 80 -20 80 -10 N
-P 2 0 1 0 150 -200 150 -100 N
-P 3 0 1 0 80 20 150 20 150 0 N
-P 4 0 1 0 80 0 80 20 0 20 0 0 N
-X ~ 1 -80 -100 79 R 50 50 1 1 P
-X ~ 2 -80 -200 79 R 50 50 1 1 P
-X ~ 3 230 -200 79 L 50 50 1 1 P
-X ~ 4 230 -100 79 L 50 50 1 1 P
+C -80 0 20 0 0 0 N
+C 80 -100 20 0 0 0 N
+C 80 100 20 0 1 0 N
+P 2 0 1 0 -60 10 65 90 N
+X A 1 200 100 100 L 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 P
+X C 3 200 -100 100 L 50 50 1 1 P
+X A 4 200 100 100 L 50 50 2 1 P
+X B 5 -200 0 100 R 50 50 2 1 P
+X C 6 200 -100 100 L 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
