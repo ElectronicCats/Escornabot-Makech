@@ -83,16 +83,6 @@ Text Label 7015 2390 0    60   ~ 0
 A2
 Text Label 7645 2390 0    60   ~ 0
 A3
-Text Label 5755 1260 1    60   ~ 0
-S1
-Text Label 6180 1260 1    60   ~ 0
-S2
-Text Label 6645 1260 1    60   ~ 0
-S3
-Text Label 7110 1255 1    60   ~ 0
-S5
-Text Label 7570 1270 1    60   ~ 0
-S4
 $Comp
 L Makech-rescue:JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SJ1
 U 1 1 58BAD83A
@@ -877,7 +867,7 @@ U 1 1 5D9FC5AA
 P 1255 5680
 F 0 "J1" H 1305 5897 50  0000 C CNN
 F 1 "SWD programmer" H 1305 5806 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x02_P1.00mm_Vertical_SMD" H 1255 5680 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 1255 5680 50  0001 C CNN
 F 3 "~" H 1255 5680 50  0001 C CNN
 	1    1255 5680
 	1    0    0    -1  
