@@ -96,18 +96,6 @@ F 3 "" H 8365 3185 50  0000 C CNN
 $EndComp
 Text Notes 7730 3460 0    60   ~ 0
 Enabling LEDs, Default ON\n
-$Comp
-L Makech-rescue:CONN_01X02--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue JP1
-U 1 1 58BAEF93
-P 4300 5565
-F 0 "JP1" H 4300 5715 50  0000 C CNN
-F 1 "CONN_01X02" V 4400 5565 50  0001 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill0.8mm" H 4300 5565 50  0001 C CNN
-F 3 "" H 4300 5565 50  0000 C CNN
-F 4 "61300211121" H 4300 5565 50  0001 C CNN "manf#"
-	1    4300 5565
-	1    0    0    -1  
-$EndComp
 Text Notes 4445 5095 2    118  ~ 0
 BUZZ
 $Comp
@@ -122,7 +110,7 @@ F 4 "F/CM12P-LF" H 4165 5960 50  0001 C CNN "manf#"
 	1    4165 5960
 	1    0    0    -1  
 $EndComp
-Text Label 3880 5515 0    60   ~ 0
+Text Label 4025 5260 2    60   ~ 0
 D11
 $Comp
 L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR013
@@ -399,8 +387,6 @@ Wire Notes Line
 	4190 495  4190 3360
 Wire Wire Line
 	8365 3120 8365 3185
-Wire Wire Line
-	4100 5515 3880 5515
 Wire Wire Line
 	4115 5910 4075 5910
 Wire Wire Line
@@ -2698,4 +2684,19 @@ Wire Wire Line
 	10695 5905 10695 6030
 Wire Wire Line
 	10695 6030 10515 6030
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5CA75BE5
+P 4100 5465
+F 0 "JP1" V 4054 5533 50  0000 L CNN
+F 1 "Jumper" H 3980 5380 50  0000 L CNN
+F 2 "" H 4100 5465 50  0001 C CNN
+F 3 "~" H 4100 5465 50  0001 C CNN
+	1    4100 5465
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5315 4100 5260
+Wire Wire Line
+	4100 5260 4025 5260
 $EndSCHEMATC
