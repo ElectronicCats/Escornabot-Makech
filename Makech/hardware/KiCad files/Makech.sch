@@ -94,8 +94,6 @@ F 3 "" H 8365 3185 50  0000 C CNN
 	1    8365 3185
 	-1   0    0    -1  
 $EndComp
-Text Notes 7730 3460 0    60   ~ 0
-Enabling LEDs, Default ON\n
 Text Notes 4445 5095 2    118  ~ 0
 BUZZ
 $Comp
@@ -2699,4 +2697,8 @@ Wire Wire Line
 	4100 5315 4100 5260
 Wire Wire Line
 	4100 5260 4025 5260
+Text Notes 6995 5975 0    60   ~ 12
+ESP32
+Text Notes 2570 6715 0    118  ~ 0
+SOURCE
 $EndSCHEMATC
