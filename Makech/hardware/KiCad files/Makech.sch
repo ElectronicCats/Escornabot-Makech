@@ -218,10 +218,6 @@ Text Label 9330 5455 0    60   ~ 0
 D5
 Text Label 9330 5555 0    60   ~ 0
 D4
-Text Label 10695 5905 0    60   ~ 0
-RAW
-Text Label 10695 5010 0    60   ~ 0
-RAW
 Text Label 10700 4610 0    60   ~ 0
 ML1
 Text Label 10695 4710 0    60   ~ 0
@@ -397,8 +393,6 @@ Wire Wire Line
 	4885 1180 4885 1240
 Wire Wire Line
 	4545 1240 4885 1240
-Wire Wire Line
-	4885 920  4990 920 
 Wire Wire Line
 	4885 980  4885 920 
 Wire Notes Line
@@ -604,17 +598,15 @@ F 3 "" H 3090 2040 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1420 1305 1290 1305
-Wire Wire Line
-	4990 920  4990 855 
 $Comp
 L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR015
 U 1 1 5D10D595
-P 4990 855
-F 0 "#PWR015" H 4990 705 50  0001 C CNN
-F 1 "+3.3V" H 5005 1028 50  0000 C CNN
-F 2 "" H 4990 855 50  0001 C CNN
-F 3 "" H 4990 855 50  0001 C CNN
-	1    4990 855 
+P 4885 920
+F 0 "#PWR015" H 4885 770 50  0001 C CNN
+F 1 "+3.3V" H 4900 1093 50  0000 C CNN
+F 2 "" H 4885 920 50  0001 C CNN
+F 3 "" H 4885 920 50  0001 C CNN
+	1    4885 920 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2674,4 +2666,36 @@ Wire Wire Line
 Connection ~ 5600 7225
 Wire Wire Line
 	5600 7225 5675 7225
+$Comp
+L power:+6V #PWR0101
+U 1 1 5CA32BB8
+P 10515 6030
+F 0 "#PWR0101" H 10515 5880 50  0001 C CNN
+F 1 "+6V" H 10530 6203 50  0000 C CNN
+F 2 "" H 10515 6030 50  0001 C CNN
+F 3 "" H 10515 6030 50  0001 C CNN
+	1    10515 6030
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+6V #PWR0102
+U 1 1 5CA32C6B
+P 10590 5160
+F 0 "#PWR0102" H 10590 5010 50  0001 C CNN
+F 1 "+6V" H 10605 5333 50  0000 C CNN
+F 2 "" H 10590 5160 50  0001 C CNN
+F 3 "" H 10590 5160 50  0001 C CNN
+	1    10590 5160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10695 5010 10695 5210
+Wire Wire Line
+	10695 5210 10590 5210
+Wire Wire Line
+	10590 5210 10590 5160
+Wire Wire Line
+	10695 5905 10695 6030
+Wire Wire Line
+	10695 6030 10515 6030
 $EndSCHEMATC
