@@ -1,4 +1,5 @@
 # Escornabot
+![](https://github.com/ElectronicCats/escornabot/raw/master/escornabot.jpg)
 
 Escornabot es un proyecto de código/hardware abierto cuyo objetivo es acercar la robótica y la programación a los niños y niñas.
 
@@ -22,7 +23,7 @@ Con amor para todo el mundo desde Malmo - Suecia.
 
 - Escorna CPU 2.20 by [Xdesig]
 
-- Los creadores originales de [Escornabot](www.escornabot.com) y su comunidad de usuarios y desarrolladores 
+- Los creadores originales de [Escornabot](www.escornabot.com), su comunidad de usuarios y desarrolladores 
 
 # Autor
 
