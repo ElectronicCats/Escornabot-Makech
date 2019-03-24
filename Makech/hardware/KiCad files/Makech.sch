@@ -84,17 +84,6 @@ A2
 Text Label 7645 2390 0    60   ~ 0
 A3
 $Comp
-L Makech-rescue:JUMPER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SJ1
-U 1 1 58BAD83A
-P 8095 3120
-F 0 "SJ1" H 8095 3270 60  0000 C CNN
-F 1 "JUMPER" H 8095 3040 40  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8095 3120 60  0001 C CNN
-F 3 "" H 8095 3120 60  0000 C CNN
-	1    8095 3120
-	1    0    0    -1  
-$EndComp
-$Comp
 L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR026
 U 1 1 58BADC73
 P 8365 3185
@@ -415,8 +404,6 @@ Wire Wire Line
 Wire Notes Line
 	4190 495  4190 3360
 Wire Wire Line
-	8245 3120 8365 3120
-Wire Wire Line
 	8365 3120 8365 3185
 Wire Wire Line
 	4100 5515 3880 5515
@@ -541,53 +528,10 @@ Wire Wire Line
 Wire Wire Line
 	5600 6815 5650 6815
 Wire Wire Line
-	5675 7225 5600 7225
-Connection ~ 5600 7225
-Wire Wire Line
 	5825 7225 6000 7225
-Wire Wire Line
-	6275 7225 6380 7225
-Connection ~ 6380 7225
-$Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C3.1
-U 1 1 58DE2448
-P 5775 7520
-F 0 "C3.1" V 5690 7405 50  0000 L CNN
-F 1 "10uF" V 5810 7530 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5775 7520 60  0001 C CNN
-F 3 "" H 5775 7520 60  0000 C CNN
-F 4 "C0805X106K8RACAUTO" V 5775 7520 50  0001 C CNN "manf#"
-	1    5775 7520
-	0    1    1    0   
-$EndComp
-$Comp
-L Makech-rescue:C-RESCUE-Ogaki--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C4.1
-U 1 1 58DE26E6
-P 6225 7520
-F 0 "C4.1" V 6140 7450 50  0000 L CNN
-F 1 "10uF" V 6255 7295 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6225 7520 60  0001 C CNN
-F 3 "" H 6225 7520 60  0000 C CNN
-F 4 "C0805X106K8RACAUTO" V 6225 7520 50  0001 C CNN "manf#"
-	1    6225 7520
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5825 7520 6000 7520
-Wire Wire Line
-	5600 7520 5675 7520
-Wire Wire Line
-	6380 7520 6275 7520
-Wire Wire Line
-	6380 6815 6380 7225
-Wire Wire Line
-	5600 6815 5600 7225
 Wire Wire Line
 	6000 7165 6000 7225
 Connection ~ 6000 7225
-Connection ~ 6000 7520
-Wire Wire Line
-	7645 3120 7945 3120
 Wire Wire Line
 	6595 1920 6645 1920
 Wire Wire Line
@@ -599,17 +543,7 @@ Wire Wire Line
 Wire Wire Line
 	8820 4620 9880 4620
 Wire Wire Line
-	5600 7225 5600 7520
-Wire Wire Line
-	6380 7225 6380 7520
-Wire Wire Line
 	6000 7225 6125 7225
-Wire Wire Line
-	6000 7225 6000 7520
-Wire Wire Line
-	6000 7520 6125 7520
-Wire Wire Line
-	6000 7520 6000 7685
 Wire Notes Line
 	8460 6535 8460 3555
 Wire Notes Line
@@ -683,10 +617,6 @@ F 3 "" H 4990 855 50  0001 C CNN
 	1    4990 855 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6385 7225 6500 7225
-Wire Wire Line
-	6500 7225 6500 7220
 $Comp
 L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR020
 U 1 1 5D14A643
@@ -793,10 +723,7 @@ Wire Notes Line
 Wire Notes Line
 	2725 6530 2720 6530
 Wire Wire Line
-	5595 7225 5390 7225
-Wire Wire Line
 	5390 7225 5390 7090
-Connection ~ 5390 7225
 $Comp
 L Makech-rescue:VCC-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR018
 U 1 1 5D7E4CD1
@@ -2724,4 +2651,27 @@ Wire Wire Line
 	6645 1920 7110 1920
 Wire Wire Line
 	7110 1920 7570 1920
+Wire Wire Line
+	7645 3120 8365 3120
+Wire Wire Line
+	6000 7225 6000 7685
+Wire Wire Line
+	6275 7225 6380 7225
+Wire Wire Line
+	6500 7225 6500 7220
+Wire Wire Line
+	6380 6815 6380 7225
+Connection ~ 6380 7225
+Wire Wire Line
+	6380 7225 6500 7225
+Wire Wire Line
+	5390 7225 5390 7220
+Wire Wire Line
+	5390 7225 5600 7225
+Connection ~ 5390 7225
+Wire Wire Line
+	5600 6815 5600 7225
+Connection ~ 5600 7225
+Wire Wire Line
+	5600 7225 5675 7225
 $EndSCHEMATC
