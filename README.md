@@ -21,13 +21,13 @@ Con amor para todo el mundo desde Malmo - Suecia.
 
 # Créditos
 
-- Escorna CPU 2.20 by [Xdesig]
+- Escorna CPU 2.20 by [Xdesig](https://github.com/xdesig)
 
 - Los creadores originales de [Escornabot](www.escornabot.com), su comunidad de usuarios y desarrolladores 
 
 # Autor
 
-**Makech - Andrés Sabas at Electronic Cats**
+**Makech - Andrés Sabas and Joe at Electronic Cats**
 
 _Electronic Cats es una empresa de hardware libre hecho en México_
 
