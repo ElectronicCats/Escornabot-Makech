@@ -6,7 +6,7 @@
     (tracks 48)
     (zones 0)
     (modules 99)
-    (nets 70)
+    (nets 69)
   )
 
   (page A4)
@@ -174,8 +174,7 @@
   (net 65 "Net-(U1-Pad38)")
   (net 66 "Net-(U1-Pad47)")
   (net 67 "Net-(U1-Pad48)")
-  (net 68 /RAW)
-  (net 69 "Net-(C4-Pad2)")
+  (net 68 "Net-(C4-Pad2)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -218,7 +217,6 @@
     (add_net /MR2)
     (add_net /MR3)
     (add_net /MR4)
-    (add_net /RAW)
     (add_net /RX)
     (add_net /SCL)
     (add_net /SDA)
@@ -1620,7 +1618,7 @@
     (pad 1 smd roundrect (at -1.025 0) (size 1.15 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.217391)
       (net 1 GND))
     (pad 2 smd roundrect (at 1.025 0) (size 1.15 1.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.217391)
-      (net 69 "Net-(C4-Pad2)"))
+      (net 68 "Net-(C4-Pad2)"))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -1665,7 +1663,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5C8BECD9)
-    (at 145.575 52.425 90)
+    (at 123.952 45.457 90)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /58BBF2CA)
@@ -1774,7 +1772,7 @@
     (pad 2 smd rect (at 1.65 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask)
       (net 8 +6V))
     (pad 1 smd rect (at -1.65 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask)
-      (net 69 "Net-(C4-Pad2)"))
+      (net 68 "Net-(C4-Pad2)"))
     (model ${KISYS3DMOD}/Diode_SMD.3dshapes/D_SOD-123.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -1816,7 +1814,7 @@
     (fp_line (start -2.25 1) (end 1.65 1) (layer F.SilkS) (width 0.12))
     (fp_line (start -2.25 -1) (end 1.65 -1) (layer F.SilkS) (width 0.12))
     (pad 1 smd rect (at -1.65 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask)
-      (net 69 "Net-(C4-Pad2)"))
+      (net 68 "Net-(C4-Pad2)"))
     (pad 2 smd rect (at 1.65 0) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask)
       (net 10 VCC))
     (model ${KISYS3DMOD}/Diode_SMD.3dshapes/D_SOD-123.wrl
@@ -3165,7 +3163,7 @@
     (pad 2 smd rect (at -3.15 0) (size 2 1.5) (layers B.Cu B.Paste B.Mask)
       (net 7 +3V3))
     (pad 3 smd rect (at -3.15 -2.3) (size 2 1.5) (layers B.Cu B.Paste B.Mask)
-      (net 69 "Net-(C4-Pad2)"))
+      (net 68 "Net-(C4-Pad2)"))
     (pad 1 smd rect (at -3.15 2.3) (size 2 1.5) (layers B.Cu B.Paste B.Mask)
       (net 1 GND))
     (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-223.wrl
@@ -3357,7 +3355,7 @@
     (pad 2 thru_hole oval (at 2.54 0) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask)
       (net 25 /ML4))
     (pad 1 thru_hole roundrect (at 0 0) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask) (roundrect_rratio 0.143678)
-      (net 68 /RAW))
+      (net 8 +6V))
     (model ${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -3418,7 +3416,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole roundrect (at 0 0) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask) (roundrect_rratio 0.143678)
-      (net 68 /RAW))
+      (net 8 +6V))
     (pad 2 thru_hole oval (at 2.54 0) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask)
       (net 21 /MR4))
     (pad 3 thru_hole oval (at 5.08 0) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask)
@@ -4933,7 +4931,7 @@
   )
 
   (module Aesthetics:escornabot_8x8 (layer F.Cu) (tedit 0) (tstamp 5C966195)
-    (at 128.55 79.975)
+    (at 117.221 86.36)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
