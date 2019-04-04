@@ -1,4 +1,4 @@
-# Escornabot
+# Escornabot Makech
 ![](https://github.com/ElectronicCats/escornabot/raw/master/escornabot.jpg)
 
 Escornabot es un proyecto de código/hardware abierto cuyo objetivo es acercar la robótica y la programación a los niños y niñas.
