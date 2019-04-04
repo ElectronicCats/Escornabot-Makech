@@ -6,7 +6,9 @@ Escornabot es un proyecto de código/hardware abierto cuyo objetivo es acercar l
 El Escornabot básico puede programarse con los botones para ejecutar secuencias de movimientos. A partir de aquí, la imaginación es el único límite en las posibilidades.
 
 ## Makech
-Diseño de robot basado en el Escornabot Ogaki, creado con un chip SAMD21 completamente hecho en KiCAD, especialmente creado para enseñar programación con Arduino, MakeCode y CircuitPython.
+Diseño de robot basado en el Escornabot Ogaki, creado con el microcontrolador SAMD21 Cortex M0 de 32 bits completamente hecho en KiCAD, especialmente creado para enseñar programación con Arduino, MakeCode y CircuitPython.
+
+Al tener todos los circuitos integrados, elimina la necesidad de cablear, minimizando los errores de electrónica, lo que conlleva un incremento en el tiempo dedicado a programación y al conocimiento de nuevos lenguajes de programación.
 
 Con amor para todo el mundo desde Aguascalientes - México.
 
