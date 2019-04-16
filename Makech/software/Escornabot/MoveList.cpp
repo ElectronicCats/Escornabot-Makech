@@ -1,7 +1,7 @@
 // MoveList.cpp
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -31,14 +31,16 @@ extern EventManager* EVENTS;
 
 MoveList::MoveList()
 {
-	_move_count = 0;
+    _move_count = 0;
+    _degrees = 90;
+    _alt_degrees = 45;
 }
 
 
 
 void MoveList::clear()
 {
-	_move_count = 0;
+    _move_count = 0;
     EVENTS->indicateProgramReset();
 }
 
@@ -46,31 +48,40 @@ void MoveList::clear()
 
 uint8_t MoveList::getMoveCount()
 {
-	return _move_count;
+    return _move_count;
 }
 
 
 
 void MoveList::addMove(MOVE move)
 {
-	_move_list[_move_count++] = move;
+    _move_list[_move_count++] = move;
     EVENTS->indicateMoveAdded(move);
+}
+
+
+
+void MoveList::addProgram(const MOVE moves[])
+{
+    int m = 0;
+    while (moves[m] != MOVE_NONE)
+        _move_list[_move_count++] = moves[m++];
 }
 
 
 
 MOVE MoveList::getMove(uint8_t index)
 {
-	return _move_list[index];
+    return _move_list[index];
 }
 
 
 
 #if USE_PERSISTENT_MEMORY
 
-//#include "PersistentMemory.h"
+#include "PersistentMemory.h"
 
-int PERSISTENT_MEMORY;
+extern PersistentMemory* PERSISTENT_MEMORY;
 
 
 void MoveList::save()
@@ -78,7 +89,7 @@ void MoveList::save()
     // save only when there are movements to save
     if (_move_count > 0)
     {
-        //PERSISTENT_MEMORY->saveProgram(_move_list, _move_count);
+        PERSISTENT_MEMORY->saveProgram(_move_list, _move_count);
     }
 }
 

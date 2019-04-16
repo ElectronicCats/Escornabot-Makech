@@ -1,7 +1,7 @@
 // BluetoothInterface.cpp
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -27,7 +27,16 @@ See LICENSE.txt for details
 
 #define NL '\n'
 
+//////////////////////////////////////////////////////////////////////
+
+const static char* BUTTONS_PRESSED = "NESWGR";
+const static char* BUTTONS_RELEASED = "neswgr";
 const static char* SI_PROGRAM = "PRG:";
+
+//////////////////////////////////////////////////////////////////////
+
+#include "EventManager.h"
+extern EventManager* EVENTS;
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -43,6 +52,7 @@ BluetoothInterface::BluetoothInterface(const Config* cfg)
 
 void BluetoothInterface::init()
 {
+    ButtonSet::init();
     _config->serial->begin(_config->bauds, SERIAL_8N1);
 }
 
@@ -54,18 +64,30 @@ void BluetoothInterface::scanButtons()
     while (_readLine())
     {
         // one-char commands
+        char* found;
         if (strlen(_command) == 1)
         {
-            char* found = strchr(BUTTONS_PRESSED, _command[0]);
+            found = strchr(BUTTONS_PRESSED, _command[0]);
             if (found)
             {
-                pressed((BUTTON)((found - BUTTONS_PRESSED) + 1));
+                BUTTON button = (BUTTON)((found - BUTTONS_PRESSED) + 1);
+                EVENTS->indicateButtonLongReleased(button);
             }
 
             found = strchr(BUTTONS_RELEASED, _command[0]);
             if (found)
             {
-                released((BUTTON)((found - BUTTONS_RELEASED) + 1));
+                BUTTON button = (BUTTON)((found - BUTTONS_RELEASED) + 1);
+                EVENTS->indicateButtonReleased(button);
+            }
+        }
+        else if (strlen(_command) == 2 && _command[0] == _command[1])
+        {
+            found = strchr(BUTTONS_RELEASED, _command[0]);
+            if (found)
+            {
+                BUTTON button = (BUTTON)((found - BUTTONS_RELEASED) + 1);
+                EVENTS->indicateButtonLongReleased(button);
             }
         }
     }

@@ -1,7 +1,7 @@
 // Escornabot.h
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -25,6 +25,8 @@ See LICENSE.txt for details
 #ifndef _ESCORNABOT_H
 #define _ESCORNABOT_H
 
+#define FIRMWARE_VERSION "v1.6.2"
+
 #include <Arduino.h>
 #include "Configuration.h"
 #include "Enums.h"
@@ -33,23 +35,7 @@ See LICENSE.txt for details
 #include "ButtonSet.h"
 #include "EventManager.h"
 
-// motor engine defined from configuration
-#if defined(ENGINE_TYPE_HBRIDGE)
-
-    #include "EngineHBridge.h"
-    const EngineHBridge::Config ENGINE_CONFIG = {
-        motor_left_a: HBRIDGE_MOTOR_LEFT_A,
-        motor_left_b: HBRIDGE_MOTOR_LEFT_B,
-        motor_left_en: HBRIDGE_MOTOR_LEFT_EN,
-        motor_right_a: HBRIDGE_MOTOR_RIGHT_A,
-        motor_right_b: HBRIDGE_MOTOR_RIGHT_B,
-        motor_right_en: HBRIDGE_MOTOR_RIGHT_EN,
-        step_millis: HBRIDGE_STEP_MILLIS,
-        turn_millis: HBRIDGE_TURN_MILLIS,
-    };
-    EngineHBridge ENGINE_INSTANCE (&ENGINE_CONFIG);
-
-#elif defined(ENGINE_TYPE_STEPPERS)
+#if defined(ENGINE_TYPE_STEPPERS)
 
     #include "EngineSteppers.h"
     const EngineSteppers::Config ENGINE_CONFIG = {
@@ -66,12 +52,13 @@ See LICENSE.txt for details
         turn_steps: STEPPERS_TURN_STEPS,
     };
     EngineSteppers ENGINE_INSTANCE (&ENGINE_CONFIG);
+    Engine* ENGINE = (Engine*) &ENGINE_INSTANCE;
 
 #endif
 
-// Digital button set
 #if defined(BUTTONS_DIGITAL)
 
+    // digital button set
     #include "ButtonSetDigital.h"
     const ButtonSetDigital::Config BS_CONFIG = {
         pin_button_up: BS_DIGITAL_UP,
@@ -82,9 +69,12 @@ See LICENSE.txt for details
         pin_button_reset: BS_DIGITAL_RESET,
     };
     ButtonSetDigital BUTTONS_INSTANCE (&BS_CONFIG);
+    ButtonSet* BUTTONS = (ButtonSet*) &BUTTONS_INSTANCE;
+    #define USE_BUTTONS true
 
 #elif defined(BUTTONS_ANALOG)
 
+    // analog button set
     #include "ButtonSetAnalog.h"
     const ButtonSetAnalog::Config BS_CONFIG = {
         pin_button_set: BS_ANALOG_PIN,
@@ -97,43 +87,57 @@ See LICENSE.txt for details
         value_button_reset: BS_ANALOG_VALUE_RESET,
     };
     ButtonSetAnalog BUTTONS_INSTANCE (&BS_CONFIG);
-
-#elif defined(BUTTONS_BLUETOOTH)
-
-    #include "BluetoothInterface.h"
-    const BluetoothInterface::Config BS_CONFIG = {
-        serial: &(BS_BLUETOOTH_SERIAL),
-        bauds: BS_BLUETOOTH_BAUDS,
-    };
-    BluetoothInterface BUTTONS_INSTANCE (&BS_CONFIG);
-
-    #define INDICATOR_INSTANCE BUTTONS_INSTANCE
+    ButtonSet* BUTTONS = (ButtonSet*) &BUTTONS_INSTANCE;
+    #define USE_BUTTONS true
 
 #endif // Button set
 
+#if defined(USE_BLUETOOTH)
 
-#ifdef USE_BUZZER
+    #ifndef BLUETOOTH_SERIAL
+        #define BLUETOOTH_SERIAL Serial
+    #endif
+
+    #include "BluetoothInterface.h"
+    const BluetoothInterface::Config BT_CONFIG = {
+        serial: &(BLUETOOTH_SERIAL),
+        bauds: BLUETOOTH_BAUDS,
+    };
+    BluetoothInterface BLUETOOTH_INSTANCE (&BT_CONFIG);
+    BluetoothInterface* BLUETOOTH = &BLUETOOTH_INSTANCE;
+
+#endif // Bluetooth
+
+
+#if USE_BUZZER
     #include "Buzzer.h"
     Buzzer BUZZER = Buzzer(BUZZER_PIN);
 #endif
 
 
-#ifdef USE_SIMPLE_LED
+#if USE_SIMPLE_LED
     #include "SimpleLed.h"
     SimpleLed SIMPLE_LED = SimpleLed(SIMPLE_LED_PIN);
 #endif
 
+
+#if USE_KEYPAD_LEDS
+    #include "KeypadLeds.h"
+    const KeypadLeds::Config KEYPAD_LEDS_CONFIG = {
+        pin_led_up: KEYPAD_LED_PIN_UP,
+        pin_led_right: KEYPAD_LED_PIN_RIGHT,
+        pin_led_down: KEYPAD_LED_PIN_DOWN,
+        pin_led_left: KEYPAD_LED_PIN_LEFT,
+        pin_led_go: KEYPAD_LED_PIN_GO,
+    };
+    KeypadLeds KEYPAD_LEDS = KeypadLeds(&KEYPAD_LEDS_CONFIG);
+#endif
+
 ///// global vars
 
-// status indicators
+// event manager
 EventManager EVENTS_INSTANCE;
 EventManager* EVENTS = &EVENTS_INSTANCE;
-
-// engine
-Engine* ENGINE = (Engine*) &ENGINE_INSTANCE;
-
-// button set
-ButtonSet* BUTTONS = (ButtonSet*) &BUTTONS_INSTANCE;
 
 // program
 MoveList PROGRAM_INSTANCE;

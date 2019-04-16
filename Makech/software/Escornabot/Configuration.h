@@ -1,7 +1,7 @@
 // Configuration.h
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -33,10 +33,9 @@ See LICENSE.txt for details
 // engine to use
 #define ENGINE_TYPE_STEPPERS
 
-// button set to use
+// button set to use (analog input, digital input)
 #define BUTTONS_ANALOG
 //#define BUTTONS_DIGITAL
-//#define BUTTONS_BLUETOOTH
 
 // milliseconds after a button is considered as pressed
 #define BUTTON_MIN_PRESSED 30
@@ -48,7 +47,10 @@ See LICENSE.txt for details
 #define PROGRAM_RESET_ALWAYS true
 
 // store configuration and program within internal EEPROM
-#define USE_PERSISTENT_MEMORY false //WARNING!!: FALSE for SAMD21, EEPROM not compatible
+/* 
+ * WARNING!!: FALSE for SAMD21, EEPROM not compatible 
+ */
+#define USE_PERSISTENT_MEMORY false
 
 // memory capacity for program movements
 #define MOVE_LIMIT 100
@@ -63,17 +65,32 @@ See LICENSE.txt for details
 #define AFTER_MOVEMENT_PAUSE 0
 
 // point of view set when Vacalourabot is started
-#define POV_INITIAL	POV_ESCORNABOT
+#define POV_INITIAL    POV_ESCORNABOT
+
+// bluetooth serial
+#define USE_BLUETOOTH false
+#define BLUETOOTH_BAUDS 9600
 
 // buzzer
 #define USE_BUZZER true
-#define BUZZER_PIN 11
+#define BUZZER_PIN 10
 #define PROGRAM_FINISHED_RTTL RTTL_FIDO
+#define TONE_FREQ_UP 2637
+#define TONE_FREQ_RIGHT 4434
+#define TONE_FREQ_DOWN 3520
+#define TONE_FREQ_LEFT 2217
 
 // simple led
-#define USE_SIMPLE_LED true
-#define SIMPLE_LED_PIN A0
+#define USE_SIMPLE_LED false
+#define SIMPLE_LED_PIN LED_BUILTIN
 
+// keypad leds
+#define USE_KEYPAD_LEDS true
+#define KEYPAD_LED_PIN_UP A1
+#define KEYPAD_LED_PIN_RIGHT A0
+#define KEYPAD_LED_PIN_DOWN A3
+#define KEYPAD_LED_PIN_LEFT A2
+#define KEYPAD_LED_PIN_GO -1
 
 
 //////////////////////////////////////////////////////////////////////
@@ -83,14 +100,14 @@ See LICENSE.txt for details
 #ifdef ENGINE_TYPE_STEPPERS
 
 // stepper pin setup (digital outputs)
-#define STEPPERS_MOTOR_RIGHT_IN1 7
-#define STEPPERS_MOTOR_RIGHT_IN2 6
-#define STEPPERS_MOTOR_RIGHT_IN3 5
-#define STEPPERS_MOTOR_RIGHT_IN4 4
-#define STEPPERS_MOTOR_LEFT_IN1 13
-#define STEPPERS_MOTOR_LEFT_IN2 10
-#define STEPPERS_MOTOR_LEFT_IN3 9
-#define STEPPERS_MOTOR_LEFT_IN4 8
+#define STEPPERS_MOTOR_RIGHT_IN1 6
+#define STEPPERS_MOTOR_RIGHT_IN2 7
+#define STEPPERS_MOTOR_RIGHT_IN3 8
+#define STEPPERS_MOTOR_RIGHT_IN4 9
+#define STEPPERS_MOTOR_LEFT_IN1 5
+#define STEPPERS_MOTOR_LEFT_IN2 4
+#define STEPPERS_MOTOR_LEFT_IN3 3
+#define STEPPERS_MOTOR_LEFT_IN4 2
 
 // step calibration
 #define STEPPERS_STEPS_PER_SECOND 1000
@@ -107,13 +124,13 @@ See LICENSE.txt for details
 
 #ifdef BUTTONS_DIGITAL
 
-// Button set pin setup (digital or analog inputs)
+// keypad pin setup (digital or analog inputs) (use 255 if key doesn't exist)
 #define BS_DIGITAL_UP A0
 #define BS_DIGITAL_RIGHT A1
 #define BS_DIGITAL_DOWN A2
 #define BS_DIGITAL_LEFT A3
 #define BS_DIGITAL_GO A4
-#define BS_DIGITAL_RESET A5
+#define BS_DIGITAL_RESET 255
 
 #endif // BUTTONS_DIGITAL
 
@@ -128,16 +145,16 @@ See LICENSE.txt for details
 #define BS_ANALOG_WIRES 2
 //#define BS_ANALOG_WIRES 3
 
-// Button set pin setup (analog input)
-#define BS_ANALOG_PIN A5
+// keypad pin setup (analog input)
+#define BS_ANALOG_PIN A4
 
 // input values for each key pressed (0 if key doesn't exist)
-#define BS_ANALOG_VALUE_UP 813
-#define BS_ANALOG_VALUE_RIGHT 738
-#define BS_ANALOG_VALUE_DOWN 578
-#define BS_ANALOG_VALUE_LEFT 886
+#define BS_ANALOG_VALUE_UP 680
+#define BS_ANALOG_VALUE_RIGHT 509
+#define BS_ANALOG_VALUE_DOWN 816
+#define BS_ANALOG_VALUE_LEFT 765
 #define BS_ANALOG_VALUE_GO 857
-#define BS_ANALOG_VALUE_RESET 448
+#define BS_ANALOG_VALUE_RESET 0
 
 #endif // BUTTONS_ANALOG
 
@@ -147,17 +164,15 @@ See LICENSE.txt for details
 ///// Button set Bluetooth
 //////////////////////////////////////////////////////////////////////
 
-#ifdef BUTTONS_BLUETOOTH
+#ifdef USE_BLUETOOTH
 
-// Arduino serial port
-#define BS_BLUETOOTH_SERIAL	Serial
-//#define BS_BLUETOOTH_SERIAL	Serial1
-//#define BS_BLUETOOTH_SERIAL	Serial2
-//#define BS_BLUETOOTH_SERIAL	Serial3
+// Arduino serial port (default is Serial, use Serial1 with Arduino Micro)
+//#define BLUETOOTH_SERIAL    Serial
+#define BLUETOOTH_SERIAL    Serial1
+//#define BLUETOOTH_SERIAL    Serial2
+//#define BLUETOOTH_SERIAL    Serial3
 
-#define BS_BLUETOOTH_BAUDS 9600
-
-#endif // BUTTONS_BLUETOOTH
+#endif // USE_BLUETOOTH
 
 
 

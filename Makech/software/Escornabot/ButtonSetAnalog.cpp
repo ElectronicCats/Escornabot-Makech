@@ -1,7 +1,7 @@
 // ButtonSetAnalog.cpp
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -26,7 +26,11 @@ See LICENSE.txt for details
 #include "Configuration.h"
 #include <Arduino.h>
 
-#define PULLUP_VALUE 990
+#if (BS_ANALOG_WIRES == 2)
+#    define PULLUP_VALUE 990
+#else
+#    define PULLUP_VALUE 0
+#endif
 
 //////////////////////////////////////////////////////////////////////
 

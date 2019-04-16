@@ -1,7 +1,7 @@
 // Buzzer.cpp
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -23,11 +23,23 @@ See LICENSE.txt for details
 */
 
 #include "Buzzer.h"
+#include "EventManager.h"
 #include <Arduino.h>
+#include "Configuration.h"
 
-#define BUZZER_BEEP_FREQUENCY 4699
-#define BUZZER_BEEP_MILLIS 100
+//////////////////////////////////////////////////////////////////////
 
+// fast index between tones and directions
+const static uint16_t BTN_TONES[] = {
+    TONE_FREQ_UP,     // 1
+    TONE_FREQ_RIGHT,  // 2
+    TONE_FREQ_DOWN,   // 3
+    TONE_FREQ_LEFT    // 4
+};
+
+//////////////////////////////////////////////////////////////////////
+
+extern EventManager* EVENTS;
 
 //////////////////////////////////////////////////////////////////////
 
@@ -41,6 +53,7 @@ Buzzer::Buzzer(uint8_t pin)
 void Buzzer::init()
 {
     pinMode(_pin, OUTPUT);
+    EVENTS->add(this);
 }
 
 
@@ -48,9 +61,9 @@ void Buzzer::init()
 // utility functions
 //////////////////////////////////////////////////////////////////////
 
-void Buzzer::beep()
+void Buzzer::beep(uint16_t frequency)
 {
-    tone(_pin, BUZZER_BEEP_FREQUENCY, BUZZER_BEEP_MILLIS);
+    tone(_pin, frequency, BUZZER_BEEP_MILLIS);
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -63,7 +76,6 @@ static const uint16_t FREQUENCIES[] =
     3520, 3729, 3951, 4186, 4434, 4698, 4978, 5274, 5587, 5919, 6271, 6644,
     7040, 7458, 7902, 8372, 8869, 9397, 9956, 10548, 11175, 11839, 12543, 13289,
     14080, 14917, 15804, 16744, 17739, 18794, 19912, 21096, 22350, 23679, 25087,
-
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -75,7 +87,8 @@ void Buzzer::playRttl(const char* rttl)
     rttl++;
 
     // default values
-    uint8_t default_duration, default_octave, bps;
+    uint8_t default_duration= 16, default_octave = 5;
+    uint16_t bps = 320;
     while (*rttl && *rttl != ':')
     {
         switch (*rttl)
@@ -149,6 +162,28 @@ void Buzzer::playRttl(const char* rttl)
             }
             rttl++;
         }
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void Buzzer::_beepDirection(uint8_t direction, uint16_t duration)
+{
+    uint16_t frequency = (direction >= 1 && direction <= 4 ?
+            BTN_TONES[direction - 1] : BUZZER_BEEP_FREQUENCY);
+
+    tone(_pin, frequency, duration);
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void Buzzer::gameModeSelected(GAME_MODE mode)
+{
+    mode++;
+    while (mode-- > 0)
+    {
+        tone(_pin, BUZZER_BEEP_FREQUENCY, 100);
+        delay(200);
     }
 }
 

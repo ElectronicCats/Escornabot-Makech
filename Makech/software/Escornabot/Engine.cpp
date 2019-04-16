@@ -1,7 +1,7 @@
 // Engine.cpp
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -26,6 +26,8 @@ See LICENSE.txt for details
 #include "EventManager.h"
 #include <Arduino.h>
 
+#define SQUARE_ROOT_2 1.414213562f
+
 //////////////////////////////////////////////////////////////////////
 
 extern EventManager* EVENTS;
@@ -34,10 +36,12 @@ extern EventManager* EVENTS;
 
 Engine::Engine()
 {
-    _is_executing = false;
+    _current_degrees = 0;
+    _square_diagonals = true;
+    _program = NULL;
+    _program_index = 0;
     _is_cancelling = false;
-    _current_move = 0;
-    this->_program = NULL;
+    _pauseTimeout = 0;
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -46,12 +50,109 @@ void Engine::execute(MoveList* program, uint16_t pause, POV pov)
 {
     if (program->getMoveCount() == 0) return;
 
+    _program_index = 0;
     _is_cancelling = false;
-    _is_executing = true;
-    _current_move = 0;
     _program = program;
 
     EVENTS->indicateProgramStarted(program->getMoveCount());
+    _prepareMove();
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void Engine::_prepareMove()
+{
+    if (_is_cancelling)
+    {
+        // program is cancelled
+        EVENTS->indicateProgramAborted(_program_index, _program->getMoveCount());
+        _program = NULL;
+        return;
+    }
+
+    if (_program_index == _program->getMoveCount())
+    {
+        // program is finished
+        _program = NULL;
+        EVENTS->indicateProgramFinished();
+        return;
+    }
+
+    MOVE move = _getCurrentMove();
+    EVENTS->indicateMoveExecuting(move);
+
+    uint16_t delta_degrees = 0;
+
+    switch (move)
+    {
+        case MOVE_RIGHT:
+            delta_degrees = +(_program->getTurnDegrees());
+            turn(delta_degrees);
+            break;
+
+        case MOVE_LEFT:
+            delta_degrees = -(_program->getTurnDegrees());
+            turn(delta_degrees);
+            break;
+
+        case MOVE_FORWARD:
+            moveStraight(_calculateAdvanceUnits());
+            break;
+
+        case MOVE_BACKWARD:
+            moveStraight(-_calculateAdvanceUnits());
+            break;
+
+        case MOVE_PAUSE:
+            _pauseTimeout = millis() + PAUSE_MOVE_MILLIS;
+            break;
+
+        case MOVE_ALT_RIGHT:
+            delta_degrees = +(_program->getAltTurnDegrees());
+            turn(delta_degrees);
+            break;
+
+        case MOVE_ALT_LEFT:
+            delta_degrees = -(_program->getAltTurnDegrees());
+            turn(delta_degrees);
+            break;
+
+    }
+
+    _current_degrees += delta_degrees;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+float Engine::_calculateAdvanceUnits()
+{
+    float advance = 1.0f;
+
+    if (_square_diagonals)
+    {
+        if (isAligned(45) && !isAligned(90))
+        {
+            advance = SQUARE_ROOT_2;
+        }
+    }
+
+    return advance;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+bool Engine::_inPauseMove()
+{
+    if (_pauseTimeout > 0)
+    {
+        // in pause yet
+        if (millis() < _pauseTimeout) return true;
+
+        // pause is finished
+        _pauseTimeout = 0;
+    }
+
+    return false;
 }
 
 //////////////////////////////////////////////////////////////////////

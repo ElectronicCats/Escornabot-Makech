@@ -1,7 +1,7 @@
 // Bot.h
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -44,8 +44,6 @@ public:
     // EventListener interface
     ////////////////////////////////////////////////////////////
 
-    virtual void moveExecuting(MOVE move);
-
     virtual void programFinished();
 
     virtual void programAborted(uint8_t executed, uint8_t total);
@@ -61,6 +59,12 @@ private:
     void _go();
 
     void _storeMove(MOVE move);
+
+    uint16_t _total_programs = 0;
+
+    GAME_MODE _game_mode = GAME_MODE_GRID_90;
+
+    void _next_game_mode();
 
 };
 

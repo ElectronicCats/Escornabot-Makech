@@ -1,7 +1,7 @@
 // BluetoothInterface.h
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -28,10 +28,6 @@ See LICENSE.txt for details
 #include "ButtonSet.h"
 #include "EventListener.h"
 #include <Arduino.h>
-
-// one-key comands: one character by line
-const static char* BUTTONS_PRESSED = "NESWGR";
-const static char* BUTTONS_RELEASED = "neswgr";
 
 #define COMMAND_MAX_LENGTH 10
 

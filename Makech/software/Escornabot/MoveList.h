@@ -1,7 +1,7 @@
 // MoveList.h
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -30,6 +30,18 @@ See LICENSE.txt for details
 #include "Configuration.h"
 #include "Enums.h"
 
+const static MOVE PROGRAM_ESCORNA_GREETING[] = {
+    MOVE_FORWARD,
+    MOVE_PAUSE,
+    MOVE_LEFT,
+    MOVE_PAUSE,
+    MOVE_RIGHT,
+    MOVE_RIGHT,
+    MOVE_PAUSE,
+    MOVE_LEFT,
+    MOVE_BACKWARD,
+    MOVE_NONE
+};
 
 /**
  * \brief Container of program movements.
@@ -39,47 +51,75 @@ class MoveList
 {
 public:
 
-	/**
-	 * Constructor.
-	 */
-	MoveList();
+    /**
+     * Constructor.
+     */
+    MoveList();
 
-	/**
-	 * Removes all movements from program.
-	 */
-	void clear();
+    /**
+     * Removes all movements from program.
+     */
+    void clear();
 
-	/**
-	 * Returns the amount of movements in program.
-	 * @return Amount of movements.
-	 */
-	uint8_t getMoveCount();
+    /**
+     * Returns the amount of movements in program.
+     * @return Amount of movements.
+     */
+    uint8_t getMoveCount();
 
-	/**
-	 * Adds a new movement at the end of the program.
-	 * @param move The movement to add.
-	 */
-	void addMove(MOVE move);
+    /**
+     * Adds a new movement at the end of the program.
+     * @param move The movement to add.
+     */
+    void addMove(MOVE move);
 
-	/**
-	 * Gets the movement from program at specified position.
-	 * @param index Position index (zero-based).
-	 */
-	MOVE getMove(uint8_t index);
+    /**
+     * Adds a list of moves.
+     */
+    void addProgram(const MOVE moves[]);
 
-	#if USE_PERSISTENT_MEMORY
+    /**
+     * Gets the movement from program at specified position.
+     * @param index Position index (zero-based).
+     */
+    MOVE getMove(uint8_t index);
 
-	/**
-	 * Saves the program in EEPROM.
-	 */
-	void save();
+    /**
+     * Gets the degrees to use with MOVE_LEFT or MOVE_RIGHT
+     */
+    uint16_t getTurnDegrees() { return _degrees; }
 
-	/**
-	 * Loads the program from EEPROM.
-	 */
-	void load();
+    /**
+     * Sets the degrees to use with MOVE_LEFT or MOVE_RIGHT
+     * @param degrees The degrees to turn left or right.
+     */
+    void setTurnDegrees(int16_t degrees) { _degrees = degrees; }
 
-	#endif
+    /**
+     * Gets the degrees to use with MOVE_ALT_LEFT or MOVE_ALT_RIGHT
+     */
+    uint16_t getAltTurnDegrees() { return _alt_degrees; }
+
+    /**
+     * Sets the degrees to use with MOVE_ALT_LEFT or MOVE_ALT_RIGHT
+     * @param degrees The degrees to turn left or right.
+     */
+    void setAltTurnDegrees(int16_t degrees) { _alt_degrees = degrees; }
+
+
+    #if USE_PERSISTENT_MEMORY
+
+    /**
+     * Saves the program in EEPROM.
+     */
+    void save();
+
+    /**
+     * Loads the program from EEPROM.
+     */
+    void load();
+
+    #endif
 
 private:
 
@@ -87,6 +127,8 @@ private:
 
     MOVE _move_list[MOVE_LIMIT];
 
+    int16_t _degrees;
+    int16_t _alt_degrees;
 };
 
 

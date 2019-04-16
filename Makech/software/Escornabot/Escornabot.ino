@@ -1,7 +1,7 @@
 // Escornabot.ino
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -40,8 +40,6 @@ void setup()
 
 void loop()
 {
-//  Serial.println(analogRead(11));
-  
     ESCORNABOT.loop();
 }
 
@@ -49,4 +47,3 @@ void loop()
 
 
 // EOF
-

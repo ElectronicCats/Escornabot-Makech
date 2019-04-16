@@ -1,7 +1,7 @@
 // EngineSteppers.cpp
 /*
 
-Copyright (C) 2014 Bricolabs - http://bricolabs.cc
+Copyright (C) 2014-2019 Escornabot - http://escornabot.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -71,18 +71,9 @@ void EngineSteppers::init()
 
 //////////////////////////////////////////////////////////////////////
 
-void EngineSteppers::turn90Degrees(int8_t times)
-{
-    _movement_steps_r = -_config->turn_steps * times;
-    _movement_steps_l = _movement_steps_r;
-}
-
-//////////////////////////////////////////////////////////////////////
-
 void EngineSteppers::turn(int16_t degrees)
 {
-    uint32_t steps;
-    steps = (degrees < 0 ? _config->turn_steps : -_config->turn_steps);
+    int32_t steps = -_config->turn_steps;
     steps *= degrees;
     steps /= 90;
 
@@ -92,9 +83,9 @@ void EngineSteppers::turn(int16_t degrees)
 
 //////////////////////////////////////////////////////////////////////
 
-void EngineSteppers::moveStraight(int8_t units)
+void EngineSteppers::moveStraight(float advance_units)
 {
-    _movement_steps_r = _config->line_steps * units;
+    _movement_steps_r = _config->line_steps * advance_units;
     _movement_steps_l = -_movement_steps_r;
 }
 
@@ -122,103 +113,53 @@ void EngineSteppers::_motorStepLeft(uint8_t pattern)
 
 void EngineSteppers::tick(uint32_t micros)
 {
+    if (!isExecuting()) return;
+
     if (_movement_steps_l == 0 && _movement_steps_r == 0)
     {
+        // already executing a pause movement
+        if (_inPauseMove()) return;
+
         // deactivate Darlingtons
         _motorStepLeft(0);
         _motorStepRight(0);
 
-        // post move indication
-        EVENTS->indicateMoveExecuted(_current_move);
+        EVENTS->indicateMoveExecuted(_getCurrentMove());
 
         // prepare next movement
-        _next_movement();
+        _program_index++;
+        _prepareMove();
+        return;
     }
-    else
+
+    if (_movement_steps_l != 0)
     {
-        if (_movement_steps_l != 0)
-        {
-            // left motor step
-            int8_t delta = (_movement_steps_l > 0 ? 1 : -1);
-            _motorStepLeft(step_pattern[_pattern_index_left]);
-            _pattern_index_left += delta + 8;
-            _pattern_index_left %= 8;
-            _movement_steps_l -= delta;
-        }
-
-        if (_movement_steps_r != 0)
-        {
-            // right motor step
-            int8_t delta = (_movement_steps_r > 0 ? 1 : -1);
-            _motorStepRight(step_pattern[_pattern_index_right]);
-            _pattern_index_right += delta + 8;
-            _pattern_index_right %= 8;
-            _movement_steps_r -= delta;
-        }
-
-        if (_is_cancelling)
-        {
-            _movement_steps_r = 0;
-            _movement_steps_l = 0;
-        }
-        else
-        {
-            delayMicroseconds(1000000 / _config->steps_per_second);
-        }
+        // left motor step
+        int8_t delta = (_movement_steps_l > 0 ? 1 : -1);
+        _motorStepLeft(step_pattern[_pattern_index_left]);
+        _pattern_index_left += delta + 8;
+        _pattern_index_left %= 8;
+        _movement_steps_l -= delta;
     }
-}
 
-//////////////////////////////////////////////////////////////////////
-
-void EngineSteppers::_next_movement()
-{
-    if (!_is_executing) return;
+    if (_movement_steps_r != 0)
+    {
+        // right motor step
+        int8_t delta = (_movement_steps_r > 0 ? 1 : -1);
+        _motorStepRight(step_pattern[_pattern_index_right]);
+        _pattern_index_right += delta + 8;
+        _pattern_index_right %= 8;
+        _movement_steps_r -= delta;
+    }
 
     if (_is_cancelling)
     {
-        EVENTS->indicateProgramAborted(_current_move, _program->getMoveCount());
-        _current_move = _program->getMoveCount();
-    }
-
-    if (_current_move == _program->getMoveCount())
-    {
-        // end of program
-        _is_executing = false;
-        _program = NULL;
-
-        // program is finished
-        if (!_is_cancelling) EVENTS->indicateProgramFinished();
+        _movement_steps_r = 0;
+        _movement_steps_l = 0;
     }
     else
     {
-        // pre move indication
-        EVENTS->indicateMoveExecuting(_current_move);
-
-        // program the new movement
-        _current_move++;
-        switch (_program->getMove(_current_move - 1))
-        {
-            case MOVE_RIGHT:
-                turn90Degrees(1);
-                break;
-
-            case MOVE_LEFT:
-                turn90Degrees(-1);
-                break;
-
-            case MOVE_FORWARD:
-                moveStraight(1);
-                break;
-
-            case MOVE_BACKWARD:
-                moveStraight(-1);
-                break;
-/*
-            case MOVE_PAUSE:
-                delay(PAUSE_MOVE_MILLIS);
-                break;
-*/
-        }
+        delayMicroseconds(1000000 / _config->steps_per_second);
     }
 }
 
