@@ -1,6 +1,11 @@
 # Escornabot Makech
 ![](https://github.com/ElectronicCats/escornabot/raw/master/escornabot.jpg)
 
+
+![OSHW](https://github.com/ElectronicCats/escornabot/raw/master/OSHWA.png)
+
+**[OSHW] MX000009 | Certified open source hardware |** [oshwa.org/cert.](https://www.oshwa.org/cert)
+
 Escornabot es un proyecto de código/hardware abierto cuyo objetivo es acercar la robótica y la programación a los niños y niñas.
 
 El Escornabot básico puede programarse con los botones para ejecutar secuencias de movimientos. A partir de aquí, la imaginación es el único límite en las posibilidades.
