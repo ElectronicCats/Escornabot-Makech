@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Escornabot Makech"
-Date "2019-03-03"
-Rev "v0.2"
+Date "2019-04-28"
+Rev "v0.3"
 Comp "Electronic Cats"
 Comment1 "Andres Sabas"
 Comment2 "electroniccats.com"
@@ -109,7 +109,7 @@ F 4 "F/CM12P-LF" H 4165 5960 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 Text Label 4025 5260 2    60   ~ 0
-D11
+D10
 $Comp
 L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR013
 U 1 1 58BB0676
@@ -189,21 +189,21 @@ F 3 "" H 8600 6295 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9330 4855 0    60   ~ 0
-D13
-Text Label 9330 4955 0    60   ~ 0
-D10
-Text Label 9330 5055 0    60   ~ 0
 D9
-Text Label 9335 5155 0    60   ~ 0
+Text Label 9330 4955 0    60   ~ 0
 D8
-Text Label 9330 5255 0    60   ~ 0
+Text Label 9330 5055 0    60   ~ 0
 D7
-Text Label 9330 5355 0    60   ~ 0
+Text Label 9335 5155 0    60   ~ 0
 D6
-Text Label 9330 5455 0    60   ~ 0
+Text Label 9330 5255 0    60   ~ 0
 D5
-Text Label 9330 5555 0    60   ~ 0
+Text Label 9330 5355 0    60   ~ 0
 D4
+Text Label 9330 5455 0    60   ~ 0
+D3
+Text Label 9330 5555 0    60   ~ 0
+D2
 Text Label 10700 4610 0    60   ~ 0
 ML1
 Text Label 10695 4710 0    60   ~ 0
@@ -872,23 +872,23 @@ SDA
 Text Label 1225 2505 2    60   ~ 0
 SCL
 Text Label 1245 3805 2    60   ~ 0
-D4
+D2
 Text Label 1225 2705 2    60   ~ 0
-D5
+D3
 Text Label 1265 4205 2    60   ~ 0
-D6
+D4
 Text Label 1265 4305 2    60   ~ 0
-D7
+D5
 Text Label 1225 2205 2    60   ~ 0
-D8
+D6
 Text Label 1225 2305 2    60   ~ 0
-D9
+D7
 Text Label 1245 3405 2    60   ~ 0
-D10
+D8
 Text Label 1245 3305 2    60   ~ 0
-D13
+D9
 Text Label 1245 3205 2    60   ~ 0
-D11
+D10
 Text Notes 1400 700  0    118  ~ 0
 MICROCONTROLLER
 $Comp
@@ -1118,9 +1118,9 @@ $EndComp
 Text Label 7605 5650 0    60   ~ 0
 ESP_RESET
 Text Label 4545 1240 0    60   ~ 0
-A6
+A4
 Text Label 1225 1905 2    60   ~ 0
-A6
+A4
 Text Label 1245 3605 2    60   ~ 0
 ESP_GPIO
 Text Label 1225 2805 2    60   ~ 0
