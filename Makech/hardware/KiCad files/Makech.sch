@@ -226,7 +226,7 @@ U 1 1 58BB0114
 P 815 7170
 F 0 "X1" H 815 7420 50  0000 C TNN
 F 1 "Screw_Terminal_1x02" V 665 7170 50  0001 C TNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 815 6945 50  0001 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 815 6945 50  0001 C CNN
 F 3 "" H 790 7170 50  0001 C CNN
 	1    815  7170
 	1    0    0    1   
