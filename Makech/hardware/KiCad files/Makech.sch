@@ -126,30 +126,30 @@ Buzz ON
 $Comp
 L Makech-rescue:CONN_01X04--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue U2
 U 1 1 58BB1148
-P 5600 5210
-F 0 "U2" H 5600 5460 50  0000 C CNN
-F 1 "CONN_01X04" V 5700 5210 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5600 5210 50  0001 C CNN
-F 3 "" H 5600 5210 50  0000 C CNN
-	1    5600 5210
+P 5625 5675
+F 0 "U2" H 5625 5925 50  0000 C CNN
+F 1 "CONN_01X04" V 5725 5675 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5625 5675 50  0001 C CNN
+F 3 "" H 5625 5675 50  0000 C CNN
+	1    5625 5675
 	1    0    0    1   
 $EndComp
 $Comp
 L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR016
 U 1 1 58BB1E98
-P 5220 5485
-F 0 "#PWR016" H 5220 5235 50  0001 C CNN
-F 1 "GND" H 5220 5335 50  0000 C CNN
-F 2 "" H 5220 5485 50  0000 C CNN
-F 3 "" H 5220 5485 50  0000 C CNN
-	1    5220 5485
+P 5245 5950
+F 0 "#PWR016" H 5245 5700 50  0001 C CNN
+F 1 "GND" H 5245 5800 50  0000 C CNN
+F 2 "" H 5245 5950 50  0000 C CNN
+F 3 "" H 5245 5950 50  0000 C CNN
+	1    5245 5950
 	-1   0    0    -1  
 $EndComp
-Text Label 5090 5060 0    60   ~ 0
+Text Label 5115 5525 0    60   ~ 0
 SDA
-Text Label 5090 5160 0    60   ~ 0
+Text Label 5115 5625 0    60   ~ 0
 SCL
-Text Notes 5140 5880 0    60   ~ 12
+Text Notes 5165 6345 0    60   ~ 12
 I2C
 Text Notes 6825 3770 2    118  ~ 0
 Expasions
@@ -237,7 +237,7 @@ U 1 1 58BB5A4E
 P 2705 7015
 F 0 "F1" H 2755 7055 40  0000 C CNN
 F 1 "FUSE" H 2605 6965 40  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric" H 2705 7015 60  0001 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" H 2705 7015 60  0001 C CNN
 F 3 "" H 2705 7015 60  0000 C CNN
 F 4 "0ZCF0050FF2C" H 2705 7015 50  0001 C CNN "manf#"
 	1    2705 7015
@@ -396,13 +396,13 @@ Wire Wire Line
 Wire Wire Line
 	4055 6010 4115 6010
 Wire Wire Line
-	5400 5060 5090 5060
+	5425 5525 5115 5525
 Wire Wire Line
-	5400 5160 5090 5160
+	5425 5625 5115 5625
 Wire Wire Line
-	5400 5360 5220 5360
+	5425 5825 5245 5825
 Wire Wire Line
-	5220 5360 5220 5485
+	5245 5825 5245 5950
 Wire Notes Line
 	7750 6670 7750 6675
 Wire Wire Line
@@ -543,17 +543,15 @@ Wire Wire Line
 $Comp
 L Makech-rescue:C_Small-Device-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue C1
 U 1 1 5CFEDF86
-P 3090 1875
-F 0 "C1" H 3182 1921 50  0000 L CNN
-F 1 "1uF" H 3182 1830 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3090 1875 50  0001 C CNN
-F 3 "~" H 3090 1875 50  0001 C CNN
-F 4 "CGA4J1X8R1E105M125AE" H 3090 1875 50  0001 C CNN "manf#"
-	1    3090 1875
+P 3090 1805
+F 0 "C1" H 3182 1851 50  0000 L CNN
+F 1 "1uF" H 3182 1760 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3090 1805 50  0001 C CNN
+F 3 "~" H 3090 1805 50  0001 C CNN
+F 4 "CGA4J1X8R1E105M125AE" H 3090 1805 50  0001 C CNN "manf#"
+	1    3090 1805
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3090 1705 3090 1775
 Wire Wire Line
 	2820 1705 3090 1705
 $Comp
@@ -567,17 +565,15 @@ F 3 "" H 2940 1100 50  0001 C CNN
 	1    2940 1100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3090 1975 3090 2040
 $Comp
 L Makech-rescue:GND-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR08
 U 1 1 5D09946E
-P 3090 2040
-F 0 "#PWR08" H 3090 1790 50  0001 C CNN
-F 1 "GND" H 3095 1867 50  0000 C CNN
-F 2 "" H 3090 2040 50  0001 C CNN
-F 3 "" H 3090 2040 50  0001 C CNN
-	1    3090 2040
+P 3090 1935
+F 0 "#PWR08" H 3090 1685 50  0001 C CNN
+F 1 "GND" H 3095 1762 50  0000 C CNN
+F 2 "" H 3090 1935 50  0001 C CNN
+F 3 "" H 3090 1935 50  0001 C CNN
+	1    3090 1935
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -750,7 +746,7 @@ U 1 1 5D9CAE20
 P 3300 5590
 F 0 "F2" V 3103 5590 50  0000 C CNN
 F 1 "0.5" V 3194 5590 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric" V 3230 5590 50  0001 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" V 3230 5590 50  0001 C CNN
 F 3 "~" H 3300 5590 50  0001 C CNN
 F 4 "0ZCG0030FF2C" V 3300 5590 50  0001 C CNN "manf#"
 	1    3300 5590
@@ -992,18 +988,18 @@ Support:\n- ESP32 NINA - Bluetooth and WiFi\n- I2C
 $Comp
 L Makech-rescue:+3.3V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR014
 U 1 1 5E35FE1F
-P 4930 5165
-F 0 "#PWR014" H 4930 5015 50  0001 C CNN
-F 1 "+3.3V" H 4945 5338 50  0000 C CNN
-F 2 "" H 4930 5165 50  0001 C CNN
-F 3 "" H 4930 5165 50  0001 C CNN
-	1    4930 5165
+P 4955 5630
+F 0 "#PWR014" H 4955 5480 50  0001 C CNN
+F 1 "+3.3V" H 4970 5803 50  0000 C CNN
+F 2 "" H 4955 5630 50  0001 C CNN
+F 3 "" H 4955 5630 50  0001 C CNN
+	1    4955 5630
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4930 5260 4930 5165
+	4955 5725 4955 5630
 Wire Wire Line
-	4930 5260 5400 5260
+	4955 5725 5425 5725
 $Comp
 L Makech-rescue:+6V-power-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR012
 U 1 1 5E509C4B
@@ -1044,78 +1040,78 @@ DRIVERS MOTOR
 Text Notes 2950 5120 0    118  ~ 0
 USB
 Wire Wire Line
-	6880 5250 6720 5250
+	6935 5665 6775 5665
 Wire Wire Line
-	6880 5350 6720 5350
+	6935 5765 6775 5765
 Wire Wire Line
-	6880 5550 6720 5550
+	6935 5965 6775 5965
 Wire Wire Line
-	6880 5650 6720 5650
+	6935 6065 6775 6065
 Wire Wire Line
-	7380 5250 7580 5250
+	7435 5665 7635 5665
 Wire Wire Line
-	7380 5350 7580 5350
+	7435 5765 7635 5765
 Wire Wire Line
-	7380 5450 7590 5450
+	7435 5865 7645 5865
 Wire Wire Line
-	7380 5550 7590 5550
-Text Label 6720 5250 0    60   ~ 0
+	7435 5965 7645 5965
+Text Label 6775 5665 0    60   ~ 0
 TX
-Text Label 6720 5350 0    60   ~ 0
+Text Label 6775 5765 0    60   ~ 0
 RX
-Text Label 6630 5110 3    60   ~ 0
+Text Label 6685 5525 3    60   ~ 0
 ESP_CS
-Text Label 6720 5550 2    60   ~ 0
+Text Label 6775 5965 2    60   ~ 0
 ESP_GPIO
-Text Label 6720 5650 2    60   ~ 0
+Text Label 6775 6065 2    60   ~ 0
 ESP_MOSI
-Text Label 7590 5750 0    60   ~ 0
+Text Label 7645 6165 0    60   ~ 0
 ESP_MISO
-Text Label 7580 5350 0    60   ~ 0
+Text Label 7635 5765 0    60   ~ 0
 ESP_BUSY
-Text Label 7590 5450 0    60   ~ 0
+Text Label 7645 5865 0    60   ~ 0
 ESP_RTS
-Text Label 7590 5550 0    60   ~ 0
+Text Label 7645 5965 0    60   ~ 0
 ESP_SCK
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J3
 U 1 1 5CAF1DA2
-P 7080 5450
-F 0 "J3" H 7130 5867 50  0000 C CNN
-F 1 "ESP32-Exp" H 7130 5776 50  0000 C CNN
-F 2 "Pines:610X1221121" H 7080 5450 50  0001 C CNN
-F 3 "~" H 7080 5450 50  0001 C CNN
-F 4 "ESP32" H 7080 5450 50  0001 C CNN "manf#"
-	1    7080 5450
+P 7135 5865
+F 0 "J3" H 7185 6282 50  0000 C CNN
+F 1 "ESP32-Exp" H 7185 6191 50  0000 C CNN
+F 2 "Pines:610X1221121" H 7135 5865 50  0001 C CNN
+F 3 "~" H 7135 5865 50  0001 C CNN
+F 4 "ESP32" H 7135 5865 50  0001 C CNN "manf#"
+	1    7135 5865
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6880 5750 6720 5750
+	6935 6165 6775 6165
 Wire Wire Line
-	7380 5750 7590 5750
+	7435 6165 7645 6165
 $Comp
 L power:GND #PWR023
 U 1 1 5CB523FF
-P 6720 5750
-F 0 "#PWR023" H 6720 5500 50  0001 C CNN
-F 1 "GND" H 6725 5577 50  0000 C CNN
-F 2 "" H 6720 5750 50  0001 C CNN
-F 3 "" H 6720 5750 50  0001 C CNN
-	1    6720 5750
+P 6775 6165
+F 0 "#PWR023" H 6775 5915 50  0001 C CNN
+F 1 "GND" H 6780 5992 50  0000 C CNN
+F 2 "" H 6775 6165 50  0001 C CNN
+F 3 "" H 6775 6165 50  0001 C CNN
+	1    6775 6165
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR024
 U 1 1 5CB5358A
-P 7580 5250
-F 0 "#PWR024" H 7580 5100 50  0001 C CNN
-F 1 "+3.3V" H 7595 5423 50  0000 C CNN
-F 2 "" H 7580 5250 50  0001 C CNN
-F 3 "" H 7580 5250 50  0001 C CNN
-	1    7580 5250
+P 7635 5665
+F 0 "#PWR024" H 7635 5515 50  0001 C CNN
+F 1 "+3.3V" H 7650 5838 50  0000 C CNN
+F 2 "" H 7635 5665 50  0001 C CNN
+F 3 "" H 7635 5665 50  0001 C CNN
+	1    7635 5665
 	1    0    0    -1  
 $EndComp
-Text Label 7605 5650 0    60   ~ 0
+Text Label 7660 6065 0    60   ~ 0
 ESP_RESET
 Text Label 4545 1240 0    60   ~ 0
 A4
@@ -1137,20 +1133,20 @@ Wire Wire Line
 Wire Wire Line
 	2940 1305 2940 1405
 Wire Wire Line
-	6630 5450 6880 5450
+	6685 5865 6935 5865
 $Comp
 L power:+3.3V #PWR022
 U 1 1 5C8EBAE6
-P 6630 5025
-F 0 "#PWR022" H 6630 4875 50  0001 C CNN
-F 1 "+3.3V" H 6645 5198 50  0000 C CNN
-F 2 "" H 6630 5025 50  0001 C CNN
-F 3 "" H 6630 5025 50  0001 C CNN
-	1    6630 5025
+P 6685 5440
+F 0 "#PWR022" H 6685 5290 50  0001 C CNN
+F 1 "+3.3V" H 6700 5613 50  0000 C CNN
+F 2 "" H 6685 5440 50  0001 C CNN
+F 3 "" H 6685 5440 50  0001 C CNN
+	1    6685 5440
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7380 5650 8165 5650
+	7435 6065 8220 6065
 Text Label 1245 3905 2    60   ~ 0
 ESP_RESET
 Text Notes 1180 5110 0    118  ~ 0
@@ -1213,18 +1209,10 @@ Wire Wire Line
 	1420 2905 1220 2905
 Wire Wire Line
 	1420 3005 1220 3005
-NoConn ~ 2820 2205
-NoConn ~ 2820 2305
-NoConn ~ 2820 2405
-NoConn ~ 2820 2505
-NoConn ~ 2820 2605
-NoConn ~ 2820 2705
 Wire Wire Line
 	1420 3605 1245 3605
 Wire Wire Line
 	1420 3705 1235 3705
-NoConn ~ 2820 2805
-NoConn ~ 2820 2905
 Wire Wire Line
 	2555 7015 2105 7015
 Wire Wire Line
@@ -2654,23 +2642,128 @@ Wire Wire Line
 	4100 5315 4100 5260
 Wire Wire Line
 	4100 5260 4025 5260
-Text Notes 6995 5975 0    60   ~ 12
+Text Notes 7050 6390 0    60   ~ 12
 ESP32
 Text Notes 2570 6715 0    118  ~ 0
 SOURCE
 $Comp
 L power:GND #PWR025
 U 1 1 5C99179E
-P 8165 5780
-F 0 "#PWR025" H 8165 5530 50  0001 C CNN
-F 1 "GND" H 8170 5607 50  0000 C CNN
-F 2 "" H 8165 5780 50  0001 C CNN
-F 3 "" H 8165 5780 50  0001 C CNN
-	1    8165 5780
+P 8220 6195
+F 0 "#PWR025" H 8220 5945 50  0001 C CNN
+F 1 "GND" H 8225 6022 50  0000 C CNN
+F 2 "" H 8220 6195 50  0001 C CNN
+F 3 "" H 8220 6195 50  0001 C CNN
+	1    8220 6195
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8165 5650 8165 5780
+	8220 6065 8220 6195
 Wire Wire Line
-	6630 5025 6630 5450
+	6685 5440 6685 5865
+Wire Wire Line
+	5880 4510 5800 4510
+Wire Wire Line
+	5880 4610 5800 4610
+Wire Wire Line
+	5880 4710 5800 4710
+Wire Wire Line
+	5880 4810 5800 4810
+Wire Wire Line
+	6380 4810 6455 4810
+Wire Wire Line
+	6380 4710 6450 4710
+Wire Wire Line
+	6380 4610 6445 4610
+Wire Wire Line
+	2820 2905 2920 2905
+Wire Wire Line
+	2820 2805 2920 2805
+Wire Wire Line
+	2820 2705 2925 2705
+Wire Wire Line
+	2820 2605 2925 2605
+Wire Wire Line
+	2820 2505 2925 2505
+Wire Wire Line
+	2820 2405 2925 2405
+Wire Wire Line
+	2820 2305 2925 2305
+Wire Wire Line
+	2820 2205 2925 2205
+Wire Wire Line
+	3090 1935 3090 1905
+Text Label 2925 2205 0    50   ~ 0
+D29
+Text Label 2925 2305 0    50   ~ 0
+D30
+Text Label 2925 2405 0    50   ~ 0
+D31
+Text Label 2925 2505 0    50   ~ 0
+D32
+Text Label 2925 2605 0    50   ~ 0
+D33
+Text Label 2925 2705 0    50   ~ 0
+D34
+Text Label 2920 2805 0    50   ~ 0
+D35
+Text Label 2920 2905 0    50   ~ 0
+D36
+Wire Wire Line
+	6380 4910 6455 4910
+Wire Wire Line
+	5880 4910 5795 4910
+Text Label 5800 4610 2    50   ~ 0
+D29
+Text Label 5800 4710 2    50   ~ 0
+D30
+Text Label 5800 4810 2    50   ~ 0
+D31
+Text Label 5795 4910 2    50   ~ 0
+D32
+Text Label 6445 4610 0    50   ~ 0
+D33
+Text Label 6450 4710 0    50   ~ 0
+D34
+Text Label 6455 4810 0    50   ~ 0
+D35
+Text Label 6455 4910 0    50   ~ 0
+D36
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J4
+U 1 1 5CFB2620
+P 6080 4710
+F 0 "J4" H 6130 5127 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 6105 4400 50  0000 C CNN
+F 2 "Pines:62001021121" H 6080 4710 50  0001 C CNN
+F 3 "~" H 6080 4710 50  0001 C CNN
+	1    6080 4710
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR029
+U 1 1 5CFB40FB
+P 5800 4510
+F 0 "#PWR029" H 5800 4360 50  0001 C CNN
+F 1 "+3.3V" H 5815 4683 50  0000 C CNN
+F 2 "" H 5800 4510 50  0001 C CNN
+F 3 "" H 5800 4510 50  0001 C CNN
+	1    5800 4510
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5CFB4433
+P 6705 4520
+F 0 "#PWR030" H 6705 4270 50  0001 C CNN
+F 1 "GND" H 6710 4347 50  0000 C CNN
+F 2 "" H 6705 4520 50  0001 C CNN
+F 3 "" H 6705 4520 50  0001 C CNN
+	1    6705 4520
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6705 4510 6705 4520
+Wire Wire Line
+	6380 4510 6705 4510
 $EndSCHEMATC
