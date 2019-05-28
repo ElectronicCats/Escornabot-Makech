@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name CatNINA-rescue)(type Legacy)(uri ${KIPRJMOD}/CatNINA-rescue.lib)(options "")(descr ""))
+)
