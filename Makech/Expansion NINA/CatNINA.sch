@@ -330,17 +330,6 @@ Text Label 9525 1630 0    60   ~ 0
 ESP_BUSY
 Text Label 9525 1830 0    60   ~ 0
 ESP_SCK
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J1
-U 1 1 5CEE89FD
-P 9055 1730
-F 0 "J1" H 9105 2147 50  0000 C CNN
-F 1 "Expansion" H 9105 2056 50  0000 C CNN
-F 2 "Pines:61301221121" H 9055 1730 50  0001 C CNN
-F 3 "~" H 9055 1730 50  0001 C CNN
-	1    9055 1730
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9355 1530 9525 1530
 Wire Wire Line
@@ -374,6 +363,17 @@ F 1 "+3.3V" H 9540 1703 50  0000 C CNN
 F 2 "" H 9525 1530 50  0001 C CNN
 F 3 "" H 9525 1530 50  0001 C CNN
 	1    9525 1530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J1
+U 1 1 5CF127AA
+P 9055 1730
+F 0 "J1" H 9105 2147 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 9105 2056 50  0000 C CNN
+F 2 "Pines:61301221121" H 9055 1730 50  0001 C CNN
+F 3 "~" H 9055 1730 50  0001 C CNN
+	1    9055 1730
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
