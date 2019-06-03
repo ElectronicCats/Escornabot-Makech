@@ -17,15 +17,7 @@
 // or ethernet clients.
 #include "config.h"
 
-AdafruitIO_Feed *command = io.feed("voice-commands"); // Set up the 'command' feed
-
-// These are used to set the direction of the bridge driver.
-#define ENB 3      //ENB
-#define MOTORB_1 4 //IN3
-#define MOTORB_2 5 //IN4
-#define MOTORA_1 7 //IN1
-#define MOTORA_2 6 //IN2
-#define ENA 8      //ENA
+AdafruitIO_Feed *command = io.feed("escornabot"); // Set up the 'command' feed
 
 // SETUP
 void setup()
@@ -98,75 +90,31 @@ void handleMessage(AdafruitIO_Data *data) {
   
   // perform movements
   // LEFT
-  if (cmd.equalsIgnoreCase("left")){    
-    Serial.println("Turning left");
-    digitalWrite(ENA,HIGH);
-    digitalWrite(ENB,HIGH);
-    digitalWrite(MOTORA_1,HIGH);
-    digitalWrite(MOTORA_2,LOW);
-    digitalWrite(MOTORB_1,HIGH);
-    digitalWrite(MOTORB_2,LOW);
-    delay(angle*15);
-    Serial.println("Stop");
-    digitalWrite(ENA,LOW);
-    digitalWrite(ENB,LOW);
-    digitalWrite(MOTORA_1,LOW);
-    digitalWrite(MOTORA_2,LOW);
-    digitalWrite(MOTORB_1,LOW);
-    digitalWrite(MOTORB_2,LOW);
+  if (cmd.equalsIgnoreCase("izquierda")){    
+    Serial.println("Girando a la izquierda");
+    delay(250);
+    Serial.println("Alto");
+    delay(250);
   }
   // RIGHT
-  if (cmd.equalsIgnoreCase("right")){    
-    Serial.println("Turning right");
-    digitalWrite(ENA,HIGH);
-    digitalWrite(ENB,HIGH);
-    digitalWrite(MOTORA_1,LOW);
-    digitalWrite(MOTORA_2,HIGH);
-    digitalWrite(MOTORB_1,LOW);
-    digitalWrite(MOTORB_2,HIGH);
-    delay(angle*15);
-    Serial.println("Stop");
-    digitalWrite(ENA,LOW);
-    digitalWrite(ENB,LOW);
-    digitalWrite(MOTORA_1,LOW);
-    digitalWrite(MOTORA_2,LOW);
-    digitalWrite(MOTORB_1,LOW);
-    digitalWrite(MOTORB_2,LOW);
+  if (cmd.equalsIgnoreCase("derecha")){    
+    Serial.println("Girando a la derecha");
+    delay(250);
+    Serial.println("Alto");
+    delay(250);
   }
   // FORWARD
-  if (cmd.equalsIgnoreCase("forward")){    
-    Serial.println("Moving forward");
-    digitalWrite(ENA,HIGH);
-    digitalWrite(ENB,HIGH);
-    digitalWrite(MOTORA_1,HIGH);
-    digitalWrite(MOTORA_2,LOW);
-    digitalWrite(MOTORB_1,LOW);
-    digitalWrite(MOTORB_2,HIGH);
-    delay(angle*15);
-    Serial.println("Stop");
-    digitalWrite(ENA,LOW);
-    digitalWrite(ENB,LOW);
-    digitalWrite(MOTORA_1,LOW);
-    digitalWrite(MOTORA_2,LOW);
-    digitalWrite(MOTORB_1,LOW);
-    digitalWrite(MOTORB_2,LOW);
+  if (cmd.equalsIgnoreCase("adelante")){    
+    Serial.println("Moviendose adelante");
+    delay(250);
+    Serial.println("Alto");
+    delay(250);
   }
   // BACK
-  if (cmd.equalsIgnoreCase("back")){    
-    Serial.println("Moving back");
-    digitalWrite(ENA,HIGH);
-    digitalWrite(ENB,HIGH);
-    digitalWrite(MOTORA_1,LOW);
-    digitalWrite(MOTORA_2,HIGH);
-    digitalWrite(MOTORB_1,HIGH);
-    digitalWrite(MOTORB_2,LOW);
-    delay(angle*15);
-    Serial.println("Stop");
-    digitalWrite(ENA,LOW);
-    digitalWrite(ENB,LOW);
-    digitalWrite(MOTORA_1,LOW);
-    digitalWrite(MOTORA_2,LOW);
-    digitalWrite(MOTORB_1,LOW);
-    digitalWrite(MOTORB_2,LOW);
+  if (cmd.equalsIgnoreCase("atras")){    
+    Serial.println("Moviendose atras");
+    delay(250);
+    Serial.println("Alto");
+    delay(250);
   }  
 } 
