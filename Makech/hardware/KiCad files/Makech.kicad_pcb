@@ -22,8 +22,8 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -4712,6 +4712,16 @@
       (net 1 GND))
     (pad 12 smd rect (at 6.35 -2.7) (size 3.1 1) (layers F.Cu F.Paste F.Mask)
       (net 39 /ESP_MISO))
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x06_P2.54mm_Vertical_SMD.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
+    (model "/Users/sabas/Documents/proyectoshd/escornabot/Makech/Expansion NINA/CatNINA.step"
+      (offset (xyz -92.5 -133.8 11.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm (layer F.Cu) (tedit 59FF03AB) (tstamp 5CD72FB7)
