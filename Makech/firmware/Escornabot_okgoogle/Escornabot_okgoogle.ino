@@ -19,13 +19,16 @@
 
 AdafruitIO_Feed *command = io.feed("escornabot"); // Set up the 'command' feed
 
+////////////////////////
+// DEBUG DEFINITIONS ////               
+/////////////////////////
+//#define DEBUG
+
 // SETUP
 void setup()
 {
-  
   // Start serial communication
   Serial.begin(9600);
-
   // connect to io.adafruit.com
   Serial.print("Connecting to Adafruit IO");
   io.connect();
@@ -57,10 +60,12 @@ void handleMessage(AdafruitIO_Data *data) {
   
   String commandStr = data->toString(); // store the incoming commands in a string
   
+  #ifdef DEBUG
   // received message
-  //Serial.print("received <- ");
-  //Serial.println(commandStr);
-
+  Serial.print("received <- ");
+  Serial.println(commandStr);
+  #endif
+  
   String cmd;
   int angle;
 
@@ -73,37 +78,55 @@ void handleMessage(AdafruitIO_Data *data) {
     }
   }
 
+  #ifdef DEBUG
   // print command
-  //Serial.println(cmd);
-  //Serial.println(angle);
+  Serial.println(cmd);
+  Serial.println(angle);
+  #endif
   
   // perform movements
   // LEFT
   if (cmd.equalsIgnoreCase("izquierda")){    
+    #ifdef DEBUG
     Serial.println("Girando a la izquierda");
+    #endif
     delay(250);
+    #ifdef DEBUG
     Serial.println("Alto");
+    #endif
     delay(250);
   }
   // RIGHT
-  if (cmd.equalsIgnoreCase("derecha")){    
+  if (cmd.equalsIgnoreCase("derecha")){ 
+    #ifdef DEBUG   
     Serial.println("Girando a la derecha");
+    #endif
     delay(250);
+    #ifdef DEBUG
     Serial.println("Alto");
+    #endif
     delay(250);
   }
   // FORWARD
-  if (cmd.equalsIgnoreCase("adelante")){    
+  if (cmd.equalsIgnoreCase("adelante")){ 
+    #ifdef DEBUG   
     Serial.println("Moviendose adelante");
+    #endif
     delay(250);
+    #ifdef DEBUG
     Serial.println("Alto");
+    #endif
     delay(250);
   }
   // BACK
-  if (cmd.equalsIgnoreCase("atras")){    
+  if (cmd.equalsIgnoreCase("atras")){ 
+    #ifdef DEBUG   
     Serial.println("Moviendose atras");
+    #endif
     delay(250);
+    #ifdef DEBUG
     Serial.println("Alto");
+    #endif
     delay(250);
   }  
 } 
