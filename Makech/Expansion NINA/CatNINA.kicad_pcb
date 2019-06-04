@@ -3403,8 +3403,8 @@
     )
   )
 
-  (dimension 2.90068 (width 0.15) (layer B.SilkS)
-    (gr_text "2.901 mm" (at 177.16452 118.5799 90) (layer B.SilkS)
+  (dimension 2.90068 (width 0.15) (layer Margin)
+    (gr_text "2.901 mm" (at 177.16452 118.5799 90) (layer Margin)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 169.04716 117.12956) (xy 176.450941 117.12956)))
