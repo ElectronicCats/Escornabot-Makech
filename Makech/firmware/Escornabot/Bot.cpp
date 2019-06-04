@@ -47,6 +47,11 @@ void Bot::init()
     BLUETOOTH->init();
     #endif
 
+    // init bluetooth
+    #if USE_CATNINA
+    CATNINA->init();
+    #endif
+
     // init buzzer
     #if USE_BUZZER
     BUZZER.init();

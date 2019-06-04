@@ -71,6 +71,9 @@ See LICENSE.txt for details
 #define USE_BLUETOOTH false
 #define BLUETOOTH_BAUDS 9600
 
+// CatNINA bluetooth and WiFi SPI
+#define USE_CATNINA true
+
 // buzzer
 #define USE_BUZZER true
 #define BUZZER_PIN 10
@@ -171,6 +174,20 @@ See LICENSE.txt for details
 #define BLUETOOTH_SERIAL    Serial1
 //#define BLUETOOTH_SERIAL    Serial2
 //#define BLUETOOTH_SERIAL    Serial3
+
+#endif // USE_BLUETOOTH
+
+//////////////////////////////////////////////////////////////////////
+///// Button set CatNINA
+//////////////////////////////////////////////////////////////////////
+
+#ifdef USE_CATNINA
+
+// Arduino SPI port (default is SPI, use SPI1 with other arduino or board)
+#define SPIWIFI    SPI
+//#define SPIWIFI    SPI1
+//#define SPIWIFI    SPI2
+//#define SPIWIFI    SPI3
 
 #endif // USE_BLUETOOTH
 

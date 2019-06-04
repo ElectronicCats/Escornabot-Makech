@@ -73,3 +73,9 @@ Makech/hardware/Gerberv01/
 Makech/hardware/SVGs/
 
 Makech/hardware/Gerberv02/
+
+\.vscode/ipch/f341bbcd8ed14740/
+
+*.bin
+
+*.ipch

@@ -28,6 +28,7 @@ See LICENSE.txt for details
 #define FIRMWARE_VERSION "v1.6.2"
 
 #include <Arduino.h>
+#include <SPI.h> 
 #include "Configuration.h"
 #include "Enums.h"
 #include "MoveList.h"
@@ -107,6 +108,19 @@ See LICENSE.txt for details
     BluetoothInterface* BLUETOOTH = &BLUETOOTH_INSTANCE;
 
 #endif // Bluetooth
+
+#if defined(USE_CATNINA)
+
+    #ifndef CATNINA_SPI
+        #define SPIWIFI SPI
+    #endif
+    #include "CatNINAInterface.h"
+    const CatNINAInterface::Config CT_CONFIG = {
+    };
+    CatNINAInterface CATNINA_INSTANCE (&CT_CONFIG);
+    CatNINAInterface* CATNINA = &CATNINA_INSTANCE;
+
+#endif // CatNINA
 
 
 #if USE_BUZZER
