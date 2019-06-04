@@ -22,17 +22,6 @@ AdafruitIO_Feed *command = io.feed("escornabot"); // Set up the 'command' feed
 // SETUP
 void setup()
 {
-  // Configure pins
-  pinMode(ENA, OUTPUT);
-  pinMode(MOTORA_1, OUTPUT);
-  pinMode(MOTORA_2, OUTPUT);
-  pinMode(ENB, OUTPUT);
-  pinMode(MOTORB_1, OUTPUT);
-  pinMode(MOTORB_2, OUTPUT);
-
-  // disable both motors
-  digitalWrite(ENA,LOW);
-  digitalWrite(ENB,LOW);
   
   // Start serial communication
   Serial.begin(9600);
@@ -69,8 +58,8 @@ void handleMessage(AdafruitIO_Data *data) {
   String commandStr = data->toString(); // store the incoming commands in a string
   
   // received message
-  Serial.print("received <- ");
-  Serial.println(commandStr);
+  //Serial.print("received <- ");
+  //Serial.println(commandStr);
 
   String cmd;
   int angle;
@@ -85,8 +74,8 @@ void handleMessage(AdafruitIO_Data *data) {
   }
 
   // print command
-  Serial.println(cmd);
-  Serial.println(angle);
+  //Serial.println(cmd);
+  //Serial.println(angle);
   
   // perform movements
   // LEFT
