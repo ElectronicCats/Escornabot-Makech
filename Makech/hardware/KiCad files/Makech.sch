@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Makech-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1111,7 +1111,7 @@ F 3 "" H 7635 5665 50  0001 C CNN
 	1    7635 5665
 	1    0    0    -1  
 $EndComp
-Text Label 7660 6065 0    60   ~ 0
+Text Label 7650 6065 0    60   ~ 0
 ESP_RESET
 Text Label 4545 1240 0    60   ~ 0
 A4
@@ -1145,8 +1145,6 @@ F 3 "" H 6685 5440 50  0001 C CNN
 	1    6685 5440
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7435 6065 8220 6065
 Text Label 1245 3905 2    60   ~ 0
 ESP_RESET
 Text Notes 1180 5110 0    118  ~ 0
@@ -2646,19 +2644,6 @@ Text Notes 7050 6390 0    60   ~ 12
 ESP32
 Text Notes 2570 6715 0    118  ~ 0
 SOURCE
-$Comp
-L power:GND #PWR025
-U 1 1 5C99179E
-P 8220 6195
-F 0 "#PWR025" H 8220 5945 50  0001 C CNN
-F 1 "GND" H 8225 6022 50  0000 C CNN
-F 2 "" H 8220 6195 50  0001 C CNN
-F 3 "" H 8220 6195 50  0001 C CNN
-	1    8220 6195
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8220 6065 8220 6195
 Wire Wire Line
 	6685 5440 6685 5865
 Wire Wire Line
@@ -2766,4 +2751,6 @@ Wire Wire Line
 	6705 4510 6705 4520
 Wire Wire Line
 	6380 4510 6705 4510
+Wire Wire Line
+	7435 6065 7650 6065
 $EndSCHEMATC
