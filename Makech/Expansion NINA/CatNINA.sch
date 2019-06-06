@@ -167,9 +167,9 @@ Text Label 8685 1930 2    60   ~ 0
 ESP_MOSI
 Text Label 9530 2030 0    60   ~ 0
 ESP_MISO
-Text Label 8700 1630 2    60   ~ 0
-ESP_RX
 Text Label 8700 1530 2    60   ~ 0
+ESP_RX
+Text Label 8700 1630 2    60   ~ 0
 ESP_TX
 Text Label 9525 1730 0    60   ~ 0
 ESP_RTS
