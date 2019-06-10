@@ -1059,7 +1059,7 @@ Text Label 6775 5665 0    60   ~ 0
 TX
 Text Label 6775 5765 0    60   ~ 0
 RX
-Text Label 6685 5525 3    60   ~ 0
+Text Label 6685 5865 2    60   ~ 0
 ESP_CS
 Text Label 6775 5965 2    60   ~ 0
 ESP_GPIO
@@ -1134,17 +1134,6 @@ Wire Wire Line
 	2940 1305 2940 1405
 Wire Wire Line
 	6685 5865 6935 5865
-$Comp
-L power:+3.3V #PWR022
-U 1 1 5C8EBAE6
-P 6685 5440
-F 0 "#PWR022" H 6685 5290 50  0001 C CNN
-F 1 "+3.3V" H 6700 5613 50  0000 C CNN
-F 2 "" H 6685 5440 50  0001 C CNN
-F 3 "" H 6685 5440 50  0001 C CNN
-	1    6685 5440
-	1    0    0    -1  
-$EndComp
 Text Label 1245 3905 2    60   ~ 0
 ESP_RESET
 Text Notes 1180 5110 0    118  ~ 0
@@ -2644,8 +2633,6 @@ Text Notes 7050 6390 0    60   ~ 12
 ESP32
 Text Notes 2570 6715 0    118  ~ 0
 SOURCE
-Wire Wire Line
-	6685 5440 6685 5865
 Wire Wire Line
 	5880 4510 5800 4510
 Wire Wire Line
