@@ -1074,7 +1074,7 @@ ESP_RTS
 Text Label 7645 5965 0    60   ~ 0
 ESP_SCK
 $Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J3
+L Makech-rescue:Conn_02x06_Top_Bottom-Connector_Generic J3
 U 1 1 5CAF1DA2
 P 7135 5865
 F 0 "J3" H 7185 6282 50  0000 C CNN
@@ -1090,7 +1090,7 @@ Wire Wire Line
 Wire Wire Line
 	7435 6165 7645 6165
 $Comp
-L power:GND #PWR023
+L Makech-rescue:GND-power #PWR023
 U 1 1 5CB523FF
 P 6775 6165
 F 0 "#PWR023" H 6775 5915 50  0001 C CNN
@@ -1101,7 +1101,7 @@ F 3 "" H 6775 6165 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR024
+L Makech-rescue:+3.3V-power #PWR024
 U 1 1 5CB5358A
 P 7635 5665
 F 0 "#PWR024" H 7635 5515 50  0001 C CNN
@@ -2320,7 +2320,7 @@ Wire Wire Line
 Wire Wire Line
 	3080 7015 3400 7015
 $Comp
-L Switch:SW_DPDT_x2 SW2
+L Makech-rescue:SW_DPDT_x2-Switch SW2
 U 1 1 5C8C58BD
 P 3600 7015
 F 0 "SW2" H 3600 7300 50  0000 C CNN
@@ -2338,7 +2338,7 @@ Wire Wire Line
 	8600 5940 9880 5940
 NoConn ~ 3800 7115
 $Comp
-L Device:R_Small R1
+L Makech-rescue:R_Small-Device R1
 U 1 1 5CAE4049
 P 4885 1080
 F 0 "R1" H 4944 1126 50  0000 L CNN
@@ -2350,7 +2350,7 @@ F 4 "CRCW080510K0FKEAC" H 4885 1080 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R2
+L Makech-rescue:R_Small-Device R2
 U 1 1 5CAE4591
 P 5445 1340
 F 0 "R2" H 5504 1386 50  0000 L CNN
@@ -2362,7 +2362,7 @@ F 4 "CRCW080510K0FKEAC" H 5445 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R3
+L Makech-rescue:R_Small-Device R3
 U 1 1 5CAFA0C6
 P 5910 1340
 F 0 "R3" H 5969 1386 50  0000 L CNN
@@ -2374,7 +2374,7 @@ F 4 "CRCW080510K0FKEAC" H 5910 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R4
+L Makech-rescue:R_Small-Device R4
 U 1 1 5CAFA16C
 P 6370 1340
 F 0 "R4" H 6429 1386 50  0000 L CNN
@@ -2386,7 +2386,7 @@ F 4 "CRCW080510K0FKEAC" H 6370 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R5
+L Makech-rescue:R_Small-Device R5
 U 1 1 5CAFA20C
 P 6830 1340
 F 0 "R5" H 6889 1386 50  0000 L CNN
@@ -2398,7 +2398,7 @@ F 4 "CRCW080510K0FKEAC" H 6830 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R6
+L Makech-rescue:R_Small-Device R6
 U 1 1 5CAFA2C4
 P 7290 1340
 F 0 "R6" H 7349 1386 50  0000 L CNN
@@ -2410,7 +2410,7 @@ F 4 "CRCW080510K0FKEAC" H 7290 1340 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R9
+L Makech-rescue:R_Small-Device R9
 U 1 1 5CB676E0
 P 5755 2685
 F 0 "R9" H 5814 2731 50  0000 L CNN
@@ -2426,7 +2426,7 @@ Wire Wire Line
 Wire Wire Line
 	6385 2390 6385 2585
 $Comp
-L Device:R_Small R10
+L Makech-rescue:R_Small-Device R10
 U 1 1 5CB67CE6
 P 6385 2685
 F 0 "R10" H 6444 2731 50  0000 L CNN
@@ -2438,7 +2438,7 @@ F 4 "CRCW080510K0FKEAC" H 6385 2685 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R11
+L Makech-rescue:R_Small-Device R11
 U 1 1 5CB67E8B
 P 7015 2685
 F 0 "R11" H 7074 2731 50  0000 L CNN
@@ -2450,7 +2450,7 @@ F 4 "CRCW080510K0FKEAC" H 7015 2685 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R12
+L Makech-rescue:R_Small-Device R12
 U 1 1 5CB67FF5
 P 7645 2685
 F 0 "R12" H 7704 2731 50  0000 L CNN
@@ -2583,7 +2583,7 @@ Connection ~ 5600 7225
 Wire Wire Line
 	5600 7225 5675 7225
 $Comp
-L power:+6V #PWR0101
+L Makech-rescue:+6V-power #PWR0101
 U 1 1 5CA32BB8
 P 10515 6030
 F 0 "#PWR0101" H 10515 5880 50  0001 C CNN
@@ -2594,7 +2594,7 @@ F 3 "" H 10515 6030 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+6V #PWR0102
+L Makech-rescue:+6V-power #PWR0102
 U 1 1 5CA32C6B
 P 10590 5160
 F 0 "#PWR0102" H 10590 5010 50  0001 C CNN
@@ -2615,7 +2615,7 @@ Wire Wire Line
 Wire Wire Line
 	10695 6030 10515 6030
 $Comp
-L Jumper:SolderJumper_2_Bridged JP1
+L Makech-rescue:SolderJumper_2_Bridged-Jumper JP1
 U 1 1 5CA75BE5
 P 4100 5465
 F 0 "JP1" V 4054 5533 50  0000 L CNN
@@ -2702,18 +2702,18 @@ D35
 Text Label 6455 4910 0    50   ~ 0
 D36
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J4
+L Makech-rescue:Conn_02x05_Odd_Even-Connector_Generic J4
 U 1 1 5CFB2620
 P 6080 4710
 F 0 "J4" H 6130 5127 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 6105 4400 50  0000 C CNN
-F 2 "Pines:62001021121" H 6080 4710 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6080 4710 50  0001 C CNN
 F 3 "~" H 6080 4710 50  0001 C CNN
 	1    6080 4710
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR029
+L Makech-rescue:+3.3V-power #PWR029
 U 1 1 5CFB40FB
 P 5800 4510
 F 0 "#PWR029" H 5800 4360 50  0001 C CNN
@@ -2724,7 +2724,7 @@ F 3 "" H 5800 4510 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR030
+L Makech-rescue:GND-power #PWR030
 U 1 1 5CFB4433
 P 6705 4520
 F 0 "#PWR030" H 6705 4270 50  0001 C CNN
