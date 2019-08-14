@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.0-0)")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.2-1)-1")
 
   (general
     (thickness 1.6)
@@ -37,7 +37,7 @@
     (42 Eco1.User user)
     (43 Eco2.User user)
     (44 Edge.Cuts user)
-    (45 Margin user hide)
+    (45 Margin user)
     (46 B.CrtYd user hide)
     (47 F.CrtYd user hide)
     (48 B.Fab user hide)
@@ -78,7 +78,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x010f0_80000001)
+      (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -104,7 +104,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../Gerber/"))
+      (outputdirectory "../escorna_v3/"))
   )
 
   (net 0 "")
@@ -4925,7 +4925,7 @@
   (gr_text ON (at 104.55656 84.8614) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "Rev. 0.2" (at 143.58112 143.8402) (layer B.SilkS)
+  (gr_text "Rev. 0.3" (at 143.58112 143.8402) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.25)) (justify mirror))
   )
   (gr_text "Max. 6V" (at 151.6126 88.04656 90) (layer F.SilkS)
@@ -6416,7 +6416,7 @@
   (segment (start 142.505 66.67) (end 144.74 66.67) (width 0.3) (layer F.Cu) (net 68))
   (segment (start 141.7 67.475) (end 142.505 66.67) (width 0.3) (layer F.Cu) (net 68))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5CDEA29E) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5D5454C4) (hatch edge 0.508)
     (connect_pads (clearance 0.3))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7536,7 +7536,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5CDEA29B) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5D5454C1) (hatch edge 0.508)
     (connect_pads (clearance 0.3))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
