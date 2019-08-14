@@ -232,18 +232,6 @@ F 3 "" H 790 7170 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1
-U 1 1 58BB5A4E
-P 2705 7015
-F 0 "F1" H 2755 7055 40  0000 C CNN
-F 1 "FUSE" H 2605 6965 40  0000 C CNN
-F 2 "Resistors_SMD:R_1812_HandSoldering" H 2705 7015 60  0001 C CNN
-F 3 "" H 2705 7015 60  0000 C CNN
-F 4 "0ZCF0050FF2C" H 2705 7015 50  0001 C CNN "manf#"
-	1    2705 7015
-	1    0    0    -1  
-$EndComp
-$Comp
 L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1
 U 1 1 58BB6DB1
 P 3080 7285
@@ -1160,11 +1148,7 @@ F 0 "U1" H 2120 4772 50  0000 C CNN
 F 1 "ATSAMD21G18A-AU" H 2120 4681 50  0000 C CNN
 F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 2120 2905 50  0001 L BNN
 F 3 "3.01 USD" H 2120 2905 50  0001 L BNN
-F 4 "Microchip" H 2120 2905 50  0001 L BNN "Campo4"
-F 5 "TQFP-48 Microchip" H 2120 2905 50  0001 L BNN "Campo5"
-F 6 "SAMD21G Series 256 kB Flash 32 kB SRAM 48 MHz 32-Bit Microcontroller - TQFP-48" H 2120 2905 50  0001 L BNN "Campo6"
-F 7 "Good" H 2120 2905 50  0001 L BNN "Campo7"
-F 8 "ATSAMD21G18A-AU" H 2120 2905 50  0001 L BNN "Campo8"
+F 4 "ATSAMD21G18A-AU" H 2120 2905 50  0001 L BNN "manf#"
 	1    2120 2905
 	1    0    0    -1  
 $EndComp
@@ -2740,4 +2724,16 @@ Wire Wire Line
 	6380 4510 6705 4510
 Wire Wire Line
 	7435 6065 7650 6065
+$Comp
+L Makech-rescue:FUSE--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue F1
+U 1 1 58BB5A4E
+P 2705 7015
+F 0 "F1" H 2755 7055 40  0000 C CNN
+F 1 "FUSE" H 2605 6965 40  0000 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" H 2705 7015 60  0001 C CNN
+F 3 "" H 2705 7015 60  0000 C CNN
+F 4 "0ZCF0050FF2C" H 2705 7015 50  0001 C CNN "manf#"
+	1    2705 7015
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
