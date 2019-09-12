@@ -1,5 +1,5 @@
 <a href="https://electroniccats.com/producto/escornabot-makech/">
-  <img src="https://media.discordapp.net/attachments/562297893667471381/619566704372219915/unknown.png?width=441&height=228" width="200" height="104" />
+  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
 </a>
 
 View this project on [CADLAB.io](https://cadlab.io/project/1721). 
