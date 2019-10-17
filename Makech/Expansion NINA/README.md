@@ -22,7 +22,8 @@ El comando debería detectar el ESP32 y tardará uno o dos minutos en cargar el 
 
 Si ESPTool no detecta el ESP32 , asegúrese de haber subido el archivo .UF2 correcto al gestor de arranque.
 
-wireless_fish ___ Users_brent_Desktop__fish_.png
+![](https://cdn-learn.adafruit.com/assets/assets/000/081/481/medium800/wireless_fish___Users_brent_Desktop__fish_.png?1569525510)
+
 Una vez que el firmware está completamente cargado, el ESP32 se reiniciará y el NeoPixel se iluminará en azul. 
 
 ## Verificación de la versión de firmware actualizada
@@ -32,3 +33,5 @@ Para verificar que todo funcione correctamente, cargaremos un boceto Arduino o u
 Si anteriormente estaba usando su ESP32 con Arduino, debe cargar un boceto de Arduino para verificar que todo funcione correctamente y que la versión del nina-fw se correlaciona con la versión que lee el boceto.
 
 Abra Archivo-> Ejemplos-> WiFiNINA-> ScanNetworks y cargue el boceto. Luego, abra el Monitor de serie. Debería ver la versión del firmware impresa en el monitor serie.
+
+![](https://cdn-learn.adafruit.com/assets/assets/000/081/636/medium800/wireless_Banners_and_Alerts_and__dev_cu_usbmodem1412301__Adafruit_PyPortal_M4__SAMD51__.png?1569859141)
