@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Makech-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1048,7 +1048,7 @@ TX
 Text Label 6775 5765 0    60   ~ 0
 RX
 Text Label 6685 5865 2    60   ~ 0
-ESP_CS
+ESP_CS_RTS
 Text Label 6775 5965 2    60   ~ 0
 ESP_GPIO
 Text Label 6775 6065 2    60   ~ 0
@@ -1058,9 +1058,9 @@ ESP_MISO
 Text Label 7635 5765 0    60   ~ 0
 ESP_BUSY
 Text Label 7645 5865 0    60   ~ 0
-ESP_RTS
+ESP_CS_RTS
 Text Label 7645 5965 0    60   ~ 0
-ESP_SCK
+ESP_SCK_CTS
 $Comp
 L Makech-rescue:Conn_02x06_Top_Bottom-Connector_Generic J3
 U 1 1 5CAF1DA2
@@ -1111,8 +1111,6 @@ Text Label 1225 2805 2    60   ~ 0
 ESP_MOSI
 Text Label 1235 3705 2    60   ~ 0
 ESP_BUSY
-Text Label 1245 3105 2    60   ~ 0
-ESP_SCK
 Text Label 1220 2905 2    60   ~ 0
 ESP_MISO
 Connection ~ 2940 1305
@@ -1136,10 +1134,8 @@ Wire Notes Line
 	2275 6535 2275 4915
 Wire Notes Line
 	475  4915 4640 4915
-Text Label 1245 3505 2    60   ~ 0
-ESP_RTS
 Text Label 1220 3005 2    60   ~ 0
-ESP_CS
+ESP_CS_RTS
 $Comp
 L Makech-rescue:ATSAMD21G18A-AU-electroniccats-Makech-rescue-Makech-rescue U1
 U 1 1 5CBBAA5C
@@ -2736,4 +2732,6 @@ F 4 "0ZCF0050FF2C" H 2705 7015 50  0001 C CNN "manf#"
 	1    2705 7015
 	1    0    0    -1  
 $EndComp
+Text Label 1245 3105 2    60   ~ 0
+ESP_SCK_CTS
 $EndSCHEMATC
