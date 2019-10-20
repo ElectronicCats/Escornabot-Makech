@@ -1050,13 +1050,11 @@ ESP_CS_RTS
 Text Label 6775 5965 2    60   ~ 0
 ESP_GPIO0
 Text Label 6775 6065 2    60   ~ 0
-ESP_MOSI
+ESP_MOSI_TX
 Text Label 7645 6165 0    60   ~ 0
-ESP_MISO
+ESP_MISO_RX
 Text Label 7635 5765 0    60   ~ 0
 ESP_BUSY_ACK
-Text Label 7645 5865 0    60   ~ 0
-ESP_CS_RTS
 Text Label 7645 5965 0    60   ~ 0
 ESP_SCK_CTS
 $Comp
@@ -1106,11 +1104,11 @@ A4
 Text Label 1245 3605 2    60   ~ 0
 ESP_GPIO0
 Text Label 1225 2805 2    60   ~ 0
-ESP_MOSI
+ESP_MOSI_TX
 Text Label 1235 3705 2    60   ~ 0
 ESP_BUSY_ACK
 Text Label 1220 2905 2    60   ~ 0
-ESP_MISO
+ESP_MISO_RX
 Connection ~ 2940 1305
 Wire Wire Line
 	2940 1100 2940 1305
