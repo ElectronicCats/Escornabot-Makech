@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:CatNINA-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CatNINA"
-Date "2019-05-28"
-Rev "0.1"
+Date "2019-10-19"
+Rev "0.2"
 Comp "Electronic Cats"
 Comment1 ""
 Comment2 ""
@@ -116,7 +116,6 @@ ESP_RX
 Text Label 3510 1905 0    60   ~ 0
 ESP_TX
 NoConn ~ 1475 2255
-NoConn ~ 3325 1805
 NoConn ~ 3325 2105
 NoConn ~ 3325 2705
 NoConn ~ 3325 2605
@@ -164,19 +163,17 @@ $EndComp
 Text Label 1285 1955 2    60   ~ 0
 ESP_RESET
 Text Label 8685 1930 2    60   ~ 0
-ESP_MOSI
+ESP_MOSI_TX
 Text Label 9530 2030 0    60   ~ 0
-ESP_MISO
+ESP_MISO_RX
 Text Label 8700 1530 2    60   ~ 0
 ESP_RX
 Text Label 8700 1630 2    60   ~ 0
 ESP_TX
-Text Label 9525 1730 0    60   ~ 0
-ESP_RTS
 Text Label 8695 1830 2    60   ~ 0
 ESP_GPIO0
 Text Label 8705 1730 2    60   ~ 0
-ESP_CS
+ESP_CS_RTS
 $Comp
 L CatNINA-rescue:GND-power1-BLE_WIFI_HID-rescue-BLE_WIFI_HID-rescue #PWR06
 U 1 1 5B2759F9
@@ -258,24 +255,24 @@ Wire Wire Line
 Wire Wire Line
 	3325 2405 3475 2405
 Text Label 3475 2305 0    50   ~ 0
-ESP_RTS
+ESP_CS_RTS
 Text Label 3475 2405 0    50   ~ 0
-ESP_SCK
-Text Label 3475 2505 0    50   ~ 0
-ESP_CS
+ESP_SCK_CTS
+Text Label 3405 2505 0    50   ~ 0
+ESP_CS_RTS
 Wire Wire Line
 	1475 2955 1340 2955
 Wire Wire Line
 	1475 2555 1360 2555
 Text Label 1340 2955 2    50   ~ 0
-ESP_MOSI
+ESP_MOSI_TX
 Text Label 1360 2555 2    50   ~ 0
-ESP_BUSY
+ESP_BUSY_ACK
 NoConn ~ 1475 2355
 Wire Wire Line
 	3325 1705 3495 1705
 Text Label 3495 1705 0    50   ~ 0
-ESP_MISO
+ESP_MISO_RX
 $Comp
 L power:GND #PWR07
 U 1 1 5C93CCE3
@@ -289,32 +286,26 @@ F 3 "" H 1305 2185 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1305 2155 1305 2185
-Wire Wire Line
-	3920 2505 3920 2495
-Wire Wire Line
-	3325 2505 3920 2505
 $Comp
 L Device:R_Small R3
 U 1 1 5C941D1D
-P 3920 2395
-F 0 "R3" H 3979 2441 50  0000 L CNN
-F 1 "10K" H 3979 2350 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3920 2395 50  0001 C CNN
-F 3 "~" H 3920 2395 50  0001 C CNN
-	1    3920 2395
+P 4105 2390
+F 0 "R3" H 4164 2436 50  0000 L CNN
+F 1 "10K" H 4164 2345 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4105 2390 50  0001 C CNN
+F 3 "~" H 4105 2390 50  0001 C CNN
+	1    4105 2390
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3920 2295 3920 2255
 $Comp
 L power:+3.3V #PWR08
 U 1 1 5C9443CD
-P 3920 2255
-F 0 "#PWR08" H 3920 2105 50  0001 C CNN
-F 1 "+3.3V" H 3935 2428 50  0000 C CNN
-F 2 "" H 3920 2255 50  0001 C CNN
-F 3 "" H 3920 2255 50  0001 C CNN
-	1    3920 2255
+P 4105 2245
+F 0 "#PWR08" H 4105 2095 50  0001 C CNN
+F 1 "+3.3V" H 4120 2418 50  0000 C CNN
+F 2 "" H 4105 2245 50  0001 C CNN
+F 3 "" H 4105 2245 50  0001 C CNN
+	1    4105 2245
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2075 3505
@@ -327,9 +318,9 @@ IO25
 Wire Notes Line
 	11195 4080 11195 4100
 Text Label 9525 1630 0    60   ~ 0
-ESP_BUSY
+ESP_BUSY_ACK
 Text Label 9525 1830 0    60   ~ 0
-ESP_SCK
+ESP_SCK_CTS
 Wire Wire Line
 	9355 1530 9525 1530
 Wire Wire Line
@@ -377,4 +368,14 @@ F 4 "61000621121" H 9055 1730 50  0001 C CNN "manf #"
 	1    9055 1730
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4105 2505 4105 2490
+Wire Wire Line
+	3325 2505 4105 2505
+Wire Wire Line
+	4105 2290 4105 2245
+Wire Wire Line
+	3325 1805 3505 1805
+Text Label 3505 1805 0    50   ~ 0
+ESP_SCK_CTS
 $EndSCHEMATC

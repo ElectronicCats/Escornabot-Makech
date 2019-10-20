@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Escornabot Makech"
-Date "2019-04-28"
-Rev "v0.3"
+Date "2019-10-19"
+Rev "v0.4"
 Comp "Electronic Cats"
 Comment1 "Andres Sabas"
 Comment2 "electroniccats.com"
@@ -830,8 +830,6 @@ Wire Wire Line
 Wire Wire Line
 	1420 3405 1245 3405
 Wire Wire Line
-	1420 3505 1245 3505
-Wire Wire Line
 	1420 3805 1245 3805
 Wire Wire Line
 	1420 3905 1245 3905
@@ -1050,13 +1048,13 @@ RX
 Text Label 6685 5865 2    60   ~ 0
 ESP_CS_RTS
 Text Label 6775 5965 2    60   ~ 0
-ESP_GPIO
+ESP_GPIO0
 Text Label 6775 6065 2    60   ~ 0
 ESP_MOSI
 Text Label 7645 6165 0    60   ~ 0
 ESP_MISO
 Text Label 7635 5765 0    60   ~ 0
-ESP_BUSY
+ESP_BUSY_ACK
 Text Label 7645 5865 0    60   ~ 0
 ESP_CS_RTS
 Text Label 7645 5965 0    60   ~ 0
@@ -1106,11 +1104,11 @@ A4
 Text Label 1225 1905 2    60   ~ 0
 A4
 Text Label 1245 3605 2    60   ~ 0
-ESP_GPIO
+ESP_GPIO0
 Text Label 1225 2805 2    60   ~ 0
 ESP_MOSI
 Text Label 1235 3705 2    60   ~ 0
-ESP_BUSY
+ESP_BUSY_ACK
 Text Label 1220 2905 2    60   ~ 0
 ESP_MISO
 Connection ~ 2940 1305
@@ -2734,4 +2732,5 @@ F 4 "0ZCF0050FF2C" H 2705 7015 50  0001 C CNN "manf#"
 $EndComp
 Text Label 1245 3105 2    60   ~ 0
 ESP_SCK_CTS
+NoConn ~ 1420 3505
 $EndSCHEMATC
