@@ -326,8 +326,6 @@ Wire Wire Line
 Wire Wire Line
 	9355 1630 9525 1630
 Wire Wire Line
-	9355 1730 9525 1730
-Wire Wire Line
 	9355 1830 9525 1830
 Wire Wire Line
 	9355 1930 9525 1930
@@ -378,4 +376,5 @@ Wire Wire Line
 	3325 1805 3505 1805
 Text Label 3505 1805 0    50   ~ 0
 ESP_SCK_CTS
+NoConn ~ 9355 1730
 $EndSCHEMATC

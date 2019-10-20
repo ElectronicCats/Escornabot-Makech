@@ -1038,8 +1038,6 @@ Wire Wire Line
 Wire Wire Line
 	7435 5765 7635 5765
 Wire Wire Line
-	7435 5865 7645 5865
-Wire Wire Line
 	7435 5965 7645 5965
 Text Label 6775 5665 0    60   ~ 0
 TX
@@ -2731,4 +2729,5 @@ $EndComp
 Text Label 1245 3105 2    60   ~ 0
 ESP_SCK_CTS
 NoConn ~ 1420 3505
+NoConn ~ 7435 5865
 $EndSCHEMATC
