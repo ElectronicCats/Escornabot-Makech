@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:Makech-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Escornabot Makech"
-Date "2019-10-19"
-Rev "v0.4"
+Date "2019-11-15"
+Rev "v1.0"
 Comp "Electronic Cats"
 Comment1 "Andres Sabas"
 Comment2 "electroniccats.com"
@@ -624,9 +624,9 @@ U 1 1 5D522F31
 P 2650 5790
 F 0 "J2" H 2705 6257 50  0000 C CNN
 F 1 "USB_B_Micro" H 2705 6166 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 2800 5740 50  0001 C CNN
+F 2 "Connectors:U254051N4BH806" H 2800 5740 50  0001 C CNN
 F 3 "~" H 2800 5740 50  0001 C CNN
-F 4 "629105150521" H 2650 5790 50  0001 C CNN "manf#"
+F 4 "U254051N4BH806" H 2650 5790 50  0001 C CNN "manf#"
 	1    2650 5790
 	1    0    0    -1  
 $EndComp
