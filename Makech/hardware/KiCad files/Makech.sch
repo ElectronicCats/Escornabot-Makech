@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Makech-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -232,18 +231,6 @@ F 3 "" H 790 7170 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Makech-rescue:ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D1
-U 1 1 58BB6DB1
-P 3080 7285
-F 0 "D1" H 3080 7225 40  0000 C CNN
-F 1 "ZENER" H 3080 7185 40  0001 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Castellated" H 3080 7285 60  0001 C CNN
-F 3 "" H 3080 7285 60  0000 C CNN
-F 4 "BZY55C4V7 RYG" H 3080 7285 50  0001 C CNN "manf#"
-	1    3080 7285
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Makech-rescue:GND--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue #PWR07
 U 1 1 58BB81E0
 P 3035 7510
@@ -442,12 +429,6 @@ Wire Wire Line
 	1015 7270 1015 7455
 Wire Wire Line
 	3035 7510 3035 7455
-Connection ~ 3035 7455
-Wire Wire Line
-	3080 7015 3080 7185
-Wire Wire Line
-	3080 7455 3080 7335
-Connection ~ 3080 7015
 Wire Wire Line
 	10505 5505 10845 5505
 Wire Wire Line
@@ -504,8 +485,6 @@ Wire Wire Line
 	5285 1240 5285 1340
 Wire Wire Line
 	8600 5940 8600 6295
-Wire Wire Line
-	3035 7455 3080 7455
 Wire Wire Line
 	8820 4620 9880 4620
 Wire Wire Line
@@ -695,8 +674,6 @@ F 3 "" H 5390 6765 50  0001 C CNN
 	1    5390 6765
 	1    0    0    -1  
 $EndComp
-Text Notes 3350 7615 0    60   ~ 0
-NOTA: Revisar \ndiodo \nde proteccion
 $Comp
 L Makech-rescue:SW_Push-Switch-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue SW1
 U 1 1 5D7E7124
@@ -1176,8 +1153,6 @@ Wire Wire Line
 	1420 3705 1235 3705
 Wire Wire Line
 	2555 7015 2105 7015
-Wire Wire Line
-	2855 7015 3080 7015
 Wire Wire Line
 	2105 6885 2105 7015
 Wire Wire Line
@@ -2291,8 +2266,6 @@ Wire Wire Line
 	7645 2390 7645 2585
 Wire Wire Line
 	4885 1240 5285 1240
-Wire Wire Line
-	3080 7015 3400 7015
 $Comp
 L Makech-rescue:SW_DPDT_x2-Switch SW2
 U 1 1 5C8C58BD
@@ -2730,4 +2703,6 @@ Text Label 1245 3105 2    60   ~ 0
 ESP_SCK_CTS
 NoConn ~ 1420 3505
 NoConn ~ 7435 5865
+Wire Wire Line
+	2855 7015 3400 7015
 $EndSCHEMATC

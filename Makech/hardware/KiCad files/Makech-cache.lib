@@ -630,21 +630,6 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue
-#
-DEF Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue D 0 40 N N 1 F N
-F0 "D" 0 100 40 H V C CNN
-F1 "Makech-rescue_ZENER--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue" 0 -100 40 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 5 0 0 0 40 -25 50 -15 50 15 60 25 60 25 N
-P 4 0 1 0 50 0 0 25 0 -25 0 -25 F
-X K 1 100 0 50 L 40 40 1 1 P
-X A 2 -50 0 50 R 40 40 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue
 #
 DEF Makech-rescue_buzzer--Ogaki-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue-Makech-rescue BZ 0 10 N N 1 F N
