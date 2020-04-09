@@ -1,4 +1,4 @@
-<a href="https://electroniccats.com/producto/escornabot-makech/">
+<a href="https://electroniccats.com/store/escornabot-makech/">
   <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
 </a>
 
